@@ -1,0 +1,33 @@
+# Local development only. The credentials below are placeholders for a
+# throwaway local database and must never be used anywhere else.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: scamshield
+      POSTGRES_PASSWORD: change-me
+      POSTGRES_DB: scamshield
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U scamshield -d scamshield"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://scamshield:change-me@db:5432/scamshield
+      APP_ENV: development
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+
+volumes:
+  db_data:

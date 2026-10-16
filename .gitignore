@@ -2,14 +2,20 @@
 .env
 .env.*
 !.env.example
+*.pem
 
 # Node / Next.js
 node_modules/
 .next/
 out/
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+.vercel/
 
 # Python
 __pycache__/
+*.egg-info/
 .venv/
 .pytest_cache/
 .mypy_cache/
@@ -17,6 +23,7 @@ __pycache__/
 
 # Test and coverage output
 coverage/
+.coverage
 htmlcov/
 playwright-report/
 test-results/
@@ -30,6 +37,10 @@ ml/artifacts/
 .terraform/
 *.tfvars
 !*.tfvars.example
+
+# Build output
+dist/
+build/
 
 # OS files
 .DS_Store

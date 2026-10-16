@@ -6,7 +6,7 @@ It is a portfolio project by Soham Shah.
 
 ## Status
 
-Early development, design phase. Nothing is built or deployed yet. There is no live demo, no trained model and no published evaluation. Everything below describes the plan, and any detail may change as the work progresses.
+Early development. The repository foundation (skeletons, CI and health endpoints) is in place, but no analysis features exist yet. Nothing is deployed. There is no live demo, no trained model and no published evaluation. Everything below describes the plan, and any detail may change as the work progresses.
 
 ## What it will do
 
@@ -80,6 +80,57 @@ What leaves the service:
 - The Gemini API receives only structured evidence (signal identifiers and descriptions, the classification, URL check statuses and threat types). It does not receive the message text or the URLs.
 
 Do not paste anything you are not comfortable having checked against a third-party reputation service. This section will be updated once the implementation exists.
+
+## Local development
+
+Prerequisites: Python 3.12 or newer, [uv](https://docs.astral.sh/uv/), Node.js 20 or newer, and Docker.
+
+Copy the example environment file before running anything that reads configuration:
+
+```
+cp .env.example .env
+```
+
+Backend (http://localhost:8000):
+
+```
+cd backend
+uv sync
+uv run uvicorn app.main:app --reload
+```
+
+Frontend:
+
+```
+cd frontend
+npm ci
+npm run dev
+```
+
+PostgreSQL and the backend together, using Docker (the credentials in `docker-compose.yml` are for local use only):
+
+```
+docker compose up
+```
+
+Checks:
+
+```
+# backend, from backend/
+uv run ruff check .
+uv run ruff format --check .
+uv run mypy app
+uv run pytest -q
+uv run pip-audit
+
+# frontend, from frontend/
+npm run lint
+npm run format:check
+npm run typecheck
+npm test
+npm run build
+npm audit --omit=dev --audit-level=high
+```
 
 ## Reporting security issues
 
