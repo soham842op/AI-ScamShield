@@ -1,0 +1,35 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test and coverage output
+coverage/
+htmlcov/
+playwright-report/
+test-results/
+
+# Machine learning data and artifacts
+ml/data/
+ml/artifacts/
+
+# Terraform
+*.tfstate*
+.terraform/
+*.tfvars
+!*.tfvars.example
+
+# OS files
+.DS_Store
