@@ -9,6 +9,8 @@ dependencies = [
     "pydantic>=2",
     "pydantic-settings",
     "psycopg[binary]",
+    "sqlalchemy>=2.0",
+    "alembic>=1.13",
 ]
 
 [dependency-groups]
@@ -41,3 +43,4 @@ files = ["app"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+markers = ["integration: needs a Postgres database (TEST_DATABASE_URL)"]
