@@ -146,6 +146,8 @@ def test_ipv4_forms_are_normalized(value: str, host: str) -> None:
         ("http://[0:0:0:0:0:0:0:1]:8080/x", "http://[::1]:8080/x"),
         ("https://[2001:DB8::1]:443/", "https://[2001:db8::1]/"),
         ("http://[::ffff:192.168.0.1]/", "http://[::ffff:192.168.0.1]/"),
+        # The hex spelling of the same address gives the same dotted display.
+        ("http://[::ffff:c0a8:1]/", "http://[::ffff:192.168.0.1]/"),
     ],
 )
 def test_ipv6_literals(value: str, display: str) -> None:

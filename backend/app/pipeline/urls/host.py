@@ -63,7 +63,11 @@ def _normalize_ipv6(inner: str) -> NormalizedHost:
         address = ipaddress.IPv6Address(inner)
     except ValueError as exc:
         raise InvalidUrlError("invalid host") from exc
-    text = f"[{address.compressed}]"
+    # Python versions differ in how they write IPv4-mapped addresses (dotted or
+    # hex), so build that form here. Dotted shows which IPv4 address it reaches.
+    mapped = address.ipv4_mapped
+    compressed = f"::ffff:{mapped}" if mapped is not None else address.compressed
+    text = f"[{compressed}]"
     return NormalizedHost(ascii=text, unicode=text, is_ip=True)
 
 
