@@ -1,0 +1,955 @@
+{
+  "components": {
+    "schemas": {
+      "AnalysisResponse": {
+        "properties": {
+          "classification": {
+            "enum": [
+              "likely_legitimate",
+              "suspicious",
+              "high_risk",
+              "inconclusive"
+            ],
+            "title": "Classification",
+            "type": "string"
+          },
+          "classifier": {
+            "$ref": "#/components/schemas/ClassifierOut"
+          },
+          "created_at": {
+            "format": "date-time",
+            "title": "Created At",
+            "type": "string"
+          },
+          "experiment": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ExperimentOut"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "explanation": {
+            "$ref": "#/components/schemas/ExplanationOut"
+          },
+          "input_type": {
+            "enum": [
+              "message",
+              "url"
+            ],
+            "title": "Input Type",
+            "type": "string"
+          },
+          "latency_ms": {
+            "minimum": 0.0,
+            "title": "Latency Ms",
+            "type": "integer"
+          },
+          "limitations": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "recommendations": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Recommendations",
+            "type": "array"
+          },
+          "request_id": {
+            "format": "uuid",
+            "title": "Request Id",
+            "type": "string"
+          },
+          "risk_score": {
+            "anyOf": [
+              {
+                "maximum": 100.0,
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Risk Score"
+          },
+          "schema_version": {
+            "const": "1.0",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "score_basis": {
+            "anyOf": [
+              {
+                "const": "text_classifier",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Score Basis"
+          },
+          "score_type": {
+            "enum": [
+              "heuristic",
+              "calibrated_probability",
+              "none"
+            ],
+            "title": "Score Type",
+            "type": "string"
+          },
+          "signals": {
+            "items": {
+              "$ref": "#/components/schemas/SignalOut"
+            },
+            "title": "Signals",
+            "type": "array"
+          },
+          "url_check": {
+            "$ref": "#/components/schemas/UrlCheckOut"
+          },
+          "versions": {
+            "$ref": "#/components/schemas/VersionsOut"
+          }
+        },
+        "required": [
+          "schema_version",
+          "request_id",
+          "created_at",
+          "input_type",
+          "classification",
+          "risk_score",
+          "score_type",
+          "score_basis",
+          "classifier",
+          "signals",
+          "url_check",
+          "explanation",
+          "recommendations",
+          "limitations",
+          "versions",
+          "experiment",
+          "latency_ms"
+        ],
+        "title": "AnalysisResponse",
+        "type": "object"
+      },
+      "ClassifierOut": {
+        "properties": {
+          "label": {
+            "anyOf": [
+              {
+                "enum": [
+                  "scam_like",
+                  "not_scam_like"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Label"
+          },
+          "raw_score": {
+            "anyOf": [
+              {
+                "maximum": 1.0,
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Raw Score"
+          },
+          "status": {
+            "enum": [
+              "ok",
+              "unavailable",
+              "not_applicable"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "label",
+          "raw_score"
+        ],
+        "title": "ClassifierOut",
+        "type": "object"
+      },
+      "ErrorBody": {
+        "properties": {
+          "code": {
+            "title": "Code",
+            "type": "string"
+          },
+          "details": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/ErrorDetail"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Details"
+          },
+          "message": {
+            "title": "Message",
+            "type": "string"
+          },
+          "request_id": {
+            "format": "uuid",
+            "title": "Request Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "message",
+          "request_id"
+        ],
+        "title": "ErrorBody",
+        "type": "object"
+      },
+      "ErrorDetail": {
+        "properties": {
+          "field": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Field"
+          },
+          "issue": {
+            "title": "Issue",
+            "type": "string"
+          },
+          "limit": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Limit"
+          }
+        },
+        "required": [
+          "field",
+          "issue"
+        ],
+        "title": "ErrorDetail",
+        "type": "object"
+      },
+      "ErrorEnvelope": {
+        "properties": {
+          "error": {
+            "$ref": "#/components/schemas/ErrorBody"
+          }
+        },
+        "required": [
+          "error"
+        ],
+        "title": "ErrorEnvelope",
+        "type": "object"
+      },
+      "ExperimentOut": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "variant": {
+            "title": "Variant",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "variant"
+        ],
+        "title": "ExperimentOut",
+        "type": "object"
+      },
+      "ExplanationOut": {
+        "properties": {
+          "source": {
+            "enum": [
+              "llm",
+              "template"
+            ],
+            "title": "Source",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "source"
+        ],
+        "title": "ExplanationOut",
+        "type": "object"
+      },
+      "FeedbackRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "helpful": {
+            "title": "Helpful",
+            "type": "boolean"
+          },
+          "request_id": {
+            "format": "uuid",
+            "title": "Request Id",
+            "type": "string"
+          },
+          "verdict": {
+            "anyOf": [
+              {
+                "enum": [
+                  "correct",
+                  "false_alarm",
+                  "missed_scam",
+                  "unsure"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verdict"
+          }
+        },
+        "required": [
+          "request_id",
+          "helpful"
+        ],
+        "title": "FeedbackRequest",
+        "type": "object"
+      },
+      "FeedbackResponse": {
+        "properties": {
+          "feedback_id": {
+            "format": "uuid",
+            "title": "Feedback Id",
+            "type": "string"
+          },
+          "received_at": {
+            "format": "date-time",
+            "title": "Received At",
+            "type": "string"
+          }
+        },
+        "required": [
+          "feedback_id",
+          "received_at"
+        ],
+        "title": "FeedbackResponse",
+        "type": "object"
+      },
+      "MessageAnalysisRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "channel": {
+            "default": "other",
+            "enum": [
+              "sms",
+              "email",
+              "chat",
+              "social",
+              "other"
+            ],
+            "title": "Channel",
+            "type": "string"
+          },
+          "text": {
+            "maxLength": 10000,
+            "minLength": 1,
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "title": "MessageAnalysisRequest",
+        "type": "object"
+      },
+      "SignalOut": {
+        "properties": {
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "evidence_excerpt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence Excerpt"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "title": "Severity",
+            "type": "string"
+          },
+          "source": {
+            "enum": [
+              "rules",
+              "classifier",
+              "url_rules",
+              "url_reputation"
+            ],
+            "title": "Source",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "source",
+          "severity",
+          "description",
+          "evidence_excerpt"
+        ],
+        "title": "SignalOut",
+        "type": "object"
+      },
+      "UrlAnalysisRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "url": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "title": "UrlAnalysisRequest",
+        "type": "object"
+      },
+      "UrlCheckOut": {
+        "properties": {
+          "checked_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Checked At"
+          },
+          "provider": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Provider"
+          },
+          "status": {
+            "enum": [
+              "flagged",
+              "no_match",
+              "inconclusive",
+              "not_checked",
+              "not_applicable"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "urls": {
+            "items": {
+              "$ref": "#/components/schemas/UrlResultOut"
+            },
+            "title": "Urls",
+            "type": "array"
+          },
+          "urls_checked": {
+            "minimum": 0.0,
+            "title": "Urls Checked",
+            "type": "integer"
+          },
+          "urls_found": {
+            "minimum": 0.0,
+            "title": "Urls Found",
+            "type": "integer"
+          },
+          "urls_truncated": {
+            "title": "Urls Truncated",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "status",
+          "provider",
+          "checked_at",
+          "urls_found",
+          "urls_checked",
+          "urls_truncated",
+          "urls"
+        ],
+        "title": "UrlCheckOut",
+        "type": "object"
+      },
+      "UrlResultOut": {
+        "properties": {
+          "host_unicode": {
+            "title": "Host Unicode",
+            "type": "string"
+          },
+          "punycode": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Punycode"
+          },
+          "reason": {
+            "anyOf": [
+              {
+                "enum": [
+                  "provider_timeout",
+                  "provider_error",
+                  "provider_not_configured",
+                  "quota_exhausted"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reason"
+          },
+          "scheme_assumed": {
+            "title": "Scheme Assumed",
+            "type": "boolean"
+          },
+          "status": {
+            "enum": [
+              "flagged",
+              "no_match",
+              "unknown",
+              "not_checked"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "threat_types": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Threat Types",
+            "type": "array"
+          },
+          "url": {
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "host_unicode",
+          "punycode",
+          "scheme_assumed",
+          "status",
+          "reason",
+          "threat_types"
+        ],
+        "title": "UrlResultOut",
+        "type": "object"
+      },
+      "VersionsOut": {
+        "properties": {
+          "model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model"
+          },
+          "pipeline": {
+            "title": "Pipeline",
+            "type": "string"
+          },
+          "prompt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Prompt"
+          },
+          "rules": {
+            "title": "Rules",
+            "type": "string"
+          }
+        },
+        "required": [
+          "pipeline",
+          "rules",
+          "model",
+          "prompt"
+        ],
+        "title": "VersionsOut",
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "title": "AI ScamShield",
+    "version": "0.1.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/v1/analyze/message": {
+      "post": {
+        "operationId": "analyze_message_endpoint_api_v1_analyze_message_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MessageAnalysisRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnalysisResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Request body larger than 64 KiB."
+          },
+          "415": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Content-Type is not application/json."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Malformed JSON or a field failed validation."
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limit exceeded."
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "The service is temporarily unavailable."
+          }
+        },
+        "summary": "Analyze Message Endpoint"
+      }
+    },
+    "/api/v1/analyze/url": {
+      "post": {
+        "operationId": "analyze_url_endpoint_api_v1_analyze_url_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UrlAnalysisRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnalysisResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Request body larger than 64 KiB."
+          },
+          "415": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Content-Type is not application/json."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Malformed JSON or a field failed validation."
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limit exceeded."
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "The service is temporarily unavailable."
+          }
+        },
+        "summary": "Analyze Url Endpoint"
+      }
+    },
+    "/api/v1/feedback": {
+      "post": {
+        "operationId": "feedback_endpoint_api_v1_feedback_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeedbackRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeedbackResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "No analysis with this request_id, or it has expired."
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Feedback was already submitted for this request_id."
+          },
+          "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Request body larger than 64 KiB."
+          },
+          "415": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Content-Type is not application/json."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Malformed JSON or a field failed validation."
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "Rate limit exceeded."
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorEnvelope"
+                }
+              }
+            },
+            "description": "The service is temporarily unavailable."
+          }
+        },
+        "summary": "Feedback Endpoint"
+      }
+    },
+    "/healthz": {
+      "get": {
+        "operationId": "healthz_healthz_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "Response Healthz Healthz Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Healthz"
+      }
+    },
+    "/readyz": {
+      "get": {
+        "operationId": "readyz_readyz_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Readyz"
+      }
+    }
+  }
+}

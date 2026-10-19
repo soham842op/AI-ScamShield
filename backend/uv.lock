@@ -1073,6 +1073,15 @@ wheels = [
 ]
 
 [[package]]
+name = "publicsuffixlist"
+version = "1.1.0.20261018"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/b9/aa4b37e174aa71bc4f6e3e31d837f6b2684d6023b69def1c4bc417d9a54e/publicsuffixlist-1.1.0.20261018.tar.gz", hash = "sha256:87861b9d9af2f035e68ad1fd95f9ff1caf92c8c2187ca9cf5c7d8785db0f221b", size = 106617, upload-time = "2026-10-18T07:57:32.211Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6e/d2/b60b418213e89c9adfdf6942f3e5d2ba025796a2b820628902b935ba9bef/publicsuffixlist-1.1.0.20261018-py3-none-any.whl", hash = "sha256:8a9f487ad9a501a56f76d20827d58a5847d34a345df854e3b6a1f301e292e9d4", size = 109375, upload-time = "2026-10-18T07:57:30.374Z" },
+]
+
+[[package]]
 name = "py-serializable"
 version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1369,7 +1378,9 @@ source = { virtual = "." }
 dependencies = [
     { name = "alembic" },
     { name = "fastapi" },
+    { name = "idna" },
     { name = "psycopg", extra = ["binary"] },
+    { name = "publicsuffixlist" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "sqlalchemy" },
@@ -1389,7 +1400,9 @@ dev = [
 requires-dist = [
     { name = "alembic", specifier = ">=1.13" },
     { name = "fastapi" },
+    { name = "idna", specifier = ">=3.7" },
     { name = "psycopg", extras = ["binary"] },
+    { name = "publicsuffixlist", specifier = ">=1.0" },
     { name = "pydantic", specifier = ">=2" },
     { name = "pydantic-settings" },
     { name = "sqlalchemy", specifier = ">=2.0" },
