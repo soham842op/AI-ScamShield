@@ -1,0 +1,7 @@
+{
+  "set": "current_style_train_v1.jsonl",
+  "purpose": "training supplement; split into train, validation and test like the public data; never shares a message with the synthetic evaluation set",
+  "examples": 600,
+  "status": "draft, awaiting owner review",
+  "notes": "All names, brands, numbers and domains are invented. Brands differ from those in the synthetic evaluation set. Domains use the reserved .example TLD; phone numbers use the Ofcom drama ranges 07700 900xxx and 01632 960xxx."
+}

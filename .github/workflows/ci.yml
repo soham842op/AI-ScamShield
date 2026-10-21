@@ -38,6 +38,32 @@ jobs:
           diff -u ../tests/contract/openapi.snapshot.json "$RUNNER_TEMP/openapi.json"
       - run: uv run pip-audit
 
+  ml:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ml
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
+        with:
+          python-version: "3.12"
+          enable-cache: true
+          cache-dependency-glob: ml/uv.lock
+      - run: uv sync
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy
+      # Unit tests only: they need no dataset download and no trained model.
+      - run: uv run pytest -q
+      - name: scikit-learn pin matches the backend
+        run: |
+          grep -q '"scikit-learn==1.9.1"' pyproject.toml
+          grep -q '"scikit-learn==1.9.1"' ../backend/pyproject.toml
+      - run: uv run pip-audit
+
   backend-db:
     runs-on: ubuntu-latest
     env:

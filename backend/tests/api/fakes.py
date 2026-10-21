@@ -107,7 +107,9 @@ def make_result(input_type: str = "message", with_url: bool = True) -> AnalysisR
 
 
 def fake_pipeline() -> Pipeline:
-    async def message(text: str, channel: str, *, provider: object) -> AnalysisResult:
+    async def message(
+        text: str, channel: str, *, provider: object, classifier: object = None
+    ) -> AnalysisResult:
         return make_result("message")
 
     async def url(submitted: SubmittedUrl, char_count: int, *, provider: object) -> AnalysisResult:

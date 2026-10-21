@@ -17,6 +17,8 @@ def _clear_settings_cache(monkeypatch: pytest.MonkeyPatch) -> Iterator[None]:
     monkeypatch.setenv("CLIENT_ID_HASH_KEY", TEST_KEY)
     # Never connected to: tests replace the limiter and the store.
     monkeypatch.setenv("DATABASE_URL", "postgresql+psycopg://u:p@localhost:1/none")
+    # A model pinned in a local .env must not leak into tests; they pass a classifier.
+    monkeypatch.setenv("MODEL_ARTIFACT_SHA256", "")
     get_settings.cache_clear()
     yield
     get_settings.cache_clear()

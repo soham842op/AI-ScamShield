@@ -57,7 +57,10 @@ async def analyze_message_endpoint(
     services = get_services(request)
     try:
         result = await services.pipeline.analyze_message(
-            payload.text, payload.channel, provider=services.provider
+            payload.text,
+            payload.channel,
+            provider=services.provider,
+            classifier=services.classifier,
         )
         return await _finish(request, response, result, started, decision)
     except ApiError as exc:

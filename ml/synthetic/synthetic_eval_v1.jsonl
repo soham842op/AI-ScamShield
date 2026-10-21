@@ -1,0 +1,120 @@
+{"id": "syn-s-001", "label": "scam_like", "category": "parcel_fee", "text": "ParcelPost: your parcel is held at our depot due to an unpaid shipping fee of 1.99. Pay now to arrange redelivery: https://parcelpost-redelivery.example/pay"}
+{"id": "syn-s-002", "label": "scam_like", "category": "parcel_fee", "text": "We tried to deliver your package today but no one was home. Reschedule and confirm your address within 24 hours or it will be returned: http://pkg-track-update.example"}
+{"id": "syn-s-003", "label": "scam_like", "category": "parcel_fee", "text": "SwiftShip notice: customs charge of 2.40 outstanding on item SS4471. Settle today at swiftship-customs.example to avoid return to sender."}
+{"id": "syn-s-004", "label": "scam_like", "category": "parcel_fee", "text": "Your delivery could not be completed because the address label was damaged. Update your details here: https://redeliver-now.example/u/8812"}
+{"id": "syn-s-005", "label": "scam_like", "category": "parcel_fee", "text": "FINAL NOTICE: your parcel will be destroyed tomorrow unless the small handling fee is paid. Visit parcel-handling-fee.example"}
+{"id": "syn-s-006", "label": "scam_like", "category": "parcel_fee", "text": "Hi, courier here. Your item is stuck in the system, pay 0.99 to release it. Link: bit-parcel.example/r"}
+{"id": "syn-s-007", "label": "scam_like", "category": "bank_alert", "text": "Northbank: a payment of 849.00 to a new payee was attempted from your account. If this was not you, verify your identity now at northbank-secure-verify.example"}
+{"id": "syn-s-008", "label": "scam_like", "category": "bank_alert", "text": "Your online banking has been suspended due to unusual activity. Log in within 12 hours to restore access: https://secure-login-unlock.example"}
+{"id": "syn-s-009", "label": "scam_like", "category": "bank_alert", "text": "Fraud team: we blocked a card payment. Call us urgently on 07700 900412 and have your card number and PIN ready so we can cancel it."}
+{"id": "syn-s-010", "label": "scam_like", "category": "bank_alert", "text": "Alert: your card has been locked. To unlock reply with your full card number, expiry date and security code."}
+{"id": "syn-s-011", "label": "scam_like", "category": "bank_alert", "text": "Harbor Credit Union: new device sign-in detected. If this was not you, cancel it here immediately harbor-cu-cancel.example/device"}
+{"id": "syn-s-012", "label": "scam_like", "category": "bank_alert", "text": "This is your bank's security department. Your savings are at risk. Move your money to the safe account we have set up for you, sort code 00-00-00, account 12345678."}
+{"id": "syn-s-013", "label": "scam_like", "category": "toll_unpaid", "text": "Road Toll Services: you have an unpaid toll balance of 6.80. Pay by tonight to avoid a late penalty of 50.00: https://tollpay-balance.example"}
+{"id": "syn-s-014", "label": "scam_like", "category": "toll_unpaid", "text": "Notice of outstanding congestion charge for your vehicle. Failure to pay today will result in enforcement action. Pay: congestion-charge-settle.example"}
+{"id": "syn-s-015", "label": "scam_like", "category": "toll_unpaid", "text": "EZRoad: our records show an unpaid trip on 14 Oct. Pay 4.15 now to keep your driving record clear. ezroad-payments.example/trip"}
+{"id": "syn-s-016", "label": "scam_like", "category": "toll_unpaid", "text": "Parking fine reminder: PCN 77120 is overdue. Pay within 24 hours to avoid court fees: parking-fine-portal.example"}
+{"id": "syn-s-017", "label": "scam_like", "category": "toll_unpaid", "text": "Your vehicle tax payment failed. Your vehicle is no longer taxed and may be clamped. Update your payment details at vehicle-tax-renew.example"}
+{"id": "syn-s-018", "label": "scam_like", "category": "tax_refund", "text": "Tax Office: you are due a tax refund of 312.40. Claim it before the deadline by submitting your bank details at taxrefund-claim.example"}
+{"id": "syn-s-019", "label": "scam_like", "category": "tax_refund", "text": "We have identified an overpayment on your tax account. To receive your rebate, confirm your identity: https://gov-rebate-check.example/claim"}
+{"id": "syn-s-020", "label": "scam_like", "category": "tax_refund", "text": "Revenue Service final warning: you owe back taxes and a warrant will be issued for your arrest unless you call 01632 960118 today."}
+{"id": "syn-s-021", "label": "scam_like", "category": "tax_refund", "text": "Cost of living payment: you are eligible for a 650 support grant. Apply now, places are limited: support-grant-apply.example"}
+{"id": "syn-s-022", "label": "scam_like", "category": "tax_refund", "text": "Your pension contribution refund is ready. Reply YES and send a photo of your ID to release the funds."}
+{"id": "syn-s-023", "label": "scam_like", "category": "job_task", "text": "Hi! I'm a recruiter from BrightPath. We offer a part-time remote job, 300-800 per day, just liking videos. Interested? Message me on WhatsApp."}
+{"id": "syn-s-024", "label": "scam_like", "category": "job_task", "text": "Congratulations, your CV has been shortlisted for an online data task role. Earn 200 a day. Pay a 50 training deposit to start: jobs-taskhub.example"}
+{"id": "syn-s-025", "label": "scam_like", "category": "job_task", "text": "Easy work from home! Rate hotel listings and earn commission. Top up your task account to unlock higher paying orders."}
+{"id": "syn-s-026", "label": "scam_like", "category": "job_task", "text": "We need you to receive payments into your account and forward them to our partners. Keep 10 percent as your fee. No experience needed."}
+{"id": "syn-s-027", "label": "scam_like", "category": "job_task", "text": "Hello, are you still looking for work? Our company pays daily for simple online tasks, 15 minutes a day. Reply 1 to get started."}
+{"id": "syn-s-028", "label": "scam_like", "category": "crypto_investment", "text": "Turn 250 into 5,000 in one week with our AI trading bot. Guaranteed returns, zero risk. Join now: profit-bot-invest.example"}
+{"id": "syn-s-029", "label": "scam_like", "category": "crypto_investment", "text": "Your crypto wallet has been flagged and will be frozen. Re-verify your recovery phrase within 24 hours at wallet-verify-secure.example"}
+{"id": "syn-s-030", "label": "scam_like", "category": "crypto_investment", "text": "Exclusive invite: our VIP investment group made members 40 percent this month. Only 5 places left, deposit today to secure yours."}
+{"id": "syn-s-031", "label": "scam_like", "category": "crypto_investment", "text": "You have unclaimed bitcoin worth 1,840 in your account. Pay the withdrawal tax of 120 to receive it."}
+{"id": "syn-s-032", "label": "scam_like", "category": "crypto_investment", "text": "Hey, it's Jordan from the trading group. The new coin launch is tonight, send me your deposit now and I'll double it by Friday."}
+{"id": "syn-s-033", "label": "scam_like", "category": "family_impersonation", "text": "Hi Mum, I dropped my phone in the sink, this is my new number. Can you text me back here? I need a favour."}
+{"id": "syn-s-034", "label": "scam_like", "category": "family_impersonation", "text": "Hey Dad it's me, new phone. I have to pay a bill today but my banking app is locked. Can you send 480 to this account and I'll pay you back tomorrow?"}
+{"id": "syn-s-035", "label": "scam_like", "category": "family_impersonation", "text": "Grandma, I'm in trouble and I can't tell Mum. I need money for a lawyer today. Please buy gift cards and send me the codes."}
+{"id": "syn-s-036", "label": "scam_like", "category": "family_impersonation", "text": "Hi it's your boss, I'm in a meeting and can't talk. I need you to buy six 100 gift cards for a client urgently. Send the codes to this number."}
+{"id": "syn-s-037", "label": "scam_like", "category": "family_impersonation", "text": "Hello sis this is my new number, save it. Are you free? I need you to make an urgent payment for me, I'll explain later."}
+{"id": "syn-s-038", "label": "scam_like", "category": "prize_lottery", "text": "CONGRATULATIONS! You have been selected to receive a 1,000 store voucher. Claim your reward now at winner-claims.example before it expires."}
+{"id": "syn-s-039", "label": "scam_like", "category": "prize_lottery", "text": "Your number won 2nd prize in the international mobile lottery. To release your winnings pay the processing fee by bank transfer."}
+{"id": "syn-s-040", "label": "scam_like", "category": "prize_lottery", "text": "You're our lucky customer of the month! Answer 3 questions to win a new phone: survey-prize-now.example"}
+{"id": "syn-s-041", "label": "scam_like", "category": "prize_lottery", "text": "Free gift! You have a reward waiting. Just pay 2.95 shipping: rewards-giveaway.example/claim"}
+{"id": "syn-s-042", "label": "scam_like", "category": "account_verification", "text": "StreamFlix: your payment was declined and your membership is on hold. Update your billing information to keep watching: streamflix-billing.example"}
+{"id": "syn-s-043", "label": "scam_like", "category": "account_verification", "text": "Your cloud storage is full and your photos will be deleted today. Upgrade at a discount here: cloud-storage-renew.example"}
+{"id": "syn-s-044", "label": "scam_like", "category": "account_verification", "text": "Security notice: your email account will be closed in 24 hours. Click here to confirm your password: mail-account-keep.example"}
+{"id": "syn-s-045", "label": "scam_like", "category": "account_verification", "text": "ShopMart: we could not verify your last order. Your account will be suspended unless you confirm your card details at shopmart-verify.example"}
+{"id": "syn-s-046", "label": "scam_like", "category": "account_verification", "text": "Your social media account was reported for copyright violation and will be disabled. Appeal within 48 hours: appeal-center-review.example"}
+{"id": "syn-s-047", "label": "scam_like", "category": "utility_rebate", "text": "BrightEnergy: you are owed an energy rebate of 165.20. Claim it now by entering your card details at brightenergy-rebate.example"}
+{"id": "syn-s-048", "label": "scam_like", "category": "utility_rebate", "text": "Your electricity will be disconnected today due to a missed payment. Call 07700 900733 immediately to avoid disconnection."}
+{"id": "syn-s-049", "label": "scam_like", "category": "utility_rebate", "text": "Water company refund: you overpaid last year. Visit water-refund-portal.example to receive 88.50 back."}
+{"id": "syn-s-050", "label": "scam_like", "category": "utility_rebate", "text": "Your broadband contract has an unpaid balance and service stops at midnight. Pay now: netlink-overdue.example"}
+{"id": "syn-s-051", "label": "scam_like", "category": "romance_advance_fee", "text": "My dear, I am a widow with 4.5 million in a bank abroad. I need a trusted partner to help transfer it. You will receive 30 percent."}
+{"id": "syn-s-052", "label": "scam_like", "category": "romance_advance_fee", "text": "Darling I miss you. I'm stuck at the airport and they won't let me leave without paying a fee. Can you send 900 by money transfer? I love you."}
+{"id": "syn-s-053", "label": "scam_like", "category": "romance_advance_fee", "text": "Good day. I am a lawyer handling the estate of a late client with your surname. Contact me to claim your inheritance. A small legal fee applies."}
+{"id": "syn-s-054", "label": "scam_like", "category": "tech_support", "text": "Your antivirus subscription renewed today for 399.99. If you did not authorise this, call support on 01632 960455 for a refund."}
+{"id": "syn-s-055", "label": "scam_like", "category": "tech_support", "text": "WARNING: your device is infected with 3 viruses. Download our cleaner now to protect your data: device-clean-fix.example"}
+{"id": "syn-s-056", "label": "scam_like", "category": "tech_support", "text": "System alert: your software licence has expired and your files are locked. Call our technicians immediately on 07700 900288."}
+{"id": "syn-s-057", "label": "scam_like", "category": "tech_support", "text": "Order confirmation: 1 x gaming laptop 1,249.00 charged to your account. Not you? Cancel at order-cancel-help.example"}
+{"id": "syn-s-058", "label": "scam_like", "category": "otp_request", "text": "Hi, I accidentally sent my verification code to your number. Can you forward me the 6 digit code you just got please?"}
+{"id": "syn-s-059", "label": "scam_like", "category": "otp_request", "text": "Northbank: to stop the fraudulent payment, read us the one-time passcode we just sent you when our agent calls."}
+{"id": "syn-s-060", "label": "scam_like", "category": "otp_request", "text": "Your account recovery is pending. Reply with the code you received to confirm you are the owner, or your account will be deleted."}
+{"id": "syn-l-001", "label": "not_scam_like", "category": "delivery_notice", "text": "ParcelPost: your parcel from Greenleaf Books will be delivered today between 10:00 and 12:00. No action needed."}
+{"id": "syn-l-002", "label": "not_scam_like", "category": "delivery_notice", "text": "Your order has been dispatched and should arrive on Thursday. Track it in the app under Orders."}
+{"id": "syn-l-003", "label": "not_scam_like", "category": "delivery_notice", "text": "Sorry we missed you. Your parcel has been left with your neighbour at number 12."}
+{"id": "syn-l-004", "label": "not_scam_like", "category": "delivery_notice", "text": "SwiftShip: your driver Sam is 3 stops away. Please make sure someone is in to sign."}
+{"id": "syn-l-005", "label": "not_scam_like", "category": "delivery_notice", "text": "Your grocery delivery is booked for Saturday 8am to 9am. Reply STOP to opt out of delivery texts."}
+{"id": "syn-l-006", "label": "not_scam_like", "category": "delivery_notice", "text": "Your parcel was delivered to your safe place (porch) at 14:32. Photo available in the app."}
+{"id": "syn-l-007", "label": "not_scam_like", "category": "bank_genuine", "text": "Northbank: your new card has been dispatched and will arrive within 5 working days. We will never ask for your PIN or passcodes by text."}
+{"id": "syn-l-008", "label": "not_scam_like", "category": "bank_genuine", "text": "Your monthly statement is now available in online banking."}
+{"id": "syn-l-009", "label": "not_scam_like", "category": "bank_genuine", "text": "Harbor Credit Union: your direct debit to Greenleaf Gym for 29.99 will be taken on 1 Nov."}
+{"id": "syn-l-010", "label": "not_scam_like", "category": "bank_genuine", "text": "You received 25.00 from Alex Morgan. Your balance is in the app."}
+{"id": "syn-l-011", "label": "not_scam_like", "category": "bank_genuine", "text": "Reminder: your credit card payment of 120.50 is due on 28 Oct. You can pay through the app as usual."}
+{"id": "syn-l-012", "label": "not_scam_like", "category": "bank_genuine", "text": "Northbank: did you just pay 42.10 at Corner Cafe? If not, open your banking app and freeze your card. We will never call you to move money."}
+{"id": "syn-l-013", "label": "not_scam_like", "category": "otp_code", "text": "Your verification code is 482913. It expires in 10 minutes. Do not share this code with anyone."}
+{"id": "syn-l-014", "label": "not_scam_like", "category": "otp_code", "text": "Use 7741 to sign in. If you didn't request this, you can ignore this message."}
+{"id": "syn-l-015", "label": "not_scam_like", "category": "otp_code", "text": "StreamFlix code: 302118. Never share it. StreamFlix staff will never ask for it."}
+{"id": "syn-l-016", "label": "not_scam_like", "category": "otp_code", "text": "Your login code for ShopMart is 559201."}
+{"id": "syn-l-017", "label": "not_scam_like", "category": "otp_code", "text": "Northbank: 618204 is your code to approve a payment of 15.00 to Jamie Lee. Don't share this code."}
+{"id": "syn-l-018", "label": "not_scam_like", "category": "otp_code", "text": "Your password was changed successfully. If this was you, no action is needed."}
+{"id": "syn-l-019", "label": "not_scam_like", "category": "appointment", "text": "Reminder: you have a dental check-up at Riverside Dental on Tue 4 Nov at 09:30. Reply C to cancel."}
+{"id": "syn-l-020", "label": "not_scam_like", "category": "appointment", "text": "Your GP appointment is confirmed for Friday at 11:15 with Dr Patel. Please arrive 5 minutes early."}
+{"id": "syn-l-021", "label": "not_scam_like", "category": "appointment", "text": "Hi, this is Lakeside Garage. Your car is ready to collect. We close at 6pm."}
+{"id": "syn-l-022", "label": "not_scam_like", "category": "appointment", "text": "Your haircut with Mia is booked for Saturday at 2pm. See you then!"}
+{"id": "syn-l-023", "label": "not_scam_like", "category": "appointment", "text": "Your eye test results are ready. Please call the practice during opening hours to book a fitting."}
+{"id": "syn-l-024", "label": "not_scam_like", "category": "personal_chat", "text": "Running 10 mins late, grab us a table?"}
+{"id": "syn-l-025", "label": "not_scam_like", "category": "personal_chat", "text": "Happy birthday!! Hope you have a lovely day, see you at dinner tonight"}
+{"id": "syn-l-026", "label": "not_scam_like", "category": "personal_chat", "text": "Can you pick up milk and bread on the way home?"}
+{"id": "syn-l-027", "label": "not_scam_like", "category": "personal_chat", "text": "Did you watch the match last night? Unbelievable second half"}
+{"id": "syn-l-028", "label": "not_scam_like", "category": "personal_chat", "text": "Mum says lunch is at 1 on Sunday, bring the kids"}
+{"id": "syn-l-029", "label": "not_scam_like", "category": "personal_chat", "text": "Thanks for the money for the concert tickets, got it. See you there"}
+{"id": "syn-l-030", "label": "not_scam_like", "category": "personal_chat", "text": "I've sent you the photos from the weekend, let me know if they don't come through"}
+{"id": "syn-l-031", "label": "not_scam_like", "category": "personal_chat", "text": "Are we still on for the gym tomorrow at 7?"}
+{"id": "syn-l-032", "label": "not_scam_like", "category": "work", "text": "Hi team, the 10am stand-up is moved to 10:30 today. Same link as usual."}
+{"id": "syn-l-033", "label": "not_scam_like", "category": "work", "text": "Can you send me the slides before the client call this afternoon? Thanks"}
+{"id": "syn-l-034", "label": "not_scam_like", "category": "work", "text": "Your timesheet for last week has been approved."}
+{"id": "syn-l-035", "label": "not_scam_like", "category": "work", "text": "Reminder: payroll cut-off is Friday. Submit expenses through the usual portal."}
+{"id": "syn-l-036", "label": "not_scam_like", "category": "work", "text": "Office is closed on Monday for the bank holiday. Enjoy the long weekend."}
+{"id": "syn-l-037", "label": "not_scam_like", "category": "order_confirmation", "text": "Thanks for your order with Greenleaf Books. Order GB-20931 total 18.49. We'll email you when it ships."}
+{"id": "syn-l-038", "label": "not_scam_like", "category": "order_confirmation", "text": "ShopMart: your refund of 34.99 has been processed and will reach your account in 3-5 days."}
+{"id": "syn-l-039", "label": "not_scam_like", "category": "order_confirmation", "text": "Your table for 4 at Olive Grove is confirmed for 7:30pm Friday."}
+{"id": "syn-l-040", "label": "not_scam_like", "category": "order_confirmation", "text": "Your takeaway order is being prepared and will be ready for collection in 20 minutes."}
+{"id": "syn-l-041", "label": "not_scam_like", "category": "order_confirmation", "text": "StreamFlix: your plan changes to Standard on your next billing date. No action needed."}
+{"id": "syn-l-042", "label": "not_scam_like", "category": "utility_bill", "text": "BrightEnergy: your October bill of 74.12 is ready to view in your account. It will be paid by direct debit on 12 Nov."}
+{"id": "syn-l-043", "label": "not_scam_like", "category": "utility_bill", "text": "Planned maintenance: water supply in your area may be interrupted on Wednesday from 9am to 1pm."}
+{"id": "syn-l-044", "label": "not_scam_like", "category": "utility_bill", "text": "NetLink: we're upgrading the network in your area tonight between 1am and 5am. Your broadband may drop briefly."}
+{"id": "syn-l-045", "label": "not_scam_like", "category": "utility_bill", "text": "Please submit your meter reading this week so we can send you an accurate bill."}
+{"id": "syn-l-046", "label": "not_scam_like", "category": "community_notice", "text": "Oakfield Primary: school photos are on Thursday. Please make sure your child wears full uniform."}
+{"id": "syn-l-047", "label": "not_scam_like", "category": "community_notice", "text": "Library notice: the book you reserved is ready to collect at the front desk."}
+{"id": "syn-l-048", "label": "not_scam_like", "category": "community_notice", "text": "Bin collection this week is on Saturday instead of Friday due to the holiday."}
+{"id": "syn-l-049", "label": "not_scam_like", "category": "community_notice", "text": "Football training is cancelled tonight because the pitch is waterlogged."}
+{"id": "syn-l-050", "label": "not_scam_like", "category": "marketing_known", "text": "Greenleaf Books: 20 percent off all paperbacks this weekend in store and online. Reply STOP to unsubscribe."}
+{"id": "syn-l-051", "label": "not_scam_like", "category": "marketing_known", "text": "Olive Grove: new autumn menu starts Monday. Book a table on our website. Text STOP to opt out."}
+{"id": "syn-l-052", "label": "not_scam_like", "category": "marketing_known", "text": "Your loyalty points balance is 1,240. Use them at checkout on your next visit."}
+{"id": "syn-l-053", "label": "not_scam_like", "category": "marketing_known", "text": "ShopMart: the item on your wishlist is back in stock. Reply STOP to unsubscribe from alerts."}
+{"id": "syn-l-054", "label": "not_scam_like", "category": "marketing_known", "text": "Riverside Gym: classes are now bookable 7 days in advance in the members app."}
+{"id": "syn-l-055", "label": "not_scam_like", "category": "travel", "text": "Your train to Leeds at 08:12 is on time and departs from platform 4."}
+{"id": "syn-l-056", "label": "not_scam_like", "category": "travel", "text": "SkyAir: online check-in for flight SA214 is now open. Your seat is 17C."}
+{"id": "syn-l-057", "label": "not_scam_like", "category": "travel", "text": "Your hotel booking at Harbour View for 2 nights from 9 Dec is confirmed. Check-in from 3pm."}
+{"id": "syn-l-058", "label": "not_scam_like", "category": "travel", "text": "Your taxi is arriving in 4 minutes: grey hatchback, driver Priya."}
+{"id": "syn-l-059", "label": "not_scam_like", "category": "travel", "text": "Delay notice: the 17:45 bus service is running 15 minutes late due to traffic."}
+{"id": "syn-l-060", "label": "not_scam_like", "category": "travel", "text": "Your car rental pick-up is tomorrow at 10am at the airport desk. Bring your licence and the card used to book."}

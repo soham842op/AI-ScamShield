@@ -17,6 +17,7 @@ from app.core.services import (
     database_engine,
 )
 from app.health import router as health_router
+from app.pipeline.classifier import TextClassifier, load_classifier
 from app.pipeline.intel import UrlReputationProvider, get_provider
 
 MIN_CLIENT_ID_KEY_LENGTH = 32
@@ -48,6 +49,7 @@ def create_app(
     persistence: Persistence | None = None,
     provider: UrlReputationProvider | None = None,
     pipeline: Pipeline | None = None,
+    classifier: TextClassifier | None = None,
 ) -> FastAPI:
     """Build the app. The keyword arguments replace collaborators in tests."""
     settings = get_settings()
@@ -68,6 +70,8 @@ def create_app(
         provider=provider or get_provider(settings.url_intel_provider),
         pipeline=pipeline or Pipeline(),
         client_id_key=key,
+        classifier=classifier
+        or load_classifier(settings.model_artifact_path, settings.model_artifact_sha256),
     )
     register_error_handlers(app)
     app.add_middleware(NoStoreMiddleware)

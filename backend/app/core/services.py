@@ -21,6 +21,7 @@ from app.db.repository import (
     insert_analysis_record,
     insert_feedback,
 )
+from app.pipeline.classifier import TextClassifier
 from app.pipeline.intel import UrlReputationProvider
 from app.pipeline.orchestrator import analyze_message, analyze_url
 from app.pipeline.types import AnalysisResult
@@ -96,3 +97,5 @@ class Services:
     pipeline: Pipeline
     # HMAC key for client ids.
     client_id_key: bytes
+    # None when no verified model artifact is loaded.
+    classifier: TextClassifier | None = None

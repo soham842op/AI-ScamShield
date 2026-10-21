@@ -4,6 +4,7 @@ from datetime import UTC, datetime
 import pytest
 
 from app.pipeline import orchestrator
+from app.pipeline.aggregator import Thresholds
 from app.pipeline.types import (
     Explanation,
     ExplanationEvidence,
@@ -321,3 +322,95 @@ async def test_real_none_provider_and_real_packages() -> None:
     assert result.classification == "inconclusive"
     assert result.url_check.checked_at is None
     assert "Links were not checked against a reputation service." in result.limitations
+
+
+class FakeClassifier:
+    version = "fake-model-1"
+
+    def __init__(self, score: float = 0.5, error: Exception | None = None) -> None:
+        self.thresholds = Thresholds(suspicious=0.3, high_risk=0.7)
+        self.value = score
+        self.error = error
+        self.seen: list[str] = []
+
+    def score(self, text: str) -> float:
+        self.seen.append(text)
+        if self.error is not None:
+            raise self.error
+        return self.value
+
+
+async def test_classifier_scores_the_feature_form_of_the_text() -> None:
+    model = FakeClassifier(0.1)
+    await orchestrator.analyze_message(
+        "ＷＩＮ ca​sh", "sms", provider=FakeProvider(), classifier=model
+    )
+    assert model.seen == ["WIN cash"]
+
+
+async def test_low_score_with_no_signals_is_likely_legitimate() -> None:
+    result = await orchestrator.analyze_message(
+        "Lunch at noon?", "sms", provider=FakeProvider(), classifier=FakeClassifier(0.1)
+    )
+    assert result.classifier.status == "ok"
+    assert result.classifier.label == "not_scam_like"
+    assert result.classification == "likely_legitimate"
+    assert (result.risk_score, result.score_type, result.score_basis) == (
+        10,
+        "heuristic",
+        "text_classifier",
+    )
+    assert result.versions.model == "fake-model-1"
+    assert "classifier" in result.timings_ms
+    assert not any("rules only" in item for item in result.limitations)
+    assert all(s.source != "classifier" for s in result.signals)
+
+
+async def test_score_between_thresholds_is_suspicious_with_medium_signal() -> None:
+    result = await orchestrator.analyze_message(
+        "Lunch at noon?", "sms", provider=FakeProvider(), classifier=FakeClassifier(0.5)
+    )
+    assert result.classification == "suspicious"
+    assert result.classifier.label == "scam_like"
+    model_signals = [s for s in result.signals if s.source == "classifier"]
+    assert [(s.id, s.severity, s.evidence_excerpt) for s in model_signals] == [
+        ("classifier_scam_like", "medium", None)
+    ]
+    assert result.risk_score == 50
+
+
+async def test_score_at_high_threshold_is_high_risk(
+    fakes: dict[str, list[ExplanationEvidence]],
+) -> None:
+    result = await orchestrator.analyze_message(
+        "Lunch at noon?", "sms", provider=FakeProvider(), classifier=FakeClassifier(0.7)
+    )
+    assert result.classification == "high_risk"
+    assert result.signals[0].id == "classifier_scam_like"
+    assert result.signals[0].severity == "high"
+    # The explanation sees the classifier status and signal, never the text.
+    evidence = fakes["evidence"][-1]
+    assert evidence.classifier_status == "ok"
+    assert [s.id for s in evidence.signals] == ["classifier_scam_like"]
+
+
+async def test_classifier_failure_degrades_to_rules_only() -> None:
+    result = await orchestrator.analyze_message(
+        "Lunch at noon?",
+        "sms",
+        provider=FakeProvider(),
+        classifier=FakeClassifier(error=RuntimeError("boom")),
+    )
+    assert result.classifier.status == "unavailable"
+    assert result.classification == "inconclusive"
+    assert result.risk_score is None
+    assert result.versions.model is None
+    assert any("rules only" in item for item in result.limitations)
+
+
+async def test_url_input_never_runs_the_classifier() -> None:
+    model = FakeClassifier(0.9)
+    result = await orchestrator.analyze_url(submitted(), 5, provider=FakeProvider())
+    assert result.classifier.status == "not_applicable"
+    assert result.versions.model is None
+    assert model.seen == []

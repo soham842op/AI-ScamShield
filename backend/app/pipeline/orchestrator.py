@@ -9,12 +9,14 @@ from datetime import UTC, datetime
 from app.pipeline.aggregator import (
     Thresholds,
     build_url_check,
+    classifier_signal,
     classify,
     merge_signals,
     risk_score,
     url_reputation_signal,
 )
 from app.pipeline.catalog import build_limitations, build_recommendations
+from app.pipeline.classifier import TextClassifier, run_classifier
 from app.pipeline.explain import TEMPLATE_VERSION, explain, template_explanation
 from app.pipeline.intel import UrlReputationProvider
 from app.pipeline.normalize import normalize
@@ -110,6 +112,7 @@ async def _finish(
     provider: UrlReputationProvider,
     timings: dict[str, int],
     thresholds: Thresholds | None = None,
+    model_version: str | None = None,
 ) -> AnalysisResult:
     entries: tuple[UrlEntry, ...] = ()
     checked_at: datetime | None = None
@@ -191,7 +194,7 @@ async def _finish(
         versions=Versions(
             pipeline=f"{PIPELINE_VERSION}+{TEMPLATE_VERSION}",
             rules=f"{RULES_VERSION}+{URL_RULES_VERSION}",
-            model=None,
+            model=model_version if classifier.status == "ok" else None,
             prompt=explanation.prompt_version,
         ),
         timings_ms=timings,
@@ -199,7 +202,11 @@ async def _finish(
 
 
 async def analyze_message(
-    text: str, channel: Channel, *, provider: UrlReputationProvider
+    text: str,
+    channel: Channel,
+    *,
+    provider: UrlReputationProvider,
+    classifier: TextClassifier | None = None,
 ) -> AnalysisResult:
     timings: dict[str, int] = {}
 
@@ -207,6 +214,13 @@ async def analyze_message(
     normalized = normalize(text)
     rule_signals = evaluate_rules(normalized)
     timings["rules"] = _elapsed_ms(start)
+
+    # The model was trained on the same `features` form (ml/scamshield_ml/prepare.py).
+    start = time.perf_counter()
+    result = await run_classifier(classifier, normalized.features)
+    timings["classifier"] = _elapsed_ms(start)
+    thresholds = classifier.thresholds if classifier is not None else None
+    model_signal = classifier_signal(result, thresholds)
 
     start = time.perf_counter()
     extraction = extract_urls(normalized.display)
@@ -216,14 +230,15 @@ async def analyze_message(
         input_type="message",
         channel=channel,
         char_count=len(unicodedata.normalize("NFC", text)),
-        # No text model yet: the result is rules and URL checks only.
-        classifier=ClassifierResult(status="unavailable"),
-        signals=(*rule_signals, *extraction.signals),
+        classifier=result,
+        signals=(*rule_signals, *extraction.signals, *([model_signal] if model_signal else [])),
         urls=extraction.urls,
         urls_found=extraction.urls_found,
         truncated=extraction.truncated,
         provider=provider,
         timings=timings,
+        thresholds=thresholds if result.status == "ok" else None,
+        model_version=classifier.version if classifier is not None else None,
     )
 
 

@@ -1,7 +1,7 @@
 import asyncio
 
 import psycopg
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse
 
 from app.core.config import get_settings
@@ -39,13 +39,16 @@ async def healthz() -> dict[str, str]:
 
 
 @router.get("/readyz")
-async def readyz() -> JSONResponse:
+async def readyz(request: Request) -> JSONResponse:
     database_ok = await check_database()
+    model_loaded = getattr(request.app.state, "services", None) is not None and (
+        request.app.state.services.classifier is not None
+    )
     body = {
         "status": "ready" if database_ok else "not_ready",
         "checks": {
             "database": "ok" if database_ok else "unavailable",
-            "model": "not_loaded",
+            "model": "ok" if model_loaded else "not_loaded",
         },
     }
     if database_ok:
