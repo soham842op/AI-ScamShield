@@ -42,6 +42,10 @@ services:
         condition: service_healthy
       migrate:
         condition: service_completed_successfully
+    # The trained model, read-only. It is loaded only when MODEL_ARTIFACT_SHA256 in
+    # .env matches the file; otherwise the backend runs on rules only.
+    volumes:
+      - ./ml/artifacts:/app/ml/artifacts:ro
     ports:
       - "8000:8000"
 

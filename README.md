@@ -6,7 +6,7 @@ It is a portfolio project by Soham Shah.
 
 ## Status
 
-Early development. The analysis API and the web page work end to end using rule signals only: there is no trained classifier yet and no URL reputation lookup, so links are reported as not checked and most results without clear warning signs are inconclusive. Nothing is deployed. There is no live demo, no trained model and no published evaluation. Everything below describes the plan, and any detail may change as the work progresses.
+Early development. The analysis API and the web page work end to end. A baseline text classifier can be trained locally from public datasets; the backend uses it only when a model file with a matching checksum is configured, and otherwise runs on rule signals alone. There is no URL reputation lookup yet, so links are reported as not checked. How well the classifier handles real current-style messages has not been measured yet, so its results are not yet reliable (see Limitations below). Nothing is deployed. There is no live demo and no published evaluation. Everything below describes the plan, and any detail may change as the work progresses.
 
 ## What it will do
 
@@ -68,6 +68,14 @@ scripts/          development helpers
 6. Test suites, observability and hardening.
 7. Staging deployment on AWS, then a clearly labeled public beta.
 
+## Limitations of the text classifier
+
+- It is trained on English SMS collections from 2011 to 2022. Email, chat and recent scam styles are outside what it has seen.
+- Older spam collections include ordinary marketing, so "spam" is not the same as "scam".
+- Its training also includes a few hundred invented current-style messages written for this project. Local checks on similar invented messages look much better than with the public data alone, but those checks share the same author, and performance on real current messages has not been measured.
+- It still flags some genuine business notifications as suspicious.
+- Its score is an uncalibrated heuristic, not a probability.
+
 ## Privacy
 
 What is processed: the text or URL you submit, for the length of the request, to produce a result.
@@ -109,9 +117,27 @@ uv run alembic upgrade head
 uv run uvicorn app.main:app --reload
 ```
 
+To train the baseline classifier (Python 3.12, from `ml/`). The fetch step downloads the two public datasets listed under Data sources and refuses any file whose checksum differs from the pinned value; the datasets are never committed:
+
+```
+cd ml
+uv sync
+uv run python -m scamshield_ml.fetch
+uv run python -m scamshield_ml.train
+```
+
+The training run prints the model file's SHA-256. To let the backend use the model, set `MODEL_ARTIFACT_SHA256` to that value: in `.env` at the repository root for `docker compose` (which mounts `ml/artifacts` read-only), or in `backend/.env` together with `MODEL_ARTIFACT_PATH=../ml/artifacts/current/model.joblib` when running uvicorn from `backend/`. Without a matching checksum the model is not loaded and `/readyz` reports `"model": "not_loaded"`.
+
 Checks:
 
 ```
+# ml, from ml/
+uv run ruff check .
+uv run ruff format --check .
+uv run mypy
+uv run pytest -q
+uv run pip-audit
+
 # backend, from backend/
 uv run ruff check .
 uv run ruff format --check .
@@ -127,6 +153,17 @@ npm test
 npm run build
 npm audit --omit=dev --audit-level=high
 ```
+
+## Data sources
+
+The baseline classifier is trained and evaluated on these datasets. They are downloaded by the training scripts and not redistributed by this repository.
+
+- SMS Spam Collection. Almeida, T. & Hidalgo, J. (2011). UCI Machine Learning Repository. https://doi.org/10.24432/C5CC84. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- SMS Phishing Dataset for Machine Learning and Pattern Recognition. Mishra, S. & Soni, D. (2022). Mendeley Data, V1. https://doi.org/10.17632/f45bkkt8pr.1. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+The training data also includes a set of invented current-style messages written for this project (`ml/supplement/`), covered by the repository license.
+
+Changes made to the public datasets: labels mapped to two classes (ham as not scam-like; spam and smishing as scam-like), text Unicode-normalized, and duplicate messages across the two datasets merged.
 
 ## Reporting security issues
 

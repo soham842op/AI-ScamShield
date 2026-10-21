@@ -1,0 +1,3328 @@
+{
+  "model_version": "tfidf-logreg-1.1.0",
+  "sklearn_version": "1.9.1",
+  "artifact_sha256": "4a23351fe98f47069cd5d330fc1c62f636c4bafd592ef8f1ba54ed92bbaf7a63",
+  "data_sha256": {
+    "current_style_supplement": "1977547cc2d581a582d374045a4504d395915e6600c701f76b68100c8862d486",
+    "mendeley_sms_phishing": "9bbf3188fdad81495d8e82825648b9b63b53fc86841a3d26c02629990b233cc3",
+    "uci_sms_spam": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3"
+  },
+  "split_seed": "scamshield-cp5-v1",
+  "label_mapping": {
+    "ham": "not_scam_like",
+    "spam": "scam_like",
+    "smishing": "scam_like",
+    "scam (supplement)": "scam_like"
+  },
+  "supplement_status": "draft, awaiting owner review",
+  "synthetic_overlap": {
+    "max_similarity": 0.6265,
+    "copies": 0
+  },
+  "preparation": {
+    "raw_rows": {
+      "uci_sms_spam": 5574,
+      "mendeley_sms_phishing": 5971,
+      "current_style_supplement": 600
+    },
+    "empty_dropped": 0,
+    "duplicates_merged": 5441,
+    "conflicts_dropped": 0,
+    "unique_texts": 6704,
+    "in_both_datasets": 4886,
+    "near_duplicate_groups": 6484
+  },
+  "splits": {
+    "train": {
+      "examples": 4670,
+      "groups": 4537,
+      "by_source_label": {
+        "ham": 3730,
+        "scam": 206,
+        "smishing": 387,
+        "spam": 347
+      }
+    },
+    "validation": {
+      "examples": 1016,
+      "groups": 975,
+      "by_source_label": {
+        "ham": 798,
+        "scam": 54,
+        "smishing": 88,
+        "spam": 76
+      }
+    },
+    "test": {
+      "examples": 1018,
+      "groups": 972,
+      "by_source_label": {
+        "ham": 813,
+        "scam": 40,
+        "smishing": 87,
+        "spam": 78
+      }
+    }
+  },
+  "leakage_check": {
+    "texts_train_validation": 0,
+    "groups_train_validation": 0,
+    "texts_train_test": 0,
+    "groups_train_test": 0,
+    "texts_validation_test": 0,
+    "groups_validation_test": 0
+  },
+  "candidates_on_validation": [
+    {
+      "candidate": "word/C=0.5/w=1",
+      "score": 0.9337299669675683,
+      "average_precision_public": 0.9703260633947745,
+      "average_precision_supplement": 0.8971338705403621,
+      "average_precision": 0.9584095414430808,
+      "roc_auc": 0.9829964820307651
+    },
+    {
+      "candidate": "word/C=0.5/w=3",
+      "score": 0.9639246509950161,
+      "average_precision_public": 0.9673235306186909,
+      "average_precision_supplement": 0.9605257713713412,
+      "average_precision": 0.9662461455015878,
+      "roc_auc": 0.9861120691637351
+    },
+    {
+      "candidate": "word/C=0.5/w=5",
+      "score": 0.9696290040011197,
+      "average_precision_public": 0.9640463487830269,
+      "average_precision_supplement": 0.9752116592192127,
+      "average_precision": 0.966890660591556,
+      "roc_auc": 0.9864339748453703
+    },
+    {
+      "candidate": "word/C=1/w=1",
+      "score": 0.9447689778726218,
+      "average_precision_public": 0.9725739328595728,
+      "average_precision_supplement": 0.9169640228856708,
+      "average_precision": 0.9639565348655948,
+      "roc_auc": 0.985037134119703
+    },
+    {
+      "candidate": "word/C=1/w=3",
+      "score": 0.9685912491200379,
+      "average_precision_public": 0.970694419865092,
+      "average_precision_supplement": 0.966488078374984,
+      "average_precision": 0.9701294674619091,
+      "roc_auc": 0.9875606447310938
+    },
+    {
+      "candidate": "word/C=1/w=5",
+      "score": 0.9729924724581827,
+      "average_precision_public": 0.9680002896312869,
+      "average_precision_supplement": 0.9779846552850785,
+      "average_precision": 0.9702800516906956,
+      "roc_auc": 0.987738842519142
+    },
+    {
+      "candidate": "word/C=2/w=1",
+      "score": 0.9562161174726018,
+      "average_precision_public": 0.9743772927181785,
+      "average_precision_supplement": 0.9380549422270251,
+      "average_precision": 0.9684175008799261,
+      "roc_auc": 0.9868765951576188
+    },
+    {
+      "candidate": "word/C=2/w=3",
+      "score": 0.9708286743803458,
+      "average_precision_public": 0.9726039785620556,
+      "average_precision_supplement": 0.969053370198636,
+      "average_precision": 0.9722447442232557,
+      "roc_auc": 0.9884056471453864
+    },
+    {
+      "candidate": "word/C=2/w=5",
+      "score": 0.9743817166896585,
+      "average_precision_public": 0.9706953736756251,
+      "average_precision_supplement": 0.9780680597036917,
+      "average_precision": 0.9725456025428313,
+      "roc_auc": 0.9886413280908694
+    },
+    {
+      "candidate": "word/C=4/w=1",
+      "score": 0.9616535024571067,
+      "average_precision_public": 0.9750655522872251,
+      "average_precision_supplement": 0.9482414526269881,
+      "average_precision": 0.9706958028800492,
+      "roc_auc": 0.98766986273022
+    },
+    {
+      "candidate": "word/C=4/w=3",
+      "score": 0.9717078080998385,
+      "average_precision_public": 0.9739584126946934,
+      "average_precision_supplement": 0.9694572035049837,
+      "average_precision": 0.9734906791747702,
+      "roc_auc": 0.9889517371410176
+    },
+    {
+      "candidate": "word/C=4/w=5",
+      "score": 0.9741498481859951,
+      "average_precision_public": 0.9722033795918468,
+      "average_precision_supplement": 0.9760963167801436,
+      "average_precision": 0.9731601635510844,
+      "roc_auc": 0.9887562944057391
+    },
+    {
+      "candidate": "word/C=8/w=1",
+      "score": 0.9649773196675222,
+      "average_precision_public": 0.9753505882615193,
+      "average_precision_supplement": 0.9546040510735252,
+      "average_precision": 0.9720988887965023,
+      "roc_auc": 0.9880377549378032
+    },
+    {
+      "candidate": "word/C=8/w=3",
+      "score": 0.9725114933313601,
+      "average_precision_public": 0.9737703765888963,
+      "average_precision_supplement": 0.9712526100738238,
+      "average_precision": 0.9733656775986327,
+      "roc_auc": 0.9887850359844567
+    },
+    {
+      "candidate": "word/C=8/w=5",
+      "score": 0.9744193877216453,
+      "average_precision_public": 0.9732771431449262,
+      "average_precision_supplement": 0.9755616322983643,
+      "average_precision": 0.9737176427605193,
+      "roc_auc": 0.9889632337725046
+    },
+    {
+      "candidate": "word/C=16/w=1",
+      "score": 0.9659421118511016,
+      "average_precision_public": 0.9756832407347823,
+      "average_precision_supplement": 0.9562009829674208,
+      "average_precision": 0.9726074039648035,
+      "roc_auc": 0.9881584695684166
+    },
+    {
+      "candidate": "word/C=16/w=3",
+      "score": 0.9726112850897076,
+      "average_precision_public": 0.974238617176317,
+      "average_precision_supplement": 0.9709839530030983,
+      "average_precision": 0.9736695231605228,
+      "roc_auc": 0.9888022809316871
+    },
+    {
+      "candidate": "word/C=16/w=5",
+      "score": 0.9725431240943192,
+      "average_precision_public": 0.9733534910551338,
+      "average_precision_supplement": 0.9717327571335045,
+      "average_precision": 0.9733213863636048,
+      "roc_auc": 0.9888080292474305
+    },
+    {
+      "candidate": "word+char/C=0.5/w=1",
+      "score": 0.9567268251018861,
+      "average_precision_public": 0.9776747592349335,
+      "average_precision_supplement": 0.9357788909688388,
+      "average_precision": 0.9701529509833803,
+      "roc_auc": 0.9872962222068933
+    },
+    {
+      "candidate": "word+char/C=0.5/w=3",
+      "score": 0.9717681502302704,
+      "average_precision_public": 0.9753820993400744,
+      "average_precision_supplement": 0.9681542011204666,
+      "average_precision": 0.9735232672481531,
+      "roc_auc": 0.9885206134602562
+    },
+    {
+      "candidate": "word+char/C=0.5/w=5",
+      "score": 0.9757229442753661,
+      "average_precision_public": 0.9733682528346493,
+      "average_precision_supplement": 0.9780776357160829,
+      "average_precision": 0.9738343606409426,
+      "roc_auc": 0.9886068381964085
+    },
+    {
+      "candidate": "word+char/C=1/w=1",
+      "score": 0.9642409478035725,
+      "average_precision_public": 0.9803488817925232,
+      "average_precision_supplement": 0.9481330138146219,
+      "average_precision": 0.9743369016755248,
+      "roc_auc": 0.9888942539835829
+    },
+    {
+      "candidate": "word+char/C=1/w=3",
+      "score": 0.9749439204071728,
+      "average_precision_public": 0.9780471900922225,
+      "average_precision_supplement": 0.9718406507221232,
+      "average_precision": 0.9764810367597835,
+      "roc_auc": 0.9896645282932102
+    },
+    {
+      "candidate": "word+char/C=1/w=5",
+      "score": 0.9778458744333748,
+      "average_precision_public": 0.9763174328355471,
+      "average_precision_supplement": 0.9793743160312025,
+      "average_precision": 0.976411863367107,
+      "roc_auc": 0.989687521556184
+    },
+    {
+      "candidate": "word+char/C=2/w=1",
+      "score": 0.9689346557717153,
+      "average_precision_public": 0.9812530846515313,
+      "average_precision_supplement": 0.9566162268918993,
+      "average_precision": 0.9771338556790384,
+      "roc_auc": 0.9899519440803844
+    },
+    {
+      "candidate": "word+char/C=2/w=3",
+      "score": 0.9767868557875194,
+      "average_precision_public": 0.9802124432843032,
+      "average_precision_supplement": 0.9733612682907358,
+      "average_precision": 0.9785998386159507,
+      "roc_auc": 0.9904462992343244
+    },
+    {
+      "candidate": "word+char/C=2/w=5",
+      "score": 0.978350352688966,
+      "average_precision_public": 0.9783302116105932,
+      "average_precision_supplement": 0.9783704937673388,
+      "average_precision": 0.9780243675852993,
+      "roc_auc": 0.9904175576556069
+    },
+    {
+      "candidate": "word+char/C=4/w=1",
+      "score": 0.9703959197186768,
+      "average_precision_public": 0.9820768046868951,
+      "average_precision_supplement": 0.9587150347504585,
+      "average_precision": 0.9782080151291747,
+      "roc_auc": 0.9904462992343244
+    },
+    {
+      "candidate": "word+char/C=4/w=3",
+      "score": 0.9784102367558669,
+      "average_precision_public": 0.9810470538779393,
+      "average_precision_supplement": 0.9757734196337945,
+      "average_precision": 0.9795208652434054,
+      "roc_auc": 0.9909981375456991
+    },
+    {
+      "candidate": "word+char/C=4/w=5",
+      "score": 0.9798354748430151,
+      "average_precision_public": 0.9798268848040408,
+      "average_precision_supplement": 0.9798440648819896,
+      "average_precision": 0.9793082190205841,
+      "roc_auc": 0.9909176611252902
+    },
+    {
+      "candidate": "word+char/C=8/w=1",
+      "score": 0.9743246333185589,
+      "average_precision_public": 0.9828325150688981,
+      "average_precision_supplement": 0.9658167515682197,
+      "average_precision": 0.9794695114716192,
+      "roc_auc": 0.9910958589133384
+    },
+    {
+      "candidate": "word+char/C=8/w=3",
+      "score": 0.9790857134662925,
+      "average_precision_public": 0.9818177750213078,
+      "average_precision_supplement": 0.9763536519112772,
+      "average_precision": 0.9801080261550005,
+      "roc_auc": 0.9913487848060518
+    },
+    {
+      "candidate": "word+char/C=8/w=5",
+      "score": 0.9782815888150398,
+      "average_precision_public": 0.9809288370401773,
+      "average_precision_supplement": 0.9756343405899022,
+      "average_precision": 0.9795663110514929,
+      "roc_auc": 0.9912338184911822
+    },
+    {
+      "candidate": "word+char/C=16/w=1",
+      "score": 0.9742955087507645,
+      "average_precision_public": 0.9830746021403314,
+      "average_precision_supplement": 0.9655164153611976,
+      "average_precision": 0.9794864471203134,
+      "roc_auc": 0.9913372881745649
+    },
+    {
+      "candidate": "word+char/C=16/w=3",
+      "score": 0.9787588470239135,
+      "average_precision_public": 0.9823557351657903,
+      "average_precision_supplement": 0.9751619588820365,
+      "average_precision": 0.9803974308639762,
+      "roc_auc": 0.9915269825941
+    },
+    {
+      "candidate": "word+char/C=16/w=5",
+      "score": 0.9777345562332578,
+      "average_precision_public": 0.9813979349971462,
+      "average_precision_supplement": 0.9740711774693693,
+      "average_precision": 0.9797039065833949,
+      "roc_auc": 0.9914694994366651
+    }
+  ],
+  "chosen_candidate": "word+char/C=4/w=5",
+  "threshold_rule": {
+    "high_risk_min_validation_precision": 0.98,
+    "suspicious_min_validation_recall": 0.95
+  },
+  "thresholds": {
+    "suspicious": 0.2367,
+    "high_risk": 0.6018
+  },
+  "validation": {
+    "examples": 1016,
+    "positives": 218,
+    "average_precision": 0.9793082190205841,
+    "roc_auc": 0.9909176611252902,
+    "at_suspicious": {
+      "tp": 208,
+      "fp": 35,
+      "fn": 10,
+      "tn": 763,
+      "precision": 0.8559670781893004,
+      "precision_ci95": [
+        0.8062759850783906,
+        0.8945787286477759
+      ],
+      "recall": 0.9541284403669725,
+      "recall_ci95": [
+        0.9176338025937287,
+        0.9748954883624168
+      ],
+      "f1": 0.9023861171366594,
+      "false_positive_rate": 0.043859649122807015,
+      "false_positive_rate_ci95": [
+        0.03170330128543085,
+        0.06038654772825981
+      ],
+      "false_negative_rate": 0.045871559633027525
+    },
+    "at_high_risk": {
+      "tp": 190,
+      "fp": 3,
+      "fn": 28,
+      "tn": 795,
+      "precision": 0.9844559585492227,
+      "precision_ci95": [
+        0.9553033347814387,
+        0.994699784799021
+      ],
+      "recall": 0.8715596330275229,
+      "recall_ci95": [
+        0.820630277047817,
+        0.9096209610072111
+      ],
+      "f1": 0.9245742092457421,
+      "false_positive_rate": 0.0037593984962406013,
+      "false_positive_rate_ci95": [
+        0.001279340781497204,
+        0.010994231222408024
+      ],
+      "false_negative_rate": 0.12844036697247707
+    },
+    "reference": {
+      "0.3": {
+        "tp": 206,
+        "fp": 22,
+        "fn": 12,
+        "tn": 776,
+        "precision": 0.9035087719298246,
+        "precision_ci95": [
+          0.858232400156219,
+          0.9354133993822015
+        ],
+        "recall": 0.944954128440367,
+        "recall_ci95": [
+          0.906263972785718,
+          0.9682344234036366
+        ],
+        "f1": 0.9237668161434978,
+        "false_positive_rate": 0.02756892230576441,
+        "false_positive_rate_ci95": [
+          0.01827549272531199,
+          0.04138899375315334
+        ],
+        "false_negative_rate": 0.05504587155963303
+      },
+      "0.5": {
+        "tp": 196,
+        "fp": 8,
+        "fn": 22,
+        "tn": 790,
+        "precision": 0.9607843137254902,
+        "precision_ci95": [
+          0.9245384599678398,
+          0.9799971462192397
+        ],
+        "recall": 0.8990825688073395,
+        "recall_ci95": [
+          0.8519362524672781,
+          0.9324076698881226
+        ],
+        "f1": 0.9289099526066351,
+        "false_positive_rate": 0.010025062656641603,
+        "false_positive_rate_ci95": [
+          0.005088430154417005,
+          0.019656435132267197
+        ],
+        "false_negative_rate": 0.10091743119266056
+      },
+      "0.7": {
+        "tp": 176,
+        "fp": 0,
+        "fn": 42,
+        "tn": 798,
+        "precision": 1.0,
+        "precision_ci95": [
+          0.9786397480025362,
+          1.0
+        ],
+        "recall": 0.8073394495412844,
+        "recall_ci95": [
+          0.7498472549134011,
+          0.8541877197740914
+        ],
+        "f1": 0.8934010152284264,
+        "false_positive_rate": 0.0,
+        "false_positive_rate_ci95": [
+          0.0,
+          0.004790796034237843
+        ],
+        "false_negative_rate": 0.1926605504587156
+      },
+      "0.9": {
+        "tp": 158,
+        "fp": 0,
+        "fn": 60,
+        "tn": 798,
+        "precision": 1.0,
+        "precision_ci95": [
+          0.97626406170675,
+          1.0
+        ],
+        "recall": 0.7247706422018348,
+        "recall_ci95": [
+          0.66197718938311,
+          0.779779732403265
+        ],
+        "f1": 0.8404255319148937,
+        "false_positive_rate": 0.0,
+        "false_positive_rate_ci95": [
+          0.0,
+          0.004790796034237843
+        ],
+        "false_negative_rate": 0.27522935779816515
+      }
+    },
+    "recall_by_source_label_at_suspicious": {
+      "spam": {
+        "detected": 69,
+        "total": 76
+      },
+      "smishing": {
+        "detected": 87,
+        "total": 88
+      },
+      "scam": {
+        "detected": 52,
+        "total": 54
+      }
+    },
+    "recall_by_source_label_at_high_risk": {
+      "spam": {
+        "detected": 58,
+        "total": 76
+      },
+      "smishing": {
+        "detected": 85,
+        "total": 88
+      },
+      "scam": {
+        "detected": 47,
+        "total": 54
+      }
+    },
+    "error_analysis_at_suspicious": {
+      "threshold": 0.2367,
+      "false_negative_by_trait": {
+        "has_link:False": 8,
+        "has_link:True": 2,
+        "has_long_number:False": 6,
+        "has_long_number:True": 4,
+        "label:scam": 2,
+        "label:smishing": 1,
+        "label:spam": 7,
+        "length:50_to_160": 9,
+        "length:over_160": 1,
+        "origin:both": 8,
+        "origin:current_style_supplement": 2
+      },
+      "false_positive_by_trait": {
+        "has_link:False": 35,
+        "has_long_number:False": 35,
+        "label:ham": 35,
+        "length:50_to_160": 20,
+        "length:over_160": 3,
+        "length:under_50": 12,
+        "origin:both": 22,
+        "origin:current_style_supplement": 13
+      },
+      "examples_by_trait": {
+        "has_link:False": 973,
+        "has_link:True": 43,
+        "has_long_number:False": 894,
+        "has_long_number:True": 122,
+        "label:ham": 798,
+        "label:scam": 54,
+        "label:smishing": 88,
+        "label:spam": 76,
+        "length:50_to_160": 603,
+        "length:over_160": 52,
+        "length:under_50": 361,
+        "origin:both": 725,
+        "origin:current_style_supplement": 99,
+        "origin:mendeley_sms_phishing": 142,
+        "origin:uci_sms_spam": 50
+      }
+    },
+    "by_origin": {
+      "public": {
+        "examples": 917,
+        "positives": 164,
+        "average_precision": 0.9798268848040408,
+        "roc_auc": 0.9920804586531922,
+        "at_suspicious": {
+          "tp": 156,
+          "fp": 22,
+          "fn": 8,
+          "tn": 731,
+          "precision": 0.8764044943820225,
+          "precision_ci95": [
+            0.8199603936458381,
+            0.9169452648567901
+          ],
+          "recall": 0.9512195121951219,
+          "recall_ci95": [
+            0.9067067289639142,
+            0.975077789512366
+          ],
+          "f1": 0.912280701754386,
+          "false_positive_rate": 0.029216467463479414,
+          "false_positive_rate_ci95": [
+            0.019372040771176123,
+            0.043839954713335925
+          ],
+          "false_negative_rate": 0.04878048780487805
+        },
+        "at_high_risk": {
+          "tp": 143,
+          "fp": 2,
+          "fn": 21,
+          "tn": 751,
+          "precision": 0.9862068965517241,
+          "precision_ci95": [
+            0.9511074548036677,
+            0.9962092475436958
+          ],
+          "recall": 0.8719512195121951,
+          "recall_ci95": [
+            0.8121751203333012,
+            0.9147013070593082
+          ],
+          "f1": 0.9255663430420712,
+          "false_positive_rate": 0.0026560424966799467,
+          "false_positive_rate_ci95": [
+            0.0007286850876628706,
+            0.009632083061701768
+          ],
+          "false_negative_rate": 0.12804878048780488
+        },
+        "reference": {
+          "0.3": {
+            "tp": 154,
+            "fp": 13,
+            "fn": 10,
+            "tn": 740,
+            "precision": 0.9221556886227545,
+            "precision_ci95": [
+              0.8713811127995058,
+              0.9539454848735426
+            ],
+            "recall": 0.9390243902439024,
+            "recall_ci95": [
+              0.891407065633141,
+              0.9665454388302668
+            ],
+            "f1": 0.9305135951661632,
+            "false_positive_rate": 0.017264276228419653,
+            "false_positive_rate_ci95": [
+              0.010116660428089997,
+              0.029312282755605715
+            ],
+            "false_negative_rate": 0.06097560975609756
+          },
+          "0.5": {
+            "tp": 146,
+            "fp": 3,
+            "fn": 18,
+            "tn": 750,
+            "precision": 0.9798657718120806,
+            "precision_ci95": [
+              0.942480728510941,
+              0.9931292888670052
+            ],
+            "recall": 0.8902439024390244,
+            "recall_ci95": [
+              0.8331863655111225,
+              0.9294380829007958
+            ],
+            "f1": 0.9329073482428115,
+            "false_positive_rate": 0.00398406374501992,
+            "false_positive_rate_ci95": [
+              0.0013558465312597532,
+              0.011647482984862258
+            ],
+            "false_negative_rate": 0.10975609756097561
+          },
+          "0.7": {
+            "tp": 135,
+            "fp": 0,
+            "fn": 29,
+            "tn": 753,
+            "precision": 1.0,
+            "precision_ci95": [
+              0.9723320475580691,
+              1.0
+            ],
+            "recall": 0.823170731707317,
+            "recall_ci95": [
+              0.7575829658300577,
+              0.8739654055110619
+            ],
+            "f1": 0.903010033444816,
+            "false_positive_rate": 0.0,
+            "false_positive_rate_ci95": [
+              0.0,
+              0.005075645415849899
+            ],
+            "false_negative_rate": 0.17682926829268292
+          },
+          "0.9": {
+            "tp": 122,
+            "fp": 0,
+            "fn": 42,
+            "tn": 753,
+            "precision": 1.0,
+            "precision_ci95": [
+              0.9694738211441146,
+              1.0
+            ],
+            "recall": 0.7439024390243902,
+            "recall_ci95": [
+              0.6720518814146011,
+              0.8045883988428476
+            ],
+            "f1": 0.8531468531468531,
+            "false_positive_rate": 0.0,
+            "false_positive_rate_ci95": [
+              0.0,
+              0.005075645415849899
+            ],
+            "false_negative_rate": 0.25609756097560976
+          }
+        },
+        "recall_by_source_label_at_suspicious": {
+          "spam": {
+            "detected": 69,
+            "total": 76
+          },
+          "smishing": {
+            "detected": 87,
+            "total": 88
+          },
+          "scam": {
+            "detected": 0,
+            "total": 0
+          }
+        },
+        "recall_by_source_label_at_high_risk": {
+          "spam": {
+            "detected": 58,
+            "total": 76
+          },
+          "smishing": {
+            "detected": 85,
+            "total": 88
+          },
+          "scam": {
+            "detected": 0,
+            "total": 0
+          }
+        },
+        "error_analysis_at_suspicious": {
+          "threshold": 0.2367,
+          "false_negative_by_trait": {
+            "has_link:False": 6,
+            "has_link:True": 2,
+            "has_long_number:False": 4,
+            "has_long_number:True": 4,
+            "label:smishing": 1,
+            "label:spam": 7,
+            "length:50_to_160": 7,
+            "length:over_160": 1,
+            "origin:both": 8
+          },
+          "false_positive_by_trait": {
+            "has_link:False": 22,
+            "has_long_number:False": 22,
+            "label:ham": 22,
+            "length:50_to_160": 9,
+            "length:over_160": 2,
+            "length:under_50": 11,
+            "origin:both": 22
+          },
+          "examples_by_trait": {
+            "has_link:False": 874,
+            "has_link:True": 43,
+            "has_long_number:False": 798,
+            "has_long_number:True": 119,
+            "label:ham": 753,
+            "label:smishing": 88,
+            "label:spam": 76,
+            "length:50_to_160": 510,
+            "length:over_160": 50,
+            "length:under_50": 357,
+            "origin:both": 725,
+            "origin:mendeley_sms_phishing": 142,
+            "origin:uci_sms_spam": 50
+          }
+        }
+      },
+      "supplement": {
+        "examples": 99,
+        "positives": 54,
+        "average_precision": 0.9798440648819896,
+        "roc_auc": 0.968724279835391,
+        "at_suspicious": {
+          "tp": 52,
+          "fp": 13,
+          "fn": 2,
+          "tn": 32,
+          "precision": 0.8,
+          "precision_ci95": [
+            0.6872986726325446,
+            0.8792204080750284
+          ],
+          "recall": 0.9629629629629629,
+          "recall_ci95": [
+            0.8746482298295409,
+            0.9897836321435728
+          ],
+          "f1": 0.8739495798319328,
+          "false_positive_rate": 0.28888888888888886,
+          "false_positive_rate_ci95": [
+            0.17730082412256962,
+            0.43368540693622215
+          ],
+          "false_negative_rate": 0.037037037037037035
+        },
+        "at_high_risk": {
+          "tp": 47,
+          "fp": 1,
+          "fn": 7,
+          "tn": 44,
+          "precision": 0.9791666666666666,
+          "precision_ci95": [
+            0.8910078189694375,
+            0.9963128890632689
+          ],
+          "recall": 0.8703703703703703,
+          "recall_ci95": [
+            0.7557826967018287,
+            0.9357627928766622
+          ],
+          "f1": 0.9215686274509804,
+          "false_positive_rate": 0.022222222222222223,
+          "false_positive_rate_ci95": [
+            0.003933598839322983,
+            0.11566681882004808
+          ],
+          "false_negative_rate": 0.12962962962962962
+        },
+        "reference": {
+          "0.3": {
+            "tp": 52,
+            "fp": 9,
+            "fn": 2,
+            "tn": 36,
+            "precision": 0.8524590163934426,
+            "precision_ci95": [
+              0.7427676460474365,
+              0.9203883153062286
+            ],
+            "recall": 0.9629629629629629,
+            "recall_ci95": [
+              0.8746482298295409,
+              0.9897836321435728
+            ],
+            "f1": 0.9043478260869565,
+            "false_positive_rate": 0.2,
+            "false_positive_rate_ci95": [
+              0.10896126755287432,
+              0.3382296923727772
+            ],
+            "false_negative_rate": 0.037037037037037035
+          },
+          "0.5": {
+            "tp": 50,
+            "fp": 5,
+            "fn": 4,
+            "tn": 40,
+            "precision": 0.9090909090909091,
+            "precision_ci95": [
+              0.8042250531228354,
+              0.9605418451755379
+            ],
+            "recall": 0.9259259259259259,
+            "recall_ci95": [
+              0.8244588405779678,
+              0.970818472437297
+            ],
+            "f1": 0.9174311926605504,
+            "false_positive_rate": 0.1111111111111111,
+            "false_positive_rate_ci95": [
+              0.048404717639364256,
+              0.23499097115314704
+            ],
+            "false_negative_rate": 0.07407407407407407
+          },
+          "0.7": {
+            "tp": 41,
+            "fp": 0,
+            "fn": 13,
+            "tn": 45,
+            "precision": 1.0,
+            "precision_ci95": [
+              0.9143324285798755,
+              1.0
+            ],
+            "recall": 0.7592592592592593,
+            "recall_ci95": [
+              0.6305247570705963,
+              0.8535570856343475
+            ],
+            "f1": 0.8631578947368421,
+            "false_positive_rate": 0.0,
+            "false_positive_rate_ci95": [
+              0.0,
+              0.07865159987608598
+            ],
+            "false_negative_rate": 0.24074074074074073
+          },
+          "0.9": {
+            "tp": 36,
+            "fp": 0,
+            "fn": 18,
+            "tn": 45,
+            "precision": 1.0,
+            "precision_ci95": [
+              0.9035813700311206,
+              1.0
+            ],
+            "recall": 0.6666666666666666,
+            "recall_ci95": [
+              0.5336096349425522,
+              0.7775858353677686
+            ],
+            "f1": 0.8,
+            "false_positive_rate": 0.0,
+            "false_positive_rate_ci95": [
+              0.0,
+              0.07865159987608598
+            ],
+            "false_negative_rate": 0.3333333333333333
+          }
+        },
+        "recall_by_source_label_at_suspicious": {
+          "spam": {
+            "detected": 0,
+            "total": 0
+          },
+          "smishing": {
+            "detected": 0,
+            "total": 0
+          },
+          "scam": {
+            "detected": 52,
+            "total": 54
+          }
+        },
+        "recall_by_source_label_at_high_risk": {
+          "spam": {
+            "detected": 0,
+            "total": 0
+          },
+          "smishing": {
+            "detected": 0,
+            "total": 0
+          },
+          "scam": {
+            "detected": 47,
+            "total": 54
+          }
+        },
+        "error_analysis_at_suspicious": {
+          "threshold": 0.2367,
+          "false_negative_by_trait": {
+            "has_link:False": 2,
+            "has_long_number:False": 2,
+            "label:scam": 2,
+            "length:50_to_160": 2,
+            "origin:current_style_supplement": 2
+          },
+          "false_positive_by_trait": {
+            "has_link:False": 13,
+            "has_long_number:False": 13,
+            "label:ham": 13,
+            "length:50_to_160": 11,
+            "length:over_160": 1,
+            "length:under_50": 1,
+            "origin:current_style_supplement": 13
+          },
+          "examples_by_trait": {
+            "has_link:False": 99,
+            "has_long_number:False": 96,
+            "has_long_number:True": 3,
+            "label:ham": 45,
+            "label:scam": 54,
+            "length:50_to_160": 93,
+            "length:over_160": 2,
+            "length:under_50": 4,
+            "origin:current_style_supplement": 99
+          }
+        }
+      }
+    }
+  },
+  "test": {
+    "examples": 1018,
+    "positives": 205,
+    "average_precision": 0.9893481772214144,
+    "roc_auc": 0.9969999699997001,
+    "at_suspicious": {
+      "tp": 201,
+      "fp": 34,
+      "fn": 4,
+      "tn": 779,
+      "precision": 0.8553191489361702,
+      "precision_ci95": [
+        0.8046266072099065,
+        0.8945819840548072
+      ],
+      "recall": 0.9804878048780488,
+      "recall_ci95": [
+        0.9509127222337249,
+        0.9923865683155398
+      ],
+      "f1": 0.9136363636363637,
+      "false_positive_rate": 0.041820418204182044,
+      "false_positive_rate_ci95": [
+        0.030079405992358078,
+        0.057870903214138805
+      ],
+      "false_negative_rate": 0.01951219512195122
+    },
+    "at_high_risk": {
+      "tp": 189,
+      "fp": 5,
+      "fn": 16,
+      "tn": 808,
+      "precision": 0.9742268041237113,
+      "precision_ci95": [
+        0.9410955223997934,
+        0.9889420998480245
+      ],
+      "recall": 0.9219512195121952,
+      "recall_ci95": [
+        0.8769899248992593,
+        0.9513896551262374
+      ],
+      "f1": 0.9473684210526315,
+      "false_positive_rate": 0.006150061500615006,
+      "false_positive_rate_ci95": [
+        0.0026297151767669886,
+        0.014315383202853152
+      ],
+      "false_negative_rate": 0.07804878048780488
+    },
+    "reference": {
+      "0.3": {
+        "tp": 197,
+        "fp": 27,
+        "fn": 8,
+        "tn": 786,
+        "precision": 0.8794642857142857,
+        "precision_ci95": [
+          0.8303085986033119,
+          0.915824264286093
+        ],
+        "recall": 0.9609756097560975,
+        "recall_ci95": [
+          0.9248973520158011,
+          0.9800953683588741
+        ],
+        "f1": 0.9184149184149184,
+        "false_positive_rate": 0.033210332103321034,
+        "false_positive_rate_ci95": [
+          0.022922996430440094,
+          0.04788812395577619
+        ],
+        "false_negative_rate": 0.03902439024390244
+      },
+      "0.5": {
+        "tp": 193,
+        "fp": 9,
+        "fn": 12,
+        "tn": 804,
+        "precision": 0.9554455445544554,
+        "precision_ci95": [
+          0.9175064491760945,
+          0.9763853887461607
+        ],
+        "recall": 0.9414634146341463,
+        "recall_ci95": [
+          0.9004851701992185,
+          0.9662009800008675
+        ],
+        "f1": 0.9484029484029484,
+        "false_positive_rate": 0.01107011070110701,
+        "false_positive_rate_ci95": [
+          0.005834778105428439,
+          0.02090414245720918
+        ],
+        "false_negative_rate": 0.05853658536585366
+      },
+      "0.7": {
+        "tp": 179,
+        "fp": 3,
+        "fn": 26,
+        "tn": 810,
+        "precision": 0.9835164835164835,
+        "precision_ci95": [
+          0.9526652424593839,
+          0.9943785499186014
+        ],
+        "recall": 0.8731707317073171,
+        "recall_ci95": [
+          0.820654086562235,
+          0.9119590680267878
+        ],
+        "f1": 0.9250645994832042,
+        "false_positive_rate": 0.0036900369003690036,
+        "false_positive_rate_ci95": [
+          0.0012557220914989837,
+          0.010792465196612415
+        ],
+        "false_negative_rate": 0.12682926829268293
+      },
+      "0.9": {
+        "tp": 158,
+        "fp": 0,
+        "fn": 47,
+        "tn": 813,
+        "precision": 1.0,
+        "precision_ci95": [
+          0.97626406170675,
+          1.0
+        ],
+        "recall": 0.7707317073170732,
+        "recall_ci95": [
+          0.7085231361950528,
+          0.8229805249773756
+        ],
+        "f1": 0.8705234159779615,
+        "false_positive_rate": 0.0,
+        "false_positive_rate_ci95": [
+          0.0,
+          0.004702820650848286
+        ],
+        "false_negative_rate": 0.22926829268292684
+      }
+    },
+    "recall_by_source_label_at_suspicious": {
+      "spam": {
+        "detected": 74,
+        "total": 78
+      },
+      "smishing": {
+        "detected": 87,
+        "total": 87
+      },
+      "scam": {
+        "detected": 40,
+        "total": 40
+      }
+    },
+    "recall_by_source_label_at_high_risk": {
+      "spam": {
+        "detected": 67,
+        "total": 78
+      },
+      "smishing": {
+        "detected": 86,
+        "total": 87
+      },
+      "scam": {
+        "detected": 36,
+        "total": 40
+      }
+    },
+    "error_analysis_at_suspicious": {
+      "threshold": 0.2367,
+      "false_negative_by_trait": {
+        "has_link:False": 4,
+        "has_long_number:False": 3,
+        "has_long_number:True": 1,
+        "label:spam": 4,
+        "length:50_to_160": 1,
+        "length:over_160": 1,
+        "length:under_50": 2,
+        "origin:both": 2,
+        "origin:mendeley_sms_phishing": 1,
+        "origin:uci_sms_spam": 1
+      },
+      "false_positive_by_trait": {
+        "has_link:False": 33,
+        "has_link:True": 1,
+        "has_long_number:False": 33,
+        "has_long_number:True": 1,
+        "label:ham": 34,
+        "length:50_to_160": 24,
+        "length:over_160": 2,
+        "length:under_50": 8,
+        "origin:both": 22,
+        "origin:current_style_supplement": 7,
+        "origin:mendeley_sms_phishing": 4,
+        "origin:uci_sms_spam": 1
+      },
+      "examples_by_trait": {
+        "has_link:False": 985,
+        "has_link:True": 33,
+        "has_long_number:False": 882,
+        "has_long_number:True": 136,
+        "label:ham": 813,
+        "label:scam": 40,
+        "label:smishing": 87,
+        "label:spam": 78,
+        "length:50_to_160": 610,
+        "length:over_160": 43,
+        "length:under_50": 365,
+        "origin:both": 736,
+        "origin:current_style_supplement": 79,
+        "origin:mendeley_sms_phishing": 162,
+        "origin:uci_sms_spam": 41
+      }
+    },
+    "by_origin": {
+      "public": {
+        "examples": 939,
+        "positives": 165,
+        "average_precision": 0.9905524800367169,
+        "roc_auc": 0.9976430976430976,
+        "at_suspicious": {
+          "tp": 161,
+          "fp": 27,
+          "fn": 4,
+          "tn": 747,
+          "precision": 0.8563829787234043,
+          "precision_ci95": [
+            0.7991097282291326,
+            0.8993837089111363
+          ],
+          "recall": 0.9757575757575757,
+          "recall_ci95": [
+            0.939333271734835,
+            0.9905331309854755
+          ],
+          "f1": 0.9121813031161473,
+          "false_positive_rate": 0.03488372093023256,
+          "false_positive_rate_ci95": [
+            0.024083273370053865,
+            0.05027822821985174
+          ],
+          "false_negative_rate": 0.024242424242424242
+        },
+        "at_high_risk": {
+          "tp": 153,
+          "fp": 3,
+          "fn": 12,
+          "tn": 771,
+          "precision": 0.9807692307692307,
+          "precision_ci95": [
+            0.9449912795992906,
+            0.9934385936627858
+          ],
+          "recall": 0.9272727272727272,
+          "recall_ci95": [
+            0.8771925375626454,
+            0.9579104101033663
+          ],
+          "f1": 0.9532710280373831,
+          "false_positive_rate": 0.003875968992248062,
+          "false_positive_rate_ci95": [
+            0.0013190360674238972,
+            0.011333232295142095
+          ],
+          "false_negative_rate": 0.07272727272727272
+        },
+        "reference": {
+          "0.3": {
+            "tp": 158,
+            "fp": 20,
+            "fn": 7,
+            "tn": 754,
+            "precision": 0.8876404494382022,
+            "precision_ci95": [
+              0.8328253403670369,
+              0.9260775019714904
+            ],
+            "recall": 0.9575757575757575,
+            "recall_ci95": [
+              0.9150299573108693,
+              0.9793001497640792
+            ],
+            "f1": 0.9212827988338192,
+            "false_positive_rate": 0.025839793281653745,
+            "false_positive_rate_ci95": [
+              0.016788559326280553,
+              0.03957441590565101
+            ],
+            "false_negative_rate": 0.04242424242424243
+          },
+          "0.5": {
+            "tp": 157,
+            "fp": 6,
+            "fn": 8,
+            "tn": 768,
+            "precision": 0.9631901840490797,
+            "precision_ci95": [
+              0.9220283406858267,
+              0.9830224842858799
+            ],
+            "recall": 0.9515151515151515,
+            "recall_ci95": [
+              0.9072545896422076,
+              0.9752300855509534
+            ],
+            "f1": 0.9573170731707318,
+            "false_positive_rate": 0.007751937984496124,
+            "false_positive_rate_ci95": [
+              0.00355748532409706,
+              0.016808437191886384
+            ],
+            "false_negative_rate": 0.048484848484848485
+          },
+          "0.7": {
+            "tp": 147,
+            "fp": 2,
+            "fn": 18,
+            "tn": 772,
+            "precision": 0.9865771812080537,
+            "precision_ci95": [
+              0.9523842446572325,
+              0.9963112275092164
+            ],
+            "recall": 0.8909090909090909,
+            "recall_ci95": [
+              0.8341574955748607,
+              0.9298728608004263
+            ],
+            "f1": 0.9363057324840764,
+            "false_positive_rate": 0.002583979328165375,
+            "false_positive_rate_ci95": [
+              0.0007089065722009503,
+              0.009372143739225893
+            ],
+            "false_negative_rate": 0.10909090909090909
+          },
+          "0.9": {
+            "tp": 133,
+            "fp": 0,
+            "fn": 32,
+            "tn": 774,
+            "precision": 1.0,
+            "precision_ci95": [
+              0.9719276678814986,
+              1.0
+            ],
+            "recall": 0.806060606060606,
+            "recall_ci95": [
+              0.7390536787554547,
+              0.8591406312748087
+            ],
+            "f1": 0.8926174496644295,
+            "false_positive_rate": 0.0,
+            "false_positive_rate_ci95": [
+              0.0,
+              0.004938614209148541
+            ],
+            "false_negative_rate": 0.19393939393939394
+          }
+        },
+        "recall_by_source_label_at_suspicious": {
+          "spam": {
+            "detected": 74,
+            "total": 78
+          },
+          "smishing": {
+            "detected": 87,
+            "total": 87
+          },
+          "scam": {
+            "detected": 0,
+            "total": 0
+          }
+        },
+        "recall_by_source_label_at_high_risk": {
+          "spam": {
+            "detected": 67,
+            "total": 78
+          },
+          "smishing": {
+            "detected": 86,
+            "total": 87
+          },
+          "scam": {
+            "detected": 0,
+            "total": 0
+          }
+        },
+        "error_analysis_at_suspicious": {
+          "threshold": 0.2367,
+          "false_negative_by_trait": {
+            "has_link:False": 4,
+            "has_long_number:False": 3,
+            "has_long_number:True": 1,
+            "label:spam": 4,
+            "length:50_to_160": 1,
+            "length:over_160": 1,
+            "length:under_50": 2,
+            "origin:both": 2,
+            "origin:mendeley_sms_phishing": 1,
+            "origin:uci_sms_spam": 1
+          },
+          "false_positive_by_trait": {
+            "has_link:False": 26,
+            "has_link:True": 1,
+            "has_long_number:False": 27,
+            "label:ham": 27,
+            "length:50_to_160": 17,
+            "length:over_160": 2,
+            "length:under_50": 8,
+            "origin:both": 22,
+            "origin:mendeley_sms_phishing": 4,
+            "origin:uci_sms_spam": 1
+          },
+          "examples_by_trait": {
+            "has_link:False": 906,
+            "has_link:True": 33,
+            "has_long_number:False": 807,
+            "has_long_number:True": 132,
+            "label:ham": 774,
+            "label:smishing": 87,
+            "label:spam": 78,
+            "length:50_to_160": 532,
+            "length:over_160": 43,
+            "length:under_50": 364,
+            "origin:both": 736,
+            "origin:mendeley_sms_phishing": 162,
+            "origin:uci_sms_spam": 41
+          }
+        }
+      },
+      "supplement": {
+        "examples": 79,
+        "positives": 40,
+        "average_precision": 0.9790806317914049,
+        "roc_auc": 0.9794871794871794,
+        "at_suspicious": {
+          "tp": 40,
+          "fp": 7,
+          "fn": 0,
+          "tn": 32,
+          "precision": 0.851063829787234,
+          "precision_ci95": [
+            0.7231437745872649,
+            0.9259328004387979
+          ],
+          "recall": 1.0,
+          "recall_ci95": [
+            0.9123783975415363,
+            1.0
+          ],
+          "f1": 0.9195402298850576,
+          "false_positive_rate": 0.1794871794871795,
+          "false_positive_rate_ci95": [
+            0.08977265424428486,
+            0.3266804579321853
+          ],
+          "false_negative_rate": 0.0
+        },
+        "at_high_risk": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 4,
+          "tn": 37,
+          "precision": 0.9473684210526315,
+          "precision_ci95": [
+            0.8271453773741386,
+            0.9854457919839332
+          ],
+          "recall": 0.9,
+          "recall_ci95": [
+            0.7694822464406407,
+            0.9604204715925885
+          ],
+          "f1": 0.9230769230769231,
+          "false_positive_rate": 0.05128205128205128,
+          "false_positive_rate_ci95": [
+            0.01417795528745254,
+            0.16885640175960576
+          ],
+          "false_negative_rate": 0.1
+        },
+        "reference": {
+          "0.3": {
+            "tp": 39,
+            "fp": 7,
+            "fn": 1,
+            "tn": 32,
+            "precision": 0.8478260869565217,
+            "precision_ci95": [
+              0.7177586032866787,
+              0.9242771781340098
+            ],
+            "recall": 0.975,
+            "recall_ci95": [
+              0.8711863091181636,
+              0.9955731685462955
+            ],
+            "f1": 0.9069767441860466,
+            "false_positive_rate": 0.1794871794871795,
+            "false_positive_rate_ci95": [
+              0.08977265424428486,
+              0.3266804579321853
+            ],
+            "false_negative_rate": 0.025
+          },
+          "0.5": {
+            "tp": 36,
+            "fp": 3,
+            "fn": 4,
+            "tn": 36,
+            "precision": 0.9230769230769231,
+            "precision_ci95": [
+              0.7967892870242645,
+              0.9734926049027948
+            ],
+            "recall": 0.9,
+            "recall_ci95": [
+              0.7694822464406407,
+              0.9604204715925885
+            ],
+            "f1": 0.9113924050632911,
+            "false_positive_rate": 0.07692307692307693,
+            "false_positive_rate_ci95": [
+              0.026507395097205205,
+              0.20321071297573554
+            ],
+            "false_negative_rate": 0.1
+          },
+          "0.7": {
+            "tp": 32,
+            "fp": 1,
+            "fn": 8,
+            "tn": 38,
+            "precision": 0.9696969696969697,
+            "precision_ci95": [
+              0.8468127447352589,
+              0.9946305895225589
+            ],
+            "recall": 0.8,
+            "recall_ci95": [
+              0.6524269352437855,
+              0.8950001032811363
+            ],
+            "f1": 0.8767123287671234,
+            "false_positive_rate": 0.02564102564102564,
+            "false_positive_rate_ci95": [
+              0.004540703050750619,
+              0.13180990297042533
+            ],
+            "false_negative_rate": 0.2
+          },
+          "0.9": {
+            "tp": 25,
+            "fp": 0,
+            "fn": 15,
+            "tn": 39,
+            "precision": 1.0,
+            "precision_ci95": [
+              0.866807747239609,
+              1.0
+            ],
+            "recall": 0.625,
+            "recall_ci95": [
+              0.4703243901750228,
+              0.7577702092103612
+            ],
+            "f1": 0.7692307692307693,
+            "false_positive_rate": 0.0,
+            "false_positive_rate_ci95": [
+              0.0,
+              0.08966685499529356
+            ],
+            "false_negative_rate": 0.375
+          }
+        },
+        "recall_by_source_label_at_suspicious": {
+          "spam": {
+            "detected": 0,
+            "total": 0
+          },
+          "smishing": {
+            "detected": 0,
+            "total": 0
+          },
+          "scam": {
+            "detected": 40,
+            "total": 40
+          }
+        },
+        "recall_by_source_label_at_high_risk": {
+          "spam": {
+            "detected": 0,
+            "total": 0
+          },
+          "smishing": {
+            "detected": 0,
+            "total": 0
+          },
+          "scam": {
+            "detected": 36,
+            "total": 40
+          }
+        },
+        "error_analysis_at_suspicious": {
+          "threshold": 0.2367,
+          "false_negative_by_trait": {},
+          "false_positive_by_trait": {
+            "has_link:False": 7,
+            "has_long_number:False": 6,
+            "has_long_number:True": 1,
+            "label:ham": 7,
+            "length:50_to_160": 7,
+            "origin:current_style_supplement": 7
+          },
+          "examples_by_trait": {
+            "has_link:False": 79,
+            "has_long_number:False": 75,
+            "has_long_number:True": 4,
+            "label:ham": 39,
+            "label:scam": 40,
+            "length:50_to_160": 78,
+            "length:under_50": 1,
+            "origin:current_style_supplement": 79
+          }
+        }
+      }
+    }
+  },
+  "synthetic": {
+    "status": "draft, awaiting owner review",
+    "examples": 120,
+    "positives": 60,
+    "average_precision": 0.9980536776456022,
+    "roc_auc": 0.9980555555555556,
+    "at_suspicious": {
+      "tp": 60,
+      "fp": 11,
+      "fn": 0,
+      "tn": 49,
+      "precision": 0.8450704225352113,
+      "precision_ci95": [
+        0.7434903705465731,
+        0.9112269576888047
+      ],
+      "recall": 1.0,
+      "recall_ci95": [
+        0.9398281469657729,
+        1.0
+      ],
+      "f1": 0.916030534351145,
+      "false_positive_rate": 0.18333333333333332,
+      "false_positive_rate_ci95": [
+        0.10557796842900966,
+        0.2991975384926676
+      ],
+      "false_negative_rate": 0.0
+    },
+    "at_high_risk": {
+      "tp": 58,
+      "fp": 2,
+      "fn": 2,
+      "tn": 58,
+      "precision": 0.9666666666666667,
+      "precision_ci95": [
+        0.886362256341505,
+        0.9908106808265498
+      ],
+      "recall": 0.9666666666666667,
+      "recall_ci95": [
+        0.886362256341505,
+        0.9908106808265498
+      ],
+      "f1": 0.9666666666666667,
+      "false_positive_rate": 0.03333333333333333,
+      "false_positive_rate_ci95": [
+        0.009189319173450283,
+        0.11363774365849509
+      ],
+      "false_negative_rate": 0.03333333333333333
+    },
+    "by_category": {
+      "account_verification": {
+        "label": "scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 5,
+        "at_or_above_high_risk": 5
+      },
+      "appointment": {
+        "label": "not_scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 1,
+        "at_or_above_high_risk": 0
+      },
+      "bank_alert": {
+        "label": "scam_like",
+        "total": 6,
+        "at_or_above_suspicious": 6,
+        "at_or_above_high_risk": 6
+      },
+      "bank_genuine": {
+        "label": "not_scam_like",
+        "total": 6,
+        "at_or_above_suspicious": 2,
+        "at_or_above_high_risk": 0
+      },
+      "community_notice": {
+        "label": "not_scam_like",
+        "total": 4,
+        "at_or_above_suspicious": 0,
+        "at_or_above_high_risk": 0
+      },
+      "crypto_investment": {
+        "label": "scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 5,
+        "at_or_above_high_risk": 5
+      },
+      "delivery_notice": {
+        "label": "not_scam_like",
+        "total": 6,
+        "at_or_above_suspicious": 2,
+        "at_or_above_high_risk": 0
+      },
+      "family_impersonation": {
+        "label": "scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 5,
+        "at_or_above_high_risk": 5
+      },
+      "job_task": {
+        "label": "scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 5,
+        "at_or_above_high_risk": 5
+      },
+      "marketing_known": {
+        "label": "not_scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 1,
+        "at_or_above_high_risk": 1
+      },
+      "order_confirmation": {
+        "label": "not_scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 2,
+        "at_or_above_high_risk": 0
+      },
+      "otp_code": {
+        "label": "not_scam_like",
+        "total": 6,
+        "at_or_above_suspicious": 0,
+        "at_or_above_high_risk": 0
+      },
+      "otp_request": {
+        "label": "scam_like",
+        "total": 3,
+        "at_or_above_suspicious": 3,
+        "at_or_above_high_risk": 1
+      },
+      "parcel_fee": {
+        "label": "scam_like",
+        "total": 6,
+        "at_or_above_suspicious": 6,
+        "at_or_above_high_risk": 6
+      },
+      "personal_chat": {
+        "label": "not_scam_like",
+        "total": 8,
+        "at_or_above_suspicious": 0,
+        "at_or_above_high_risk": 0
+      },
+      "prize_lottery": {
+        "label": "scam_like",
+        "total": 4,
+        "at_or_above_suspicious": 4,
+        "at_or_above_high_risk": 4
+      },
+      "romance_advance_fee": {
+        "label": "scam_like",
+        "total": 3,
+        "at_or_above_suspicious": 3,
+        "at_or_above_high_risk": 3
+      },
+      "tax_refund": {
+        "label": "scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 5,
+        "at_or_above_high_risk": 5
+      },
+      "tech_support": {
+        "label": "scam_like",
+        "total": 4,
+        "at_or_above_suspicious": 4,
+        "at_or_above_high_risk": 4
+      },
+      "toll_unpaid": {
+        "label": "scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 5,
+        "at_or_above_high_risk": 5
+      },
+      "travel": {
+        "label": "not_scam_like",
+        "total": 6,
+        "at_or_above_suspicious": 1,
+        "at_or_above_high_risk": 0
+      },
+      "utility_bill": {
+        "label": "not_scam_like",
+        "total": 4,
+        "at_or_above_suspicious": 2,
+        "at_or_above_high_risk": 1
+      },
+      "utility_rebate": {
+        "label": "scam_like",
+        "total": 4,
+        "at_or_above_suspicious": 4,
+        "at_or_above_high_risk": 4
+      },
+      "work": {
+        "label": "not_scam_like",
+        "total": 5,
+        "at_or_above_suspicious": 0,
+        "at_or_above_high_risk": 0
+      }
+    }
+  },
+  "comparison": {
+    "model_version": "tfidf-logreg-1.0.0",
+    "artifact_sha256": "4f0caa23de01782bb7bf8048e8d19a2540246fc04b0d19a3656554a67f32de30",
+    "thresholds": {
+      "suspicious": 0.2344,
+      "high_risk": 0.6308
+    },
+    "validation": {
+      "examples": 1016,
+      "positives": 218,
+      "average_precision": 0.9422448803485423,
+      "roc_auc": 0.9733967947391414,
+      "at_suspicious": {
+        "tp": 198,
+        "fp": 39,
+        "fn": 20,
+        "tn": 759,
+        "precision": 0.8354430379746836,
+        "precision_ci95": [
+          0.7829607106481619,
+          0.877224627617733
+        ],
+        "recall": 0.908256880733945,
+        "recall_ci95": [
+          0.8625496604181857,
+          0.9398251567040057
+        ],
+        "f1": 0.8703296703296702,
+        "false_positive_rate": 0.04887218045112782,
+        "false_positive_rate_ci95": [
+          0.035954816867104944,
+          0.0661120667728089
+        ],
+        "false_negative_rate": 0.09174311926605505
+      },
+      "at_high_risk": {
+        "tp": 163,
+        "fp": 9,
+        "fn": 55,
+        "tn": 789,
+        "precision": 0.9476744186046512,
+        "precision_ci95": [
+          0.9035586710185433,
+          0.9722302412194952
+        ],
+        "recall": 0.7477064220183486,
+        "recall_ci95": [
+          0.6861025128069035,
+          0.8007316458964485
+        ],
+        "f1": 0.8358974358974358,
+        "false_positive_rate": 0.011278195488721804,
+        "false_positive_rate_ci95": [
+          0.005944657866520723,
+          0.021294466076719275
+        ],
+        "false_negative_rate": 0.25229357798165136
+      },
+      "reference": {
+        "0.3": {
+          "tp": 190,
+          "fp": 29,
+          "fn": 28,
+          "tn": 769,
+          "precision": 0.867579908675799,
+          "precision_ci95": [
+            0.816292284549857,
+            0.9061944592017268
+          ],
+          "recall": 0.8715596330275229,
+          "recall_ci95": [
+            0.820630277047817,
+            0.9096209610072111
+          ],
+          "f1": 0.8695652173913043,
+          "false_positive_rate": 0.03634085213032581,
+          "false_positive_rate_ci95": [
+            0.025420277775390413,
+            0.05170401929896548
+          ],
+          "false_negative_rate": 0.12844036697247707
+        },
+        "0.5": {
+          "tp": 173,
+          "fp": 15,
+          "fn": 45,
+          "tn": 783,
+          "precision": 0.9202127659574468,
+          "precision_ci95": [
+            0.8725428150974355,
+            0.9510539242172098
+          ],
+          "recall": 0.7935779816513762,
+          "recall_ci95": [
+            0.7349924449579427,
+            0.8419961875793635
+          ],
+          "f1": 0.8522167487684729,
+          "false_positive_rate": 0.018796992481203006,
+          "false_positive_rate_ci95": [
+            0.011423781360506027,
+            0.03078089452206874
+          ],
+          "false_negative_rate": 0.20642201834862386
+        },
+        "0.7": {
+          "tp": 158,
+          "fp": 6,
+          "fn": 60,
+          "tn": 792,
+          "precision": 0.9634146341463414,
+          "precision_ci95": [
+            0.9224898674196531,
+            0.9831266650694996
+          ],
+          "recall": 0.7247706422018348,
+          "recall_ci95": [
+            0.66197718938311,
+            0.779779732403265
+          ],
+          "f1": 0.8272251308900525,
+          "false_positive_rate": 0.007518796992481203,
+          "false_positive_rate_ci95": [
+            0.003450355705512642,
+            0.01630599226805997
+          ],
+          "false_negative_rate": 0.27522935779816515
+        },
+        "0.9": {
+          "tp": 129,
+          "fp": 0,
+          "fn": 89,
+          "tn": 798,
+          "precision": 1.0,
+          "precision_ci95": [
+            0.9710823796001169,
+            1.0
+          ],
+          "recall": 0.591743119266055,
+          "recall_ci95": [
+            0.5254564421062783,
+            0.65485250556163
+          ],
+          "f1": 0.7435158501440923,
+          "false_positive_rate": 0.0,
+          "false_positive_rate_ci95": [
+            0.0,
+            0.004790796034237843
+          ],
+          "false_negative_rate": 0.40825688073394495
+        }
+      },
+      "recall_by_source_label_at_suspicious": {
+        "spam": {
+          "detected": 69,
+          "total": 76
+        },
+        "smishing": {
+          "detected": 87,
+          "total": 88
+        },
+        "scam": {
+          "detected": 42,
+          "total": 54
+        }
+      },
+      "recall_by_source_label_at_high_risk": {
+        "spam": {
+          "detected": 59,
+          "total": 76
+        },
+        "smishing": {
+          "detected": 86,
+          "total": 88
+        },
+        "scam": {
+          "detected": 18,
+          "total": 54
+        }
+      },
+      "error_analysis_at_suspicious": {
+        "threshold": 0.2344,
+        "false_negative_by_trait": {
+          "has_link:False": 19,
+          "has_link:True": 1,
+          "has_long_number:False": 18,
+          "has_long_number:True": 2,
+          "label:scam": 12,
+          "label:smishing": 1,
+          "label:spam": 7,
+          "length:50_to_160": 19,
+          "length:over_160": 1,
+          "origin:both": 8,
+          "origin:current_style_supplement": 12
+        },
+        "false_positive_by_trait": {
+          "has_link:False": 39,
+          "has_long_number:False": 37,
+          "has_long_number:True": 2,
+          "label:ham": 39,
+          "length:50_to_160": 26,
+          "length:over_160": 4,
+          "length:under_50": 9,
+          "origin:both": 13,
+          "origin:current_style_supplement": 23,
+          "origin:mendeley_sms_phishing": 2,
+          "origin:uci_sms_spam": 1
+        },
+        "examples_by_trait": {
+          "has_link:False": 973,
+          "has_link:True": 43,
+          "has_long_number:False": 894,
+          "has_long_number:True": 122,
+          "label:ham": 798,
+          "label:scam": 54,
+          "label:smishing": 88,
+          "label:spam": 76,
+          "length:50_to_160": 603,
+          "length:over_160": 52,
+          "length:under_50": 361,
+          "origin:both": 725,
+          "origin:current_style_supplement": 99,
+          "origin:mendeley_sms_phishing": 142,
+          "origin:uci_sms_spam": 50
+        }
+      },
+      "by_origin": {
+        "public": {
+          "examples": 917,
+          "positives": 164,
+          "average_precision": 0.9803937397101217,
+          "roc_auc": 0.9900317429469115,
+          "at_suspicious": {
+            "tp": 156,
+            "fp": 16,
+            "fn": 8,
+            "tn": 737,
+            "precision": 0.9069767441860465,
+            "precision_ci95": [
+              0.8542429017486678,
+              0.941928836649549
+            ],
+            "recall": 0.9512195121951219,
+            "recall_ci95": [
+              0.9067067289639142,
+              0.975077789512366
+            ],
+            "f1": 0.9285714285714286,
+            "false_positive_rate": 0.021248339973439574,
+            "false_positive_rate_ci95": [
+              0.013120747712478216,
+              0.03423587957148961
+            ],
+            "false_negative_rate": 0.04878048780487805
+          },
+          "at_high_risk": {
+            "tp": 145,
+            "fp": 2,
+            "fn": 19,
+            "tn": 751,
+            "precision": 0.9863945578231292,
+            "precision_ci95": [
+              0.9517542950244522,
+              0.9962609327554195
+            ],
+            "recall": 0.8841463414634146,
+            "recall_ci95": [
+              0.8261434827321474,
+              0.9245649586733344
+            ],
+            "f1": 0.932475884244373,
+            "false_positive_rate": 0.0026560424966799467,
+            "false_positive_rate_ci95": [
+              0.0007286850876628706,
+              0.009632083061701768
+            ],
+            "false_negative_rate": 0.11585365853658537
+          },
+          "reference": {
+            "0.3": {
+              "tp": 154,
+              "fp": 10,
+              "fn": 10,
+              "tn": 743,
+              "precision": 0.9390243902439024,
+              "precision_ci95": [
+                0.891407065633141,
+                0.9665454388302668
+              ],
+              "recall": 0.9390243902439024,
+              "recall_ci95": [
+                0.891407065633141,
+                0.9665454388302668
+              ],
+              "f1": 0.9390243902439024,
+              "false_positive_rate": 0.013280212483399735,
+              "false_positive_rate_ci95": [
+                0.0072292770255064625,
+                0.02427198205791714
+              ],
+              "false_negative_rate": 0.06097560975609756
+            },
+            "0.5": {
+              "tp": 147,
+              "fp": 5,
+              "fn": 17,
+              "tn": 748,
+              "precision": 0.9671052631578947,
+              "precision_ci95": [
+                0.9253133562610213,
+                0.985869078883923
+              ],
+              "recall": 0.8963414634146342,
+              "recall_ci95": [
+                0.8402719633709962,
+                0.9342684920473582
+              ],
+              "f1": 0.9303797468354429,
+              "false_positive_rate": 0.006640106241699867,
+              "false_positive_rate_ci95": [
+                0.0028394937071729194,
+                0.015448958542463833
+              ],
+              "false_negative_rate": 0.10365853658536585
+            },
+            "0.7": {
+              "tp": 143,
+              "fp": 0,
+              "fn": 21,
+              "tn": 753,
+              "precision": 1.0,
+              "precision_ci95": [
+                0.9738394121758124,
+                1.0
+              ],
+              "recall": 0.8719512195121951,
+              "recall_ci95": [
+                0.8121751203333012,
+                0.9147013070593082
+              ],
+              "f1": 0.9315960912052117,
+              "false_positive_rate": 0.0,
+              "false_positive_rate_ci95": [
+                0.0,
+                0.005075645415849899
+              ],
+              "false_negative_rate": 0.12804878048780488
+            },
+            "0.9": {
+              "tp": 124,
+              "fp": 0,
+              "fn": 40,
+              "tn": 753,
+              "precision": 1.0,
+              "precision_ci95": [
+                0.9699513841995272,
+                0.9999999999999999
+              ],
+              "recall": 0.7560975609756098,
+              "recall_ci95": [
+                0.6850048758624131,
+                0.8154674184079082
+              ],
+              "f1": 0.8611111111111112,
+              "false_positive_rate": 0.0,
+              "false_positive_rate_ci95": [
+                0.0,
+                0.005075645415849899
+              ],
+              "false_negative_rate": 0.24390243902439024
+            }
+          },
+          "recall_by_source_label_at_suspicious": {
+            "spam": {
+              "detected": 69,
+              "total": 76
+            },
+            "smishing": {
+              "detected": 87,
+              "total": 88
+            },
+            "scam": {
+              "detected": 0,
+              "total": 0
+            }
+          },
+          "recall_by_source_label_at_high_risk": {
+            "spam": {
+              "detected": 59,
+              "total": 76
+            },
+            "smishing": {
+              "detected": 86,
+              "total": 88
+            },
+            "scam": {
+              "detected": 0,
+              "total": 0
+            }
+          },
+          "error_analysis_at_suspicious": {
+            "threshold": 0.2344,
+            "false_negative_by_trait": {
+              "has_link:False": 7,
+              "has_link:True": 1,
+              "has_long_number:False": 6,
+              "has_long_number:True": 2,
+              "label:smishing": 1,
+              "label:spam": 7,
+              "length:50_to_160": 7,
+              "length:over_160": 1,
+              "origin:both": 8
+            },
+            "false_positive_by_trait": {
+              "has_link:False": 16,
+              "has_long_number:False": 16,
+              "label:ham": 16,
+              "length:50_to_160": 5,
+              "length:over_160": 3,
+              "length:under_50": 8,
+              "origin:both": 13,
+              "origin:mendeley_sms_phishing": 2,
+              "origin:uci_sms_spam": 1
+            },
+            "examples_by_trait": {
+              "has_link:False": 874,
+              "has_link:True": 43,
+              "has_long_number:False": 798,
+              "has_long_number:True": 119,
+              "label:ham": 753,
+              "label:smishing": 88,
+              "label:spam": 76,
+              "length:50_to_160": 510,
+              "length:over_160": 50,
+              "length:under_50": 357,
+              "origin:both": 725,
+              "origin:mendeley_sms_phishing": 142,
+              "origin:uci_sms_spam": 50
+            }
+          }
+        },
+        "supplement": {
+          "examples": 99,
+          "positives": 54,
+          "average_precision": 0.7147391159703672,
+          "roc_auc": 0.6732510288065844,
+          "at_suspicious": {
+            "tp": 42,
+            "fp": 23,
+            "fn": 12,
+            "tn": 22,
+            "precision": 0.6461538461538462,
+            "precision_ci95": [
+              0.5247510591330417,
+              0.7512454160834684
+            ],
+            "recall": 0.7777777777777778,
+            "recall_ci95": [
+              0.6506132823082645,
+              0.8680458348756038
+            ],
+            "f1": 0.7058823529411764,
+            "false_positive_rate": 0.5111111111111111,
+            "false_positive_rate_ci95": [
+              0.37004464541424364,
+              0.6504297634773988
+            ],
+            "false_negative_rate": 0.2222222222222222
+          },
+          "at_high_risk": {
+            "tp": 18,
+            "fp": 7,
+            "fn": 36,
+            "tn": 38,
+            "precision": 0.72,
+            "precision_ci95": [
+              0.5242339465222645,
+              0.8571614622631634
+            ],
+            "recall": 0.3333333333333333,
+            "recall_ci95": [
+              0.22241416463223138,
+              0.4663903650574477
+            ],
+            "f1": 0.4556962025316456,
+            "false_positive_rate": 0.15555555555555556,
+            "false_positive_rate_ci95": [
+              0.07745423442616176,
+              0.2878390899329196
+            ],
+            "false_negative_rate": 0.6666666666666666
+          },
+          "reference": {
+            "0.3": {
+              "tp": 36,
+              "fp": 19,
+              "fn": 18,
+              "tn": 26,
+              "precision": 0.6545454545454545,
+              "precision_ci95": [
+                0.522539034021799,
+                0.7663729053353641
+              ],
+              "recall": 0.6666666666666666,
+              "recall_ci95": [
+                0.5336096349425522,
+                0.7775858353677686
+              ],
+              "f1": 0.6605504587155963,
+              "false_positive_rate": 0.4222222222222222,
+              "false_positive_rate_ci95": [
+                0.2896870237520024,
+                0.5669921140064997
+              ],
+              "false_negative_rate": 0.3333333333333333
+            },
+            "0.5": {
+              "tp": 26,
+              "fp": 10,
+              "fn": 28,
+              "tn": 35,
+              "precision": 0.7222222222222222,
+              "precision_ci95": [
+                0.560075098694387,
+                0.8415166213194445
+              ],
+              "recall": 0.48148148148148145,
+              "recall_ci95": [
+                0.35393972653587036,
+                0.6114829989852052
+              ],
+              "f1": 0.5777777777777777,
+              "false_positive_rate": 0.2222222222222222,
+              "false_positive_rate_ci95": [
+                0.12544685475248524,
+                0.36269292295645134
+              ],
+              "false_negative_rate": 0.5185185185185185
+            },
+            "0.7": {
+              "tp": 15,
+              "fp": 6,
+              "fn": 39,
+              "tn": 39,
+              "precision": 0.7142857142857143,
+              "precision_ci95": [
+                0.5004361911516968,
+                0.8618613712823846
+              ],
+              "recall": 0.2777777777777778,
+              "recall_ci95": [
+                0.17616827587686873,
+                0.4089044303760367
+              ],
+              "f1": 0.4,
+              "false_positive_rate": 0.13333333333333333,
+              "false_positive_rate_ci95": [
+                0.06257148711032212,
+                0.26177301946547427
+              ],
+              "false_negative_rate": 0.7222222222222222
+            },
+            "0.9": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 49,
+              "tn": 45,
+              "precision": 1.0,
+              "precision_ci95": [
+                0.5655175313406071,
+                1.0
+              ],
+              "recall": 0.09259259259259259,
+              "recall_ci95": [
+                0.040201134502611466,
+                0.19909882696104841
+              ],
+              "f1": 0.1694915254237288,
+              "false_positive_rate": 0.0,
+              "false_positive_rate_ci95": [
+                0.0,
+                0.07865159987608598
+              ],
+              "false_negative_rate": 0.9074074074074074
+            }
+          },
+          "recall_by_source_label_at_suspicious": {
+            "spam": {
+              "detected": 0,
+              "total": 0
+            },
+            "smishing": {
+              "detected": 0,
+              "total": 0
+            },
+            "scam": {
+              "detected": 42,
+              "total": 54
+            }
+          },
+          "recall_by_source_label_at_high_risk": {
+            "spam": {
+              "detected": 0,
+              "total": 0
+            },
+            "smishing": {
+              "detected": 0,
+              "total": 0
+            },
+            "scam": {
+              "detected": 18,
+              "total": 54
+            }
+          },
+          "error_analysis_at_suspicious": {
+            "threshold": 0.2344,
+            "false_negative_by_trait": {
+              "has_link:False": 12,
+              "has_long_number:False": 12,
+              "label:scam": 12,
+              "length:50_to_160": 12,
+              "origin:current_style_supplement": 12
+            },
+            "false_positive_by_trait": {
+              "has_link:False": 23,
+              "has_long_number:False": 21,
+              "has_long_number:True": 2,
+              "label:ham": 23,
+              "length:50_to_160": 21,
+              "length:over_160": 1,
+              "length:under_50": 1,
+              "origin:current_style_supplement": 23
+            },
+            "examples_by_trait": {
+              "has_link:False": 99,
+              "has_long_number:False": 96,
+              "has_long_number:True": 3,
+              "label:ham": 45,
+              "label:scam": 54,
+              "length:50_to_160": 93,
+              "length:over_160": 2,
+              "length:under_50": 4,
+              "origin:current_style_supplement": 99
+            }
+          }
+        }
+      }
+    },
+    "test": {
+      "examples": 1018,
+      "positives": 205,
+      "average_precision": 0.9646188729418264,
+      "roc_auc": 0.9862958629586296,
+      "at_suspicious": {
+        "tp": 194,
+        "fp": 37,
+        "fn": 11,
+        "tn": 776,
+        "precision": 0.8398268398268398,
+        "precision_ci95": [
+          0.7870314654792803,
+          0.8815046641627942
+        ],
+        "recall": 0.9463414634146341,
+        "recall_ci95": [
+          0.906485753997567,
+          0.9697770387461662
+        ],
+        "f1": 0.8899082568807339,
+        "false_positive_rate": 0.04551045510455105,
+        "false_positive_rate_ci95": [
+          0.03319600675400737,
+          0.06209966908975262
+        ],
+        "false_negative_rate": 0.05365853658536585
+      },
+      "at_high_risk": {
+        "tp": 172,
+        "fp": 4,
+        "fn": 33,
+        "tn": 809,
+        "precision": 0.9772727272727273,
+        "precision_ci95": [
+          0.9430289806095364,
+          0.9911271424837935
+        ],
+        "recall": 0.8390243902439024,
+        "recall_ci95": [
+          0.7825564040854875,
+          0.8830202526980038
+        ],
+        "f1": 0.9028871391076115,
+        "false_positive_rate": 0.004920049200492005,
+        "false_positive_rate_ci95": [
+          0.001914924763531796,
+          0.01258171807033397
+        ],
+        "false_negative_rate": 0.16097560975609757
+      },
+      "reference": {
+        "0.3": {
+          "tp": 190,
+          "fp": 32,
+          "fn": 15,
+          "tn": 781,
+          "precision": 0.8558558558558559,
+          "precision_ci95": [
+            0.8035963415286205,
+            0.8960094827635703
+          ],
+          "recall": 0.926829268292683,
+          "recall_ci95": [
+            0.8827970128438191,
+            0.9551592097253249
+          ],
+          "f1": 0.8899297423887589,
+          "false_positive_rate": 0.03936039360393604,
+          "false_positive_rate_ci95": [
+            0.028017000668204756,
+            0.05503639744678339
+          ],
+          "false_negative_rate": 0.07317073170731707
+        },
+        "0.5": {
+          "tp": 178,
+          "fp": 22,
+          "fn": 27,
+          "tn": 791,
+          "precision": 0.89,
+          "precision_ci95": [
+            0.8390730895663762,
+            0.9262275556318328
+          ],
+          "recall": 0.8682926829268293,
+          "recall_ci95": [
+            0.8151560319701467,
+            0.9078804800752289
+          ],
+          "f1": 0.8790123456790123,
+          "false_positive_rate": 0.02706027060270603,
+          "false_positive_rate_ci95": [
+            0.017937053058360325,
+            0.04063178959908412
+          ],
+          "false_negative_rate": 0.13170731707317074
+        },
+        "0.7": {
+          "tp": 166,
+          "fp": 3,
+          "fn": 39,
+          "tn": 810,
+          "precision": 0.9822485207100592,
+          "precision_ci95": [
+            0.9491159411891988,
+            0.9939448328577564
+          ],
+          "recall": 0.8097560975609757,
+          "recall_ci95": [
+            0.7505224106050573,
+            0.8575943909165501
+          ],
+          "f1": 0.8877005347593584,
+          "false_positive_rate": 0.0036900369003690036,
+          "false_positive_rate_ci95": [
+            0.0012557220914989837,
+            0.010792465196612415
+          ],
+          "false_negative_rate": 0.1902439024390244
+        },
+        "0.9": {
+          "tp": 135,
+          "fp": 1,
+          "fn": 70,
+          "tn": 812,
+          "precision": 0.9926470588235294,
+          "precision_ci95": [
+            0.9595271455748655,
+            0.9987008439782574
+          ],
+          "recall": 0.6585365853658537,
+          "recall_ci95": [
+            0.5912409166556345,
+            0.7199999660129048
+          ],
+          "f1": 0.7917888563049853,
+          "false_positive_rate": 0.0012300123001230013,
+          "false_positive_rate_ci95": [
+            0.00021716037897180846,
+            0.006934115817630848
+          ],
+          "false_negative_rate": 0.34146341463414637
+        }
+      },
+      "recall_by_source_label_at_suspicious": {
+        "spam": {
+          "detected": 76,
+          "total": 78
+        },
+        "smishing": {
+          "detected": 87,
+          "total": 87
+        },
+        "scam": {
+          "detected": 31,
+          "total": 40
+        }
+      },
+      "recall_by_source_label_at_high_risk": {
+        "spam": {
+          "detected": 69,
+          "total": 78
+        },
+        "smishing": {
+          "detected": 87,
+          "total": 87
+        },
+        "scam": {
+          "detected": 16,
+          "total": 40
+        }
+      },
+      "error_analysis_at_suspicious": {
+        "threshold": 0.2344,
+        "false_negative_by_trait": {
+          "has_link:False": 11,
+          "has_long_number:False": 11,
+          "label:scam": 9,
+          "label:spam": 2,
+          "length:50_to_160": 10,
+          "length:under_50": 1,
+          "origin:both": 1,
+          "origin:current_style_supplement": 9,
+          "origin:uci_sms_spam": 1
+        },
+        "false_positive_by_trait": {
+          "has_link:False": 36,
+          "has_link:True": 1,
+          "has_long_number:False": 34,
+          "has_long_number:True": 3,
+          "label:ham": 37,
+          "length:50_to_160": 29,
+          "length:over_160": 1,
+          "length:under_50": 7,
+          "origin:both": 14,
+          "origin:current_style_supplement": 20,
+          "origin:mendeley_sms_phishing": 2,
+          "origin:uci_sms_spam": 1
+        },
+        "examples_by_trait": {
+          "has_link:False": 985,
+          "has_link:True": 33,
+          "has_long_number:False": 882,
+          "has_long_number:True": 136,
+          "label:ham": 813,
+          "label:scam": 40,
+          "label:smishing": 87,
+          "label:spam": 78,
+          "length:50_to_160": 610,
+          "length:over_160": 43,
+          "length:under_50": 365,
+          "origin:both": 736,
+          "origin:current_style_supplement": 79,
+          "origin:mendeley_sms_phishing": 162,
+          "origin:uci_sms_spam": 41
+        }
+      },
+      "by_origin": {
+        "public": {
+          "examples": 939,
+          "positives": 165,
+          "average_precision": 0.9957790331484303,
+          "roc_auc": 0.9990447106726176,
+          "at_suspicious": {
+            "tp": 163,
+            "fp": 17,
+            "fn": 2,
+            "tn": 757,
+            "precision": 0.9055555555555556,
+            "precision_ci95": [
+              0.8539663707463039,
+              0.9401961695665983
+            ],
+            "recall": 0.9878787878787879,
+            "recall_ci95": [
+              0.95688765836373,
+              0.9966696081201554
+            ],
+            "f1": 0.9449275362318841,
+            "false_positive_rate": 0.021963824289405683,
+            "false_positive_rate_ci95": [
+              0.013757637887258164,
+              0.03489168319125594
+            ],
+            "false_negative_rate": 0.012121212121212121
+          },
+          "at_high_risk": {
+            "tp": 156,
+            "fp": 2,
+            "fn": 9,
+            "tn": 772,
+            "precision": 0.9873417721518988,
+            "precision_ci95": [
+              0.9550267502669904,
+              0.996521765573766
+            ],
+            "recall": 0.9454545454545454,
+            "recall_ci95": [
+              0.899597972134611,
+              0.9710412711767626
+            ],
+            "f1": 0.9659442724458205,
+            "false_positive_rate": 0.002583979328165375,
+            "false_positive_rate_ci95": [
+              0.0007089065722009503,
+              0.009372143739225893
+            ],
+            "false_negative_rate": 0.05454545454545454
+          },
+          "reference": {
+            "0.3": {
+              "tp": 162,
+              "fp": 13,
+              "fn": 3,
+              "tn": 761,
+              "precision": 0.9257142857142857,
+              "precision_ci95": [
+                0.8770641543247422,
+                0.9560759963541732
+              ],
+              "recall": 0.9818181818181818,
+              "recall_ci95": [
+                0.9479142451034164,
+                0.9937975894986817
+              ],
+              "f1": 0.9529411764705882,
+              "false_positive_rate": 0.016795865633074936,
+              "false_positive_rate_ci95": [
+                0.009841463199324193,
+                0.028522985674633315
+              ],
+              "false_negative_rate": 0.01818181818181818
+            },
+            "0.5": {
+              "tp": 159,
+              "fp": 7,
+              "fn": 6,
+              "tn": 767,
+              "precision": 0.9578313253012049,
+              "precision_ci95": [
+                0.9155265190879993,
+                0.9794257558228894
+              ],
+              "recall": 0.9636363636363636,
+              "recall_ci95": [
+                0.9229459639591874,
+                0.9832295749975487
+              ],
+              "f1": 0.9607250755287009,
+              "false_positive_rate": 0.00904392764857881,
+              "false_positive_rate_ci95": [
+                0.00438765090344495,
+                0.018549489663677643
+              ],
+              "false_negative_rate": 0.03636363636363636
+            },
+            "0.7": {
+              "tp": 153,
+              "fp": 1,
+              "fn": 12,
+              "tn": 773,
+              "precision": 0.9935064935064936,
+              "precision_ci95": [
+                0.9641387905921406,
+                0.9988528155251784
+              ],
+              "recall": 0.9272727272727272,
+              "recall_ci95": [
+                0.8771925375626454,
+                0.9579104101033663
+              ],
+              "f1": 0.9592476489028213,
+              "false_positive_rate": 0.0012919896640826874,
+              "false_positive_rate_ci95": [
+                0.00022810431614991898,
+                0.007281727944137773
+              ],
+              "false_negative_rate": 0.07272727272727272
+            },
+            "0.9": {
+              "tp": 133,
+              "fp": 0,
+              "fn": 32,
+              "tn": 774,
+              "precision": 1.0,
+              "precision_ci95": [
+                0.9719276678814986,
+                1.0
+              ],
+              "recall": 0.806060606060606,
+              "recall_ci95": [
+                0.7390536787554547,
+                0.8591406312748087
+              ],
+              "f1": 0.8926174496644295,
+              "false_positive_rate": 0.0,
+              "false_positive_rate_ci95": [
+                0.0,
+                0.004938614209148541
+              ],
+              "false_negative_rate": 0.19393939393939394
+            }
+          },
+          "recall_by_source_label_at_suspicious": {
+            "spam": {
+              "detected": 76,
+              "total": 78
+            },
+            "smishing": {
+              "detected": 87,
+              "total": 87
+            },
+            "scam": {
+              "detected": 0,
+              "total": 0
+            }
+          },
+          "recall_by_source_label_at_high_risk": {
+            "spam": {
+              "detected": 69,
+              "total": 78
+            },
+            "smishing": {
+              "detected": 87,
+              "total": 87
+            },
+            "scam": {
+              "detected": 0,
+              "total": 0
+            }
+          },
+          "error_analysis_at_suspicious": {
+            "threshold": 0.2344,
+            "false_negative_by_trait": {
+              "has_link:False": 2,
+              "has_long_number:False": 2,
+              "label:spam": 2,
+              "length:50_to_160": 1,
+              "length:under_50": 1,
+              "origin:both": 1,
+              "origin:uci_sms_spam": 1
+            },
+            "false_positive_by_trait": {
+              "has_link:False": 16,
+              "has_link:True": 1,
+              "has_long_number:False": 16,
+              "has_long_number:True": 1,
+              "label:ham": 17,
+              "length:50_to_160": 10,
+              "length:over_160": 1,
+              "length:under_50": 6,
+              "origin:both": 14,
+              "origin:mendeley_sms_phishing": 2,
+              "origin:uci_sms_spam": 1
+            },
+            "examples_by_trait": {
+              "has_link:False": 906,
+              "has_link:True": 33,
+              "has_long_number:False": 807,
+              "has_long_number:True": 132,
+              "label:ham": 774,
+              "label:smishing": 87,
+              "label:spam": 78,
+              "length:50_to_160": 532,
+              "length:over_160": 43,
+              "length:under_50": 364,
+              "origin:both": 736,
+              "origin:mendeley_sms_phishing": 162,
+              "origin:uci_sms_spam": 41
+            }
+          }
+        },
+        "supplement": {
+          "examples": 79,
+          "positives": 40,
+          "average_precision": 0.6861195880275549,
+          "roc_auc": 0.660897435897436,
+          "at_suspicious": {
+            "tp": 31,
+            "fp": 20,
+            "fn": 9,
+            "tn": 19,
+            "precision": 0.6078431372549019,
+            "precision_ci95": [
+              0.47085158877595645,
+              0.7297265910242824
+            ],
+            "recall": 0.775,
+            "recall_ci95": [
+              0.6249690312905765,
+              0.8768390873572685
+            ],
+            "f1": 0.6813186813186813,
+            "false_positive_rate": 0.5128205128205128,
+            "false_positive_rate_ci95": [
+              0.3619936277532354,
+              0.6613482477597057
+            ],
+            "false_negative_rate": 0.225
+          },
+          "at_high_risk": {
+            "tp": 16,
+            "fp": 2,
+            "fn": 24,
+            "tn": 37,
+            "precision": 0.8888888888888888,
+            "precision_ci95": [
+              0.6720023466389031,
+              0.9689804776352089
+            ],
+            "recall": 0.4,
+            "recall_ci95": [
+              0.2634832559197014,
+              0.5540410645719913
+            ],
+            "f1": 0.5517241379310346,
+            "false_positive_rate": 0.05128205128205128,
+            "false_positive_rate_ci95": [
+              0.01417795528745254,
+              0.16885640175960576
+            ],
+            "false_negative_rate": 0.6
+          },
+          "reference": {
+            "0.3": {
+              "tp": 28,
+              "fp": 19,
+              "fn": 12,
+              "tn": 20,
+              "precision": 0.5957446808510638,
+              "precision_ci95": [
+                0.45342122840772736,
+                0.7235996556902896
+              ],
+              "recall": 0.7,
+              "recall_ci95": [
+                0.5456998105658182,
+                0.8192515484507963
+              ],
+              "f1": 0.6436781609195402,
+              "false_positive_rate": 0.48717948717948717,
+              "false_positive_rate_ci95": [
+                0.3386517522402942,
+                0.6380063722467645
+              ],
+              "false_negative_rate": 0.3
+            },
+            "0.5": {
+              "tp": 19,
+              "fp": 15,
+              "fn": 21,
+              "tn": 24,
+              "precision": 0.5588235294117647,
+              "precision_ci95": [
+                0.3945389913538066,
+                0.7111651785765205
+              ],
+              "recall": 0.475,
+              "recall_ci95": [
+                0.329354700094151,
+                0.6250263800287721
+              ],
+              "f1": 0.5135135135135136,
+              "false_positive_rate": 0.38461538461538464,
+              "false_positive_rate_ci95": [
+                0.24891373375022405,
+                0.5410093866333052
+              ],
+              "false_negative_rate": 0.525
+            },
+            "0.7": {
+              "tp": 13,
+              "fp": 2,
+              "fn": 27,
+              "tn": 37,
+              "precision": 0.8666666666666667,
+              "precision_ci95": [
+                0.6211801694601944,
+                0.9626387412357151
+              ],
+              "recall": 0.325,
+              "recall_ci95": [
+                0.20084502152253986,
+                0.47982253933792235
+              ],
+              "f1": 0.4727272727272728,
+              "false_positive_rate": 0.05128205128205128,
+              "false_positive_rate_ci95": [
+                0.01417795528745254,
+                0.16885640175960576
+              ],
+              "false_negative_rate": 0.675
+            },
+            "0.9": {
+              "tp": 2,
+              "fp": 1,
+              "fn": 38,
+              "tn": 38,
+              "precision": 0.6666666666666666,
+              "precision_ci95": [
+                0.2076595988078242,
+                0.9385080559790691
+              ],
+              "recall": 0.05,
+              "recall_ci95": [
+                0.01382066726155863,
+                0.16503877495105868
+              ],
+              "f1": 0.09302325581395349,
+              "false_positive_rate": 0.02564102564102564,
+              "false_positive_rate_ci95": [
+                0.004540703050750619,
+                0.13180990297042533
+              ],
+              "false_negative_rate": 0.95
+            }
+          },
+          "recall_by_source_label_at_suspicious": {
+            "spam": {
+              "detected": 0,
+              "total": 0
+            },
+            "smishing": {
+              "detected": 0,
+              "total": 0
+            },
+            "scam": {
+              "detected": 31,
+              "total": 40
+            }
+          },
+          "recall_by_source_label_at_high_risk": {
+            "spam": {
+              "detected": 0,
+              "total": 0
+            },
+            "smishing": {
+              "detected": 0,
+              "total": 0
+            },
+            "scam": {
+              "detected": 16,
+              "total": 40
+            }
+          },
+          "error_analysis_at_suspicious": {
+            "threshold": 0.2344,
+            "false_negative_by_trait": {
+              "has_link:False": 9,
+              "has_long_number:False": 9,
+              "label:scam": 9,
+              "length:50_to_160": 9,
+              "origin:current_style_supplement": 9
+            },
+            "false_positive_by_trait": {
+              "has_link:False": 20,
+              "has_long_number:False": 18,
+              "has_long_number:True": 2,
+              "label:ham": 20,
+              "length:50_to_160": 19,
+              "length:under_50": 1,
+              "origin:current_style_supplement": 20
+            },
+            "examples_by_trait": {
+              "has_link:False": 79,
+              "has_long_number:False": 75,
+              "has_long_number:True": 4,
+              "label:ham": 39,
+              "label:scam": 40,
+              "length:50_to_160": 78,
+              "length:under_50": 1,
+              "origin:current_style_supplement": 79
+            }
+          }
+        }
+      }
+    },
+    "synthetic": {
+      "status": "draft, awaiting owner review",
+      "examples": 120,
+      "positives": 60,
+      "average_precision": 0.7214985274791594,
+      "roc_auc": 0.7324999999999999,
+      "at_suspicious": {
+        "tp": 49,
+        "fp": 35,
+        "fn": 11,
+        "tn": 25,
+        "precision": 0.5833333333333334,
+        "precision_ci95": [
+          0.47652642903437453,
+          0.6828516161198939
+        ],
+        "recall": 0.8166666666666667,
+        "recall_ci95": [
+          0.7008024615073325,
+          0.8944220315709903
+        ],
+        "f1": 0.6805555555555557,
+        "false_positive_rate": 0.5833333333333334,
+        "false_positive_rate_ci95": [
+          0.4572808092532306,
+          0.699357215241065
+        ],
+        "false_negative_rate": 0.18333333333333332
+      },
+      "at_high_risk": {
+        "tp": 35,
+        "fp": 8,
+        "fn": 25,
+        "tn": 52,
+        "precision": 0.813953488372093,
+        "precision_ci95": [
+          0.6738299621842189,
+          0.9025824862073323
+        ],
+        "recall": 0.5833333333333334,
+        "recall_ci95": [
+          0.4572808092532306,
+          0.699357215241065
+        ],
+        "f1": 0.6796116504854369,
+        "false_positive_rate": 0.13333333333333333,
+        "false_positive_rate_ci95": [
+          0.06914109445171927,
+          0.2416515977733807
+        ],
+        "false_negative_rate": 0.4166666666666667
+      },
+      "by_category": {
+        "account_verification": {
+          "label": "scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 5,
+          "at_or_above_high_risk": 1
+        },
+        "appointment": {
+          "label": "not_scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 3,
+          "at_or_above_high_risk": 0
+        },
+        "bank_alert": {
+          "label": "scam_like",
+          "total": 6,
+          "at_or_above_suspicious": 5,
+          "at_or_above_high_risk": 4
+        },
+        "bank_genuine": {
+          "label": "not_scam_like",
+          "total": 6,
+          "at_or_above_suspicious": 6,
+          "at_or_above_high_risk": 1
+        },
+        "community_notice": {
+          "label": "not_scam_like",
+          "total": 4,
+          "at_or_above_suspicious": 1,
+          "at_or_above_high_risk": 1
+        },
+        "crypto_investment": {
+          "label": "scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 4,
+          "at_or_above_high_risk": 4
+        },
+        "delivery_notice": {
+          "label": "not_scam_like",
+          "total": 6,
+          "at_or_above_suspicious": 5,
+          "at_or_above_high_risk": 1
+        },
+        "family_impersonation": {
+          "label": "scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 0,
+          "at_or_above_high_risk": 0
+        },
+        "job_task": {
+          "label": "scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 5,
+          "at_or_above_high_risk": 3
+        },
+        "marketing_known": {
+          "label": "not_scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 5,
+          "at_or_above_high_risk": 3
+        },
+        "order_confirmation": {
+          "label": "not_scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 3,
+          "at_or_above_high_risk": 1
+        },
+        "otp_code": {
+          "label": "not_scam_like",
+          "total": 6,
+          "at_or_above_suspicious": 3,
+          "at_or_above_high_risk": 1
+        },
+        "otp_request": {
+          "label": "scam_like",
+          "total": 3,
+          "at_or_above_suspicious": 2,
+          "at_or_above_high_risk": 1
+        },
+        "parcel_fee": {
+          "label": "scam_like",
+          "total": 6,
+          "at_or_above_suspicious": 4,
+          "at_or_above_high_risk": 4
+        },
+        "personal_chat": {
+          "label": "not_scam_like",
+          "total": 8,
+          "at_or_above_suspicious": 1,
+          "at_or_above_high_risk": 0
+        },
+        "prize_lottery": {
+          "label": "scam_like",
+          "total": 4,
+          "at_or_above_suspicious": 4,
+          "at_or_above_high_risk": 4
+        },
+        "romance_advance_fee": {
+          "label": "scam_like",
+          "total": 3,
+          "at_or_above_suspicious": 2,
+          "at_or_above_high_risk": 1
+        },
+        "tax_refund": {
+          "label": "scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 5,
+          "at_or_above_high_risk": 5
+        },
+        "tech_support": {
+          "label": "scam_like",
+          "total": 4,
+          "at_or_above_suspicious": 4,
+          "at_or_above_high_risk": 4
+        },
+        "toll_unpaid": {
+          "label": "scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 5,
+          "at_or_above_high_risk": 2
+        },
+        "travel": {
+          "label": "not_scam_like",
+          "total": 6,
+          "at_or_above_suspicious": 4,
+          "at_or_above_high_risk": 0
+        },
+        "utility_bill": {
+          "label": "not_scam_like",
+          "total": 4,
+          "at_or_above_suspicious": 3,
+          "at_or_above_high_risk": 0
+        },
+        "utility_rebate": {
+          "label": "scam_like",
+          "total": 4,
+          "at_or_above_suspicious": 4,
+          "at_or_above_high_risk": 2
+        },
+        "work": {
+          "label": "not_scam_like",
+          "total": 5,
+          "at_or_above_suspicious": 1,
+          "at_or_above_high_risk": 0
+        }
+      }
+    }
+  }
+}

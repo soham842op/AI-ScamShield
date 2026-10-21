@@ -1,0 +1,45 @@
+[project]
+name = "scamshield-ml"
+version = "0.1.0"
+description = "AI ScamShield baseline text classifier: data preparation, training and evaluation"
+requires-python = ">=3.12"
+dependencies = [
+    # Must match the version pinned in backend/pyproject.toml: the backend loads
+    # the pickled pipeline this project writes.
+    "scikit-learn==1.9.1",
+    "joblib",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+    "pip-audit",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["scamshield_ml"]
+
+[[tool.mypy.overrides]]
+module = ["sklearn.*", "joblib.*", "scipy.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

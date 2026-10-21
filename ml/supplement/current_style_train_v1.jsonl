@@ -1,0 +1,600 @@
+{"id": "sup-s-0001", "label": "scam_like", "category": "family_impersonation", "text": "hi mum its me, my phone broke so using a mates one for now. can u message me on this number? x"}
+{"id": "sup-s-0002", "label": "scam_like", "category": "family_impersonation", "text": "Hey dad, this is my new number, the old one got stolen. Delete the old one. Are you around? Need help with something"}
+{"id": "sup-s-0003", "label": "scam_like", "category": "family_impersonation", "text": "Mum its me, I'm locked out of my bank on the new phone and rent is due today. Could you transfer 650 to my landlord? I'll send you the details"}
+{"id": "sup-s-0004", "label": "scam_like", "category": "family_impersonation", "text": "Hello mummy, new phone new number lol. Can you do me a quick favour, I need to pay something urgently and my card isn't working"}
+{"id": "sup-s-0005", "label": "scam_like", "category": "family_impersonation", "text": "Hi Dad. Don't call, my mic is broken on this phone. Can you send 280 to my friend's account, I'll pay you back on Friday when I get paid"}
+{"id": "sup-s-0006", "label": "scam_like", "category": "family_impersonation", "text": "Auntie it's your nephew, I'm in a bit of trouble abroad and can't reach mum. Please don't tell anyone yet, can you help me with some money?"}
+{"id": "sup-s-0007", "label": "scam_like", "category": "family_impersonation", "text": "hey its me, new number. dropped my phone in the bath haha. can you save this and text me when you get this"}
+{"id": "sup-s-0008", "label": "scam_like", "category": "family_impersonation", "text": "Mom I need you to pay a bill for me today, the online banking won't let me in on my new phone. Its 1,240, can you do it now please"}
+{"id": "sup-s-0009", "label": "scam_like", "category": "family_impersonation", "text": "Hi it's me, this is my temporary number until I get my sim sorted. I've got two invoices to pay before 5pm, can you help? I'll explain tonight"}
+{"id": "sup-s-0010", "label": "scam_like", "category": "family_impersonation", "text": "Grandad I'm so sorry to ask but I've been in a car accident and need money for the repairs before they let me go. Please keep this between us"}
+{"id": "sup-s-0011", "label": "scam_like", "category": "family_impersonation", "text": "Hey bro new number, save it. Can you lend me 150 till next week? Send it to the account below, its my flatmate's"}
+{"id": "sup-s-0012", "label": "scam_like", "category": "family_impersonation", "text": "Hi mum, are you busy? I need a favour, it's a bit urgent. My other phone is broken so I'm on this number now"}
+{"id": "sup-s-0013", "label": "scam_like", "category": "boss_impersonation", "text": "Hi, it's Daniel. I'm boarding a flight and need you to process an urgent supplier payment today. Reply here, not by email, and I'll send the bank details"}
+{"id": "sup-s-0014", "label": "scam_like", "category": "boss_impersonation", "text": "Are you at your desk? I need you to get some gift cards for a client presentation. I'll reimburse you. Keep it confidential for now"}
+{"id": "sup-s-0015", "label": "scam_like", "category": "boss_impersonation", "text": "This is your manager on my personal number. Please change the payroll bank details for me to the new account I'm about to send, effective this month"}
+{"id": "sup-s-0016", "label": "scam_like", "category": "boss_impersonation", "text": "Quick task: buy 5 store cards of 200 each, scratch the backs and send me photos of the codes. I'm in meetings all day"}
+{"id": "sup-s-0017", "label": "scam_like", "category": "parcel_fee", "text": "Parcelwise: Your package is on hold because of an incomplete address. Confirm your details within 24h: https://parcelwise-address-confirm.example"}
+{"id": "sup-s-0018", "label": "scam_like", "category": "parcel_fee", "text": "QuickDrop: We were unable to deliver your parcel. A 1.45 redelivery charge applies. Pay at quickdrop-redeliver.example/fee"}
+{"id": "sup-s-0019", "label": "scam_like", "category": "parcel_fee", "text": "Your shipment is waiting at the sorting centre. Import duty of 3.20 must be paid before release: duty-pay-centre.example"}
+{"id": "sup-s-0020", "label": "scam_like", "category": "parcel_fee", "text": "Missed delivery! Book a new slot and pay the small fee here or your parcel goes back to the sender tomorrow: rebook-parcel.example"}
+{"id": "sup-s-0021", "label": "scam_like", "category": "parcel_fee", "text": "Dear customer, your package could not be delivered due to unpaid postage. Please settle 0.80 at postage-due.example within 48 hours"}
+{"id": "sup-s-0022", "label": "scam_like", "category": "parcel_fee", "text": "Delivery attempt failed for order 39214. Your item will be held for 2 days. Update payment to release it: http://track-hold-release.example"}
+{"id": "sup-s-0023", "label": "scam_like", "category": "parcel_fee", "text": "Courier update: the driver could not find your house number. Confirm your address and pay 1.20 to rearrange: courier-address-fix.example"}
+{"id": "sup-s-0024", "label": "scam_like", "category": "parcel_fee", "text": "We have your parcel! Pay the outstanding shipping cost of 2.99 now to receive it today. parcel-collect-now.example"}
+{"id": "sup-s-0025", "label": "scam_like", "category": "parcel_fee", "text": "Your parcel is in our warehouse and storage charges start tomorrow. Avoid extra fees, pay now: warehouse-release.example/p"}
+{"id": "sup-s-0026", "label": "scam_like", "category": "parcel_fee", "text": "Final reminder: package QD-55817 will be returned unless you verify your card for the 1.99 fee at qd-verify-card.example"}
+{"id": "sup-s-0027", "label": "scam_like", "category": "parcel_fee", "text": "Postal service: an item addressed to you requires a customs payment. Click to pay and choose a delivery date: customs-clear-now.example"}
+{"id": "sup-s-0028", "label": "scam_like", "category": "parcel_fee", "text": "Hi, your order cannot be shipped because your payment was incomplete. Complete it here to avoid cancellation: complete-order-pay.example"}
+{"id": "sup-s-0029", "label": "scam_like", "category": "bank_safe_account", "text": "Kestrel Bank fraud department: your account has been compromised by a staff member. Do not tell branch staff. We will help you move funds to a protected account"}
+{"id": "sup-s-0030", "label": "scam_like", "category": "bank_safe_account", "text": "This is the fraud team. Someone has applied for a loan in your name. To protect your savings, transfer them to the secure holding account we give you"}
+{"id": "sup-s-0031", "label": "scam_like", "category": "bank_safe_account", "text": "Meridian Building Society: suspicious login from a new device. If this was not you, call 01632 960721 immediately to secure your account"}
+{"id": "sup-s-0032", "label": "scam_like", "category": "bank_safe_account", "text": "Kestrel: Did you authorise a payment of 1,299.00 to ELECTRO-WORLD? If NOT, visit kestrel-dispute-help.example to stop it"}
+{"id": "sup-s-0033", "label": "scam_like", "category": "bank_safe_account", "text": "Your debit card has been temporarily restricted. Verify your details now to avoid permanent suspension: card-restore-verify.example"}
+{"id": "sup-s-0034", "label": "scam_like", "category": "bank_safe_account", "text": "We noticed a new payee was added to your account. If this wasn't you, cancel it at payee-cancel-secure.example before 6pm today"}
+{"id": "sup-s-0035", "label": "scam_like", "category": "bank_safe_account", "text": "Bank alert: unusual activity detected. Reply with your full name, date of birth and online banking passcode so we can verify it is you"}
+{"id": "sup-s-0036", "label": "scam_like", "category": "bank_safe_account", "text": "Meridian: your account is due for a security review. Log in using the link below within 24 hours or access will be suspended. meridian-review.example"}
+{"id": "sup-s-0037", "label": "scam_like", "category": "bank_safe_account", "text": "This is a police officer working with your bank. We are investigating fraud at your branch and need your help to withdraw cash for evidence"}
+{"id": "sup-s-0038", "label": "scam_like", "category": "bank_safe_account", "text": "Hi, this is Kestrel Bank. A courier will collect your card today for replacement. Please put it in an envelope with your PIN written inside"}
+{"id": "sup-s-0039", "label": "scam_like", "category": "bank_safe_account", "text": "Your bank account will be frozen in 2 hours due to failed identity checks. Re-verify immediately: secure-id-check.example/bank"}
+{"id": "sup-s-0040", "label": "scam_like", "category": "bank_safe_account", "text": "ALERT: a direct debit of 449 to an unknown company is scheduled. Call our team on 07700 900583 now to cancel it"}
+{"id": "sup-s-0041", "label": "scam_like", "category": "toll_fine", "text": "Highways Agency: You have an outstanding toll fee for your vehicle. Pay 5.25 today to avoid a 75 penalty: road-toll-payment.example"}
+{"id": "sup-s-0042", "label": "scam_like", "category": "toll_fine", "text": "Speeding notice: you were recorded exceeding the limit. Pay the fixed penalty online within 7 days to avoid points: penalty-pay-online.example"}
+{"id": "sup-s-0043", "label": "scam_like", "category": "toll_fine", "text": "Clean Air Zone charge unpaid for your vehicle. Settle now to stop the fine increasing: caz-charge-pay.example"}
+{"id": "sup-s-0044", "label": "scam_like", "category": "toll_fine", "text": "Bridge crossing: we could not take payment for your crossing on Saturday. Update your card details here: crossing-pay-update.example"}
+{"id": "sup-s-0045", "label": "scam_like", "category": "toll_fine", "text": "Your driving licence will be suspended due to an unpaid fine. Act now to keep driving legally: licence-fine-clear.example"}
+{"id": "sup-s-0046", "label": "scam_like", "category": "toll_fine", "text": "Parking Services: penalty charge notice issued to your car. Payment overdue. Pay today at reduced rate: pcn-reduced-pay.example"}
+{"id": "sup-s-0047", "label": "scam_like", "category": "toll_fine", "text": "Motorway Tolls: invoice 88213 unpaid. Pay 3.60 by midnight to avoid a debt collection referral. tolls-invoice.example"}
+{"id": "sup-s-0048", "label": "scam_like", "category": "toll_fine", "text": "Your vehicle has been flagged for an unpaid road charge. Click the link to view your notice and pay: view-road-notice.example"}
+{"id": "sup-s-0049", "label": "scam_like", "category": "government_refund", "text": "Tax refund notification: you are eligible to receive 428.15. Submit your claim and bank details before Friday: claim-tax-return.example"}
+{"id": "sup-s-0050", "label": "scam_like", "category": "government_refund", "text": "Gov Support: your winter fuel payment is ready. Apply here to receive it into your bank account: fuel-payment-apply.example"}
+{"id": "sup-s-0051", "label": "scam_like", "category": "government_refund", "text": "Your council tax was overpaid. You can claim a refund of 172 by entering your card number at council-refund.example"}
+{"id": "sup-s-0052", "label": "scam_like", "category": "government_refund", "text": "National Insurance: your number has been suspended due to suspicious activity. Press 1 or call 01632 960339 to speak to an officer"}
+{"id": "sup-s-0053", "label": "scam_like", "category": "government_refund", "text": "You have been selected for a household support grant of 500. Limited places. Confirm your eligibility now: household-grant.example"}
+{"id": "sup-s-0054", "label": "scam_like", "category": "government_refund", "text": "Tax office: we have a record of unpaid tax. Legal action will start today unless you call back immediately on 07700 900146"}
+{"id": "sup-s-0055", "label": "scam_like", "category": "government_refund", "text": "Your benefit payment is on hold. Update your details to avoid losing this month's payment: benefit-update.example"}
+{"id": "sup-s-0056", "label": "scam_like", "category": "government_refund", "text": "Immigration office: there is a problem with your visa. Pay the correction fee today or you may be detained. visa-fee-correction.example"}
+{"id": "sup-s-0057", "label": "scam_like", "category": "government_refund", "text": "Electoral roll: your registration is incomplete and you may be fined 80. Complete it now at roll-complete.example"}
+{"id": "sup-s-0058", "label": "scam_like", "category": "government_refund", "text": "Energy bill support: you are owed a discount of 150. Click to claim before the scheme closes: bill-discount-claim.example"}
+{"id": "sup-s-0059", "label": "scam_like", "category": "job_task", "text": "Hi, my name is Grace from TalentLink. We saw your profile and have a flexible online position, 120-350 per day. Can I tell you more?"}
+{"id": "sup-s-0060", "label": "scam_like", "category": "job_task", "text": "Remote job: help merchants boost product ratings. 30 tasks a day, paid in crypto. Recharge your account to unlock premium tasks"}
+{"id": "sup-s-0061", "label": "scam_like", "category": "job_task", "text": "Hello! We are hiring part time staff. No experience, work from your phone, earn up to 5,000 a month. Add me on WhatsApp to start"}
+{"id": "sup-s-0062", "label": "scam_like", "category": "job_task", "text": "You've been chosen for a mystery shopper job. We'll send you a cheque, keep 300 and wire the rest to our evaluator"}
+{"id": "sup-s-0063", "label": "scam_like", "category": "job_task", "text": "Our app pays you to watch short videos. Today's bonus: 50 just for joining. Sign up with your bank card at watch-earn.example"}
+{"id": "sup-s-0064", "label": "scam_like", "category": "job_task", "text": "Job offer confirmed! To process your contract we need a refundable equipment deposit of 95. Pay via the link to secure your start date"}
+{"id": "sup-s-0065", "label": "scam_like", "category": "job_task", "text": "Hi, are you interested in a side job? Simple tasks, 20 minutes a day, daily payment. Reply YES and our mentor will contact you"}
+{"id": "sup-s-0066", "label": "scam_like", "category": "job_task", "text": "Congratulations, you passed our online interview. Download the task app and deposit 100 to activate your employee account"}
+{"id": "sup-s-0067", "label": "scam_like", "category": "job_task", "text": "We are looking for a payment agent to receive transfers from our customers and send them on. Earn 15 percent of every transfer"}
+{"id": "sup-s-0068", "label": "scam_like", "category": "job_task", "text": "Hello dear, our e-commerce platform needs order reviewers. Complete 40 orders, get commission plus your deposit back. Start now"}
+{"id": "sup-s-0069", "label": "scam_like", "category": "investment_crypto", "text": "My mentor helped me make 12k last month trading gold. He has space for 3 new students. Want his number?"}
+{"id": "sup-s-0070", "label": "scam_like", "category": "investment_crypto", "text": "Exclusive pre-sale: new token listing tomorrow, early buyers expected 20x. Minimum entry 300. Join the private channel now"}
+{"id": "sup-s-0071", "label": "scam_like", "category": "investment_crypto", "text": "Your trading account shows a profit of 8,420. To withdraw you must first pay the 15 percent release fee"}
+{"id": "sup-s-0072", "label": "scam_like", "category": "investment_crypto", "text": "Celebrity-backed investment platform pays 3 percent daily. Thousands are already earning. Register free at daily-yield-pro.example"}
+{"id": "sup-s-0073", "label": "scam_like", "category": "investment_crypto", "text": "Wallet security alert: suspicious withdrawal detected. Connect your wallet at wallet-protect-sync.example to cancel the transaction"}
+{"id": "sup-s-0074", "label": "scam_like", "category": "investment_crypto", "text": "We have recovered your lost crypto funds. Pay the recovery service fee of 450 and we will release 6,000 to your wallet"}
+{"id": "sup-s-0075", "label": "scam_like", "category": "investment_crypto", "text": "Hi, I'm an analyst at a hedge fund. I share free stock tips in my group. Last week's pick went up 60 percent. Want to join?"}
+{"id": "sup-s-0076", "label": "scam_like", "category": "investment_crypto", "text": "Airdrop alert: claim 500 free tokens before midnight. Enter your seed phrase to verify ownership: token-airdrop-claim.example"}
+{"id": "sup-s-0077", "label": "scam_like", "category": "investment_crypto", "text": "Double your investment in 48 hours, guaranteed by our smart contract. Send any amount and receive twice back"}
+{"id": "sup-s-0078", "label": "scam_like", "category": "investment_crypto", "text": "Your pension could earn 5 times more in our high-yield bond. Offer ends Friday. Transfer today and get a 10 percent bonus"}
+{"id": "sup-s-0079", "label": "scam_like", "category": "wrong_number_opener", "text": "Hi Sarah, is this still your number? It's Mike from the yoga class"}
+{"id": "sup-s-0080", "label": "scam_like", "category": "wrong_number_opener", "text": "Hello, are we still meeting for golf on Sunday? Mr Chen told me to message you"}
+{"id": "sup-s-0081", "label": "scam_like", "category": "wrong_number_opener", "text": "Sorry, I think I saved the wrong contact. Are you the dentist? Anyway you seem nice, where are you from?"}
+{"id": "sup-s-0082", "label": "scam_like", "category": "wrong_number_opener", "text": "Hi, I'm Lily. My assistant gave me this number for the wine tasting. Is this Tom?"}
+{"id": "sup-s-0083", "label": "scam_like", "category": "wrong_number_opener", "text": "Long time no see! Do you remember me? We met at the conference last year"}
+{"id": "sup-s-0084", "label": "scam_like", "category": "romance_advance_fee", "text": "I feel so close to you even though we've never met. My shipment is stuck at customs and I need 2,000 to clear it, I'll repay you as soon as I'm home"}
+{"id": "sup-s-0085", "label": "scam_like", "category": "romance_advance_fee", "text": "Baby I want to come and see you but I can't afford the ticket. Can you send it through gift cards, they're faster"}
+{"id": "sup-s-0086", "label": "scam_like", "category": "romance_advance_fee", "text": "I am a soldier on a peace mission and cannot access my salary. I have a package of gold to send you but the delivery fee must be paid first"}
+{"id": "sup-s-0087", "label": "scam_like", "category": "romance_advance_fee", "text": "Greetings, I am the manager of a bank and I have found an unclaimed account. With your help we can share 7.2 million. Reply for details"}
+{"id": "sup-s-0088", "label": "scam_like", "category": "romance_advance_fee", "text": "My love, the hospital won't treat my daughter until I pay the bill. You are the only one I trust. Please send what you can"}
+{"id": "sup-s-0089", "label": "scam_like", "category": "romance_advance_fee", "text": "You have been named beneficiary of a foreign estate. Send a copy of your passport and the 250 processing fee to begin the transfer"}
+{"id": "sup-s-0090", "label": "scam_like", "category": "prize_reward", "text": "You've won! Your number was drawn in our anniversary giveaway. Claim your 750 shopping voucher: anniversary-draw.example"}
+{"id": "sup-s-0091", "label": "scam_like", "category": "prize_reward", "text": "Thank you for being a loyal customer. You have 3,400 reward points about to expire. Redeem them now: points-redeem-now.example"}
+{"id": "sup-s-0092", "label": "scam_like", "category": "prize_reward", "text": "Congratulations! You are today's winner of a new games console. Pay 1.95 for delivery to claim your prize"}
+{"id": "sup-s-0093", "label": "scam_like", "category": "prize_reward", "text": "Your mobile number has won 25,000 in the online promo. Contact our agent with your bank details to receive your winnings"}
+{"id": "sup-s-0094", "label": "scam_like", "category": "prize_reward", "text": "Spin the wheel and win! Every player gets a guaranteed prize. Today only at lucky-wheel-free.example"}
+{"id": "sup-s-0095", "label": "scam_like", "category": "prize_reward", "text": "You have an unclaimed cashback reward of 86.40. Enter your card details to have it credited: cashback-credit.example"}
+{"id": "sup-s-0096", "label": "scam_like", "category": "prize_reward", "text": "Supermarket survey: tell us about your shopping and get a 100 voucher. Only 4 vouchers left: shop-survey-reward.example"}
+{"id": "sup-s-0097", "label": "scam_like", "category": "account_suspension", "text": "Velo Mobile: your account is suspended due to a failed payment. Update your billing within 24 hours to avoid disconnection: velo-billing.example"}
+{"id": "sup-s-0098", "label": "scam_like", "category": "account_suspension", "text": "Cinemax+: we couldn't renew your subscription. Your account will be closed today. Update payment: cinemax-renew.example"}
+{"id": "sup-s-0099", "label": "scam_like", "category": "account_suspension", "text": "Your email password expires today. Keep your current password by verifying here: keep-password-now.example"}
+{"id": "sup-s-0100", "label": "scam_like", "category": "account_suspension", "text": "MarketHub: unusual sign-in to your account from another country. Secure your account now or it will be locked: markethub-secure.example"}
+{"id": "sup-s-0101", "label": "scam_like", "category": "account_suspension", "text": "Your photo storage plan payment failed. All your photos and videos will be deleted in 48 hours unless you update your card"}
+{"id": "sup-s-0102", "label": "scam_like", "category": "account_suspension", "text": "Account notice: your profile violates our community rules and will be removed. Verify your identity to keep it: profile-verify-appeal.example"}
+{"id": "sup-s-0103", "label": "scam_like", "category": "account_suspension", "text": "Your phone contract has been upgraded for free. Confirm your account login to receive your new handset: free-upgrade-confirm.example"}
+{"id": "sup-s-0104", "label": "scam_like", "category": "account_suspension", "text": "Dear user, your mailbox is almost full and incoming messages are being rejected. Click to increase storage: mailbox-upgrade.example"}
+{"id": "sup-s-0105", "label": "scam_like", "category": "account_suspension", "text": "Your cloud ID was used to sign in on a new device. If this wasn't you, review the activity at id-activity-review.example"}
+{"id": "sup-s-0106", "label": "scam_like", "category": "account_suspension", "text": "Tidewater Energy: your direct debit failed and your supply may be cut off. Pay now to keep your power on: tidewater-pay.example"}
+{"id": "sup-s-0107", "label": "scam_like", "category": "account_suspension", "text": "We've noticed your TV licence payment failed. You could be fined up to 1,000. Renew now at licence-renew-online.example"}
+{"id": "sup-s-0108", "label": "scam_like", "category": "account_suspension", "text": "Your broadband will be disconnected tonight due to an outstanding balance. Avoid a reconnection fee by paying at fibre-balance.example"}
+{"id": "sup-s-0109", "label": "scam_like", "category": "otp_theft", "text": "Hey, I'm setting up my account and the code went to your phone by mistake. Can you send me the 6 digits? Sorry for the hassle"}
+{"id": "sup-s-0110", "label": "scam_like", "category": "otp_theft", "text": "Kestrel Bank: we are calling to confirm a refund. Please read out the code we just sent so we can complete the process"}
+{"id": "sup-s-0111", "label": "scam_like", "category": "otp_theft", "text": "This is support. To stop the hacker we need to verify you. A code has been sent to your phone, reply with it now"}
+{"id": "sup-s-0112", "label": "scam_like", "category": "otp_theft", "text": "Hi it's from the group chat admin, we are verifying members. Please forward the code you just received to stay in the group"}
+{"id": "sup-s-0113", "label": "scam_like", "category": "otp_theft", "text": "Your sim swap request has been received. If you did not request this, reply with the code below to cancel it"}
+{"id": "sup-s-0114", "label": "scam_like", "category": "marketplace", "text": "Hi, I want to buy your sofa. I've paid through the marketplace, you need to click the link to receive the money: market-receive-funds.example"}
+{"id": "sup-s-0115", "label": "scam_like", "category": "marketplace", "text": "I accidentally sent you 500 instead of 50 for the bike. Please refund the difference to my account, I'll send the details"}
+{"id": "sup-s-0116", "label": "scam_like", "category": "marketplace", "text": "I'm interested in the item but I'm abroad. My courier will collect it, please pay the courier fee first and I'll add it to my payment"}
+{"id": "sup-s-0117", "label": "scam_like", "category": "marketplace", "text": "The flat is still available. Send the deposit of 900 today to hold it, I can't show it in person as I'm working overseas"}
+{"id": "sup-s-0118", "label": "scam_like", "category": "marketplace", "text": "Puppy for sale, vaccinated and ready. Pay the transport fee of 250 and we'll deliver to your door tomorrow"}
+{"id": "sup-s-0119", "label": "scam_like", "category": "marketplace", "text": "Your listing has been sold! Verify your seller account to receive payment: seller-verify-payout.example"}
+{"id": "sup-s-0120", "label": "scam_like", "category": "marketplace", "text": "Concert tickets, front row, half price. Bank transfer only, no refunds. Message me fast they're going quickly"}
+{"id": "sup-s-0121", "label": "scam_like", "category": "tech_support", "text": "Your computer has been blocked due to illegal activity. Call the support line on 01632 960902 to unlock it. Do not restart"}
+{"id": "sup-s-0122", "label": "scam_like", "category": "tech_support", "text": "Payment confirmation: your annual security plan has been renewed for 289.99. If you wish to cancel, call 07700 900617 within 24 hours"}
+{"id": "sup-s-0123", "label": "scam_like", "category": "tech_support", "text": "We detected that your router has been hacked. Our engineer will call you to install a fix. Please keep your computer switched on"}
+{"id": "sup-s-0124", "label": "scam_like", "category": "tech_support", "text": "Your phone has 4 viruses! Install the cleaner app immediately or your banking data will be stolen: phone-cleaner-safe.example"}
+{"id": "sup-s-0125", "label": "scam_like", "category": "tech_support", "text": "Refund department: you were overcharged for your software subscription. To receive your refund, install our remote help tool"}
+{"id": "sup-s-0126", "label": "scam_like", "category": "loan_debt", "text": "Pre-approved loan of 5,000, no credit checks. Just pay the 49 arrangement fee to receive the money today"}
+{"id": "sup-s-0127", "label": "scam_like", "category": "loan_debt", "text": "You could be entitled to have 75 percent of your debt written off under a new government scheme. Reply YES for a free assessment"}
+{"id": "sup-s-0128", "label": "scam_like", "category": "loan_debt", "text": "Final demand: your debt has been passed to enforcement agents. Pay today to avoid bailiffs visiting your home: debt-settle-now.example"}
+{"id": "sup-s-0129", "label": "scam_like", "category": "loan_debt", "text": "Were you mis-sold car finance? You may be owed thousands. Claim now, no win no fee, just confirm your bank details"}
+{"id": "sup-s-0130", "label": "scam_like", "category": "loan_debt", "text": "Instant cash advance approved! Click to accept 800 into your account in 10 minutes: instant-cash-accept.example"}
+{"id": "sup-s-0131", "label": "scam_like", "category": "charity_disaster", "text": "Urgent appeal: families affected by the floods need your help now. Donate by bank transfer to our relief account today"}
+{"id": "sup-s-0132", "label": "scam_like", "category": "charity_disaster", "text": "Help a sick child get surgery. Every gift card counts. Send codes to this number and we'll pass them on"}
+{"id": "sup-s-0133", "label": "scam_like", "category": "subscription_trap", "text": "Your free trial is ending and you will be charged 79.99 monthly. To cancel, confirm your card details at trial-cancel.example"}
+{"id": "sup-s-0134", "label": "scam_like", "category": "subscription_trap", "text": "Thanks for your order of 2 bottles of slimming pills. Your card will be charged 189 unless you cancel at pills-cancel.example"}
+{"id": "sup-s-0135", "label": "scam_like", "category": "extortion", "text": "I have access to your device and recorded you. Pay 900 in bitcoin within 48 hours or I will send the video to your contacts"}
+{"id": "sup-s-0136", "label": "scam_like", "category": "extortion", "text": "We know your password. Your accounts will be leaked unless you pay the fee to the wallet below. Do not contact the police"}
+{"id": "sup-s-0137", "label": "scam_like", "category": "utility_refund", "text": "Water services: your meter was read incorrectly and you are due 64.20. Claim your refund at water-meter-refund.example"}
+{"id": "sup-s-0138", "label": "scam_like", "category": "utility_refund", "text": "Your energy supplier has gone bust. To keep your credit balance, transfer your account to us now at energy-switch-protect.example"}
+{"id": "sup-s-0139", "label": "scam_like", "category": "utility_refund", "text": "Smart meter installation is mandatory. Book now and pay the 35 booking fee or face a penalty: meter-booking.example"}
+{"id": "sup-s-0140", "label": "scam_like", "category": "utility_refund", "text": "Velo Mobile: you've been overcharged for 6 months. Get 92.50 back by verifying your card at velo-refund.example"}
+{"id": "sup-s-0141", "label": "scam_like", "category": "travel_booking", "text": "Your holiday booking could not be confirmed. Pay the remaining balance of 340 within 2 hours or your rooms will be released: booking-balance.example"}
+{"id": "sup-s-0142", "label": "scam_like", "category": "travel_booking", "text": "Flight cancelled! Claim your 600 compensation by providing your card details at flight-comp-claim.example"}
+{"id": "sup-s-0143", "label": "scam_like", "category": "travel_booking", "text": "Hotel reservation issue: your card was declined. Re-enter it here to keep your booking: hotel-card-retry.example"}
+{"id": "sup-s-0144", "label": "scam_like", "category": "travel_booking", "text": "Cheap flights to anywhere for 49! Limited seats, pay by bank transfer only to get the discount"}
+{"id": "sup-s-0145", "label": "scam_like", "category": "health_insurance", "text": "Your health insurance has lapsed. Reactivate it today to avoid losing cover: insurance-reactivate.example"}
+{"id": "sup-s-0146", "label": "scam_like", "category": "health_insurance", "text": "Free home testing kit available for you. Just pay 2.50 postage at test-kit-order.example"}
+{"id": "sup-s-0147", "label": "scam_like", "category": "health_insurance", "text": "Health service notice: you have been in contact with an infected person. Order a test now and pay the delivery fee: contact-test-order.example"}
+{"id": "sup-s-0148", "label": "scam_like", "category": "health_insurance", "text": "Your car insurance renewal failed and you are now driving uninsured. Renew immediately: car-cover-renew.example"}
+{"id": "sup-s-0149", "label": "scam_like", "category": "short_link_lure", "text": "Is this you in this video?? omg look: tinylnk.example/v9x"}
+{"id": "sup-s-0150", "label": "scam_like", "category": "short_link_lure", "text": "Someone shared a document with you. View it here before it expires: doc-share-view.example/d/4421"}
+{"id": "sup-s-0151", "label": "scam_like", "category": "family_impersonation", "text": "Hi mum 😊 new number! Old phone smashed. Can u whatsapp me here when ur free, need to ask u something xx"}
+{"id": "sup-s-0152", "label": "scam_like", "category": "family_impersonation", "text": "its me ur daughter, cant talk rn. need 390 for a payment today, my app is blocked. can u send to the acc i send u"}
+{"id": "sup-s-0153", "label": "scam_like", "category": "family_impersonation", "text": "Hi Mam, I'm using my friend's phone. Mine fell in the river. Can you send some money for a new one? I'll pay it back"}
+{"id": "sup-s-0154", "label": "scam_like", "category": "family_impersonation", "text": "Dad pls dont be mad, I lost my wallet and phone on the night out. This is a friends number. Can you send 200 so I can get a taxi and a hotel"}
+{"id": "sup-s-0155", "label": "scam_like", "category": "family_impersonation", "text": "Hi Grandma, it's me. I'm at the police station and need bail money. A lawyer will call you, please don't tell mum and dad"}
+{"id": "sup-s-0156", "label": "scam_like", "category": "family_impersonation", "text": "Hey son, it's your father. I changed my number. I need you to buy me some vouchers for a bill, I'll explain later"}
+{"id": "sup-s-0157", "label": "scam_like", "category": "family_impersonation", "text": "Hiya, its me, this is my new number. Have you got online banking on your phone? I need to send a payment urgently"}
+{"id": "sup-s-0158", "label": "scam_like", "category": "family_impersonation", "text": "Mum my bank card got declined at the shop and I have no money for the train home. Can you send 45 to this account quickly?"}
+{"id": "sup-s-0159", "label": "scam_like", "category": "family_impersonation", "text": "Hi it's me, using a new phone. I've got a delivery to pay for and my card has expired. Could you pay it and I'll send it back tomorrow?"}
+{"id": "sup-s-0160", "label": "scam_like", "category": "family_impersonation", "text": "Hello sweetheart it's your uncle Ray. Lost my phone. Can you help me with 500 for a deposit, I'll sort you out at the weekend"}
+{"id": "sup-s-0161", "label": "scam_like", "category": "family_impersonation", "text": "hi mum this is my new number, the other one is broken. can you text me back here? i'll explain everything x"}
+{"id": "sup-s-0162", "label": "scam_like", "category": "family_impersonation", "text": "Hey sis, it's me. New phone, number changed. I need a really quick favour, can you pay a bill for me online? 830"}
+{"id": "sup-s-0163", "label": "scam_like", "category": "family_impersonation", "text": "Dad I'm in hospital, my phone is broken, I'm using a nurse's phone. I need money for medicine urgently, please send to this account"}
+{"id": "sup-s-0164", "label": "scam_like", "category": "family_impersonation", "text": "Mum its me again, did you get my last message? I really need that money today, the landlord is waiting"}
+{"id": "sup-s-0165", "label": "scam_like", "category": "family_impersonation", "text": "Hi it's your colleague Priya, I'm stuck at a client site and my card isn't working. Can you lend me 120 till tomorrow? Bank details below"}
+{"id": "sup-s-0166", "label": "scam_like", "category": "parcel_fee", "text": "📦 Your parcel is waiting! Due to a missing house number we couldn't deliver. Fix it here 👉 parcelfix.example/a7"}
+{"id": "sup-s-0167", "label": "scam_like", "category": "parcel_fee", "text": "dear customer ur package is pending, pls pay the delivery charge to recieve it. link: deliv-charge.example"}
+{"id": "sup-s-0168", "label": "scam_like", "category": "parcel_fee", "text": "Your Parcelwise delivery is scheduled but a balance of 1.10 remains. Pay now so the driver can deliver today"}
+{"id": "sup-s-0169", "label": "scam_like", "category": "parcel_fee", "text": "We tried to deliver your order but the customs paperwork is incomplete. Complete the form and pay 2.85 at customs-form.example"}
+{"id": "sup-s-0170", "label": "scam_like", "category": "parcel_fee", "text": "QuickDrop notice: delivery suspended. Reason: unpaid fee. Resolve now to avoid your item being destroyed: qd-resolve.example"}
+{"id": "sup-s-0171", "label": "scam_like", "category": "parcel_fee", "text": "Your package with tracking number 7713-2290 is awaiting confirmation. Confirm and pay the handling charge: confirm-handling.example"}
+{"id": "sup-s-0172", "label": "scam_like", "category": "parcel_fee", "text": "Hello, we have a parcel for you but need you to verify your identity first. Enter your details at verify-recipient.example"}
+{"id": "sup-s-0173", "label": "scam_like", "category": "parcel_fee", "text": "Courier service: your item is held at the depot, pay 1.50 to rebook. depot-rebook.example"}
+{"id": "sup-s-0174", "label": "scam_like", "category": "parcel_fee", "text": "Your international parcel is held by customs. The fee must be paid in 24 hours or it will be returned. Pay: intl-customs-fee.example"}
+{"id": "sup-s-0175", "label": "scam_like", "category": "parcel_fee", "text": "Last chance to collect your parcel. Pay the 0.99 release fee now: last-chance-parcel.example"}
+{"id": "sup-s-0176", "label": "scam_like", "category": "bank_safe_account", "text": "kestrel bank: a new device has been added to ur account. not you? secure ur acc here kestrel-device-check.example"}
+{"id": "sup-s-0177", "label": "scam_like", "category": "bank_safe_account", "text": "URGENT security message from your bank: your card has been cloned. Do NOT use it. Call 01632 960248 now to arrange a replacement"}
+{"id": "sup-s-0178", "label": "scam_like", "category": "bank_safe_account", "text": "Meridian: we have placed a hold on your account. To lift it, confirm your identity and card details at meridian-hold-lift.example"}
+{"id": "sup-s-0179", "label": "scam_like", "category": "bank_safe_account", "text": "We are contacting you because a large transfer was attempted. For your protection, move your balance to the new account number we will text you"}
+{"id": "sup-s-0180", "label": "scam_like", "category": "bank_safe_account", "text": "Your online banking access will expire today. Re-activate it now to avoid service interruption: banking-reactivate.example"}
+{"id": "sup-s-0181", "label": "scam_like", "category": "bank_safe_account", "text": "Kestrel Bank: Payment of 74.99 to STREAMBOX scheduled. If you don't recognise this, cancel at kestrel-cancel-pay.example"}
+{"id": "sup-s-0182", "label": "scam_like", "category": "bank_safe_account", "text": "Hi, this is Mark from your bank's fraud team. I'll call you in 5 minutes. Please have your card reader and passcodes ready"}
+{"id": "sup-s-0183", "label": "scam_like", "category": "bank_safe_account", "text": "Important: your account has been used for money laundering. You must cooperate with our investigation and keep this confidential"}
+{"id": "sup-s-0184", "label": "scam_like", "category": "bank_safe_account", "text": "Your card ending 4471 was used for a purchase abroad. Reply NO if this was not you and we will call you to secure the account"}
+{"id": "sup-s-0185", "label": "scam_like", "category": "bank_safe_account", "text": "Bank security update required. Your account will be locked unless you update your mobile number at secure-update-mobile.example"}
+{"id": "sup-s-0186", "label": "scam_like", "category": "toll_fine", "text": "unpaid toll! your vehicle used a toll road on 03/10 without payment. pay 4.90 now or face 60 fine. tollroad-pay.example"}
+{"id": "sup-s-0187", "label": "scam_like", "category": "toll_fine", "text": "Your vehicle tax is due. To avoid a fine and clamping, renew online now using the secure link: car-tax-due.example"}
+{"id": "sup-s-0188", "label": "scam_like", "category": "toll_fine", "text": "Low emission zone notice: a charge of 12.50 was not paid. Pay within 3 days to avoid a penalty: lez-notice-pay.example"}
+{"id": "sup-s-0189", "label": "scam_like", "category": "toll_fine", "text": "River crossing account: your autopay failed. Update your card to avoid penalty charges: crossing-autopay.example"}
+{"id": "sup-s-0190", "label": "scam_like", "category": "toll_fine", "text": "Traffic camera violation recorded. View the photo evidence and pay your fine: camera-evidence-view.example"}
+{"id": "sup-s-0191", "label": "scam_like", "category": "toll_fine", "text": "Final notice before court: parking penalty unpaid. Settle the reduced amount of 35 today at parking-final.example"}
+{"id": "sup-s-0192", "label": "scam_like", "category": "government_refund", "text": "GOV notice: you are owed a cost of living payment of 301. Apply before it expires at col-payment-apply.example"}
+{"id": "sup-s-0193", "label": "scam_like", "category": "government_refund", "text": "Your tax code is wrong and you have overpaid 612. Update your details to get your refund: taxcode-refund.example"}
+{"id": "sup-s-0194", "label": "scam_like", "category": "government_refund", "text": "Pension service: your state pension payment is suspended until you confirm your bank account details at pension-confirm.example"}
+{"id": "sup-s-0195", "label": "scam_like", "category": "government_refund", "text": "This is an automated call from the tax authority. A lawsuit has been filed against you. Press 1 to speak to an officer now"}
+{"id": "sup-s-0196", "label": "scam_like", "category": "government_refund", "text": "Your student loan account has an overpayment. Claim 245 back by logging in at studentloan-refund.example"}
+{"id": "sup-s-0197", "label": "scam_like", "category": "government_refund", "text": "Universal credit update: you qualify for an extra payment. Provide your details within 24 hours: uc-extra-payment.example"}
+{"id": "sup-s-0198", "label": "scam_like", "category": "government_refund", "text": "Your passport application has been put on hold due to a payment error. Pay the outstanding 12 to continue: passport-pay-fix.example"}
+{"id": "sup-s-0199", "label": "scam_like", "category": "government_refund", "text": "Census office: you failed to complete the household survey and may be fined. Complete it now at survey-complete-gov.example"}
+{"id": "sup-s-0200", "label": "scam_like", "category": "job_task", "text": "hi dear 😊 i'm Anna, HR at a digital agency. we have part time work, 1-2 hours a day, 200+ per day. interested?"}
+{"id": "sup-s-0201", "label": "scam_like", "category": "job_task", "text": "Hello, your resume matches our open position. The job is simple: click to like products on our app. Daily salary paid. Contact our recruiter"}
+{"id": "sup-s-0202", "label": "scam_like", "category": "job_task", "text": "Earn money from home by rating films! Join today and get a 30 welcome bonus. Withdraw anytime after your first deposit"}
+{"id": "sup-s-0203", "label": "scam_like", "category": "job_task", "text": "We need people to test our banking app. Use your own account to receive and send payments, we pay you 200 per test"}
+{"id": "sup-s-0204", "label": "scam_like", "category": "job_task", "text": "Data entry job, work from anywhere. Registration fee 25, refunded with your first salary. Sign up: data-entry-start.example"}
+{"id": "sup-s-0205", "label": "scam_like", "category": "job_task", "text": "Our team is recruiting. You will get commission for every order you complete. The more you recharge the more you earn"}
+{"id": "sup-s-0206", "label": "scam_like", "category": "job_task", "text": "Congrats! You've been selected for an online assistant role. Please send a copy of your ID and bank card to complete onboarding"}
+{"id": "sup-s-0207", "label": "scam_like", "category": "job_task", "text": "Hi there, are you looking for extra income? I make 500 a week with this simple trick. DM me to learn how"}
+{"id": "sup-s-0208", "label": "scam_like", "category": "investment_crypto", "text": "📈 I turned 500 into 9,000 in a month with this platform. My account manager can help you too, just message him"}
+{"id": "sup-s-0209", "label": "scam_like", "category": "investment_crypto", "text": "Your crypto exchange account is restricted. Complete KYC by connecting your wallet and entering your recovery phrase: exchange-kyc.example"}
+{"id": "sup-s-0210", "label": "scam_like", "category": "investment_crypto", "text": "Bitcoin is about to explode. Our signal group gives you buy alerts with 95 percent accuracy. Join for 99 today"}
+{"id": "sup-s-0211", "label": "scam_like", "category": "investment_crypto", "text": "Hi, I saw you were interested in investing. I'm a licensed advisor with a fund that returns 25 percent a month, risk free"}
+{"id": "sup-s-0212", "label": "scam_like", "category": "investment_crypto", "text": "Withdrawal pending: 14,300. Pay the anti-money-laundering verification deposit of 1,200 to release your funds"}
+{"id": "sup-s-0213", "label": "scam_like", "category": "investment_crypto", "text": "Gold bars at 30 percent below market price, limited stock. Reserve yours with a bank transfer today"}
+{"id": "sup-s-0214", "label": "scam_like", "category": "investment_crypto", "text": "We're giving back to the community: send 0.1 ETH and get 0.3 ETH back instantly. Event ends in 2 hours"}
+{"id": "sup-s-0215", "label": "scam_like", "category": "investment_crypto", "text": "Property investment abroad with guaranteed 18 percent yearly returns. Secure a unit with a 2,000 deposit before prices rise"}
+{"id": "sup-s-0216", "label": "scam_like", "category": "wrong_number_opener", "text": "Hey, is this Jenny? We met at the rooftop bar last week, you said to text you 😊"}
+{"id": "sup-s-0217", "label": "scam_like", "category": "wrong_number_opener", "text": "Good morning! Sorry to bother you, is this Mrs Patel? My driver is looking for your address for the delivery"}
+{"id": "sup-s-0218", "label": "scam_like", "category": "wrong_number_opener", "text": "Hi, I think you have the wrong number but you seem interesting. I'm a fashion designer in Singapore. What do you do?"}
+{"id": "sup-s-0219", "label": "scam_like", "category": "wrong_number_opener", "text": "Hello my friend, how have you been? It's been so long since we talked"}
+{"id": "sup-s-0220", "label": "scam_like", "category": "romance_advance_fee", "text": "I know we only met online but I trust you more than anyone. My account is frozen abroad and I need 1,500 to unfreeze it. I'll pay you double"}
+{"id": "sup-s-0221", "label": "scam_like", "category": "romance_advance_fee", "text": "Honey I'm stuck at the border, they want a fee before I can travel to you. Please send it by money transfer, I can't wait to hold you"}
+{"id": "sup-s-0222", "label": "scam_like", "category": "romance_advance_fee", "text": "I am an engineer working on an oil rig. I need help paying for my internet access so we can keep talking. Can you buy me some cards?"}
+{"id": "sup-s-0223", "label": "scam_like", "category": "romance_advance_fee", "text": "Dear friend, I have a business proposal worth 3.5 million that requires a trusted foreign partner. Please reply with your full name and phone"}
+{"id": "sup-s-0224", "label": "scam_like", "category": "prize_reward", "text": "🎉 CONGRATS! You've been picked to test the new smartphone for free. Just cover shipping 2.99: phone-tester-free.example"}
+{"id": "sup-s-0225", "label": "scam_like", "category": "prize_reward", "text": "You have 1 unclaimed reward from your mobile network. Claim within 24h: network-reward.example"}
+{"id": "sup-s-0226", "label": "scam_like", "category": "prize_reward", "text": "Dear winner, your email address won 500,000 in our annual lottery. To claim, send your details and the clearance fee"}
+{"id": "sup-s-0227", "label": "scam_like", "category": "prize_reward", "text": "Final notice: your gift of 1,000 is waiting. If you don't claim it today it will go to another customer: gift-claim-final.example"}
+{"id": "sup-s-0228", "label": "scam_like", "category": "prize_reward", "text": "You've been chosen for our loyalty bonus! A 250 credit is ready, verify your card to receive it: bonus-credit-verify.example"}
+{"id": "sup-s-0229", "label": "scam_like", "category": "account_suspension", "text": "Cinemax+ Your account has been on hold. Update your payment details to resume your membership. cinemax-account-hold.example"}
+{"id": "sup-s-0230", "label": "scam_like", "category": "account_suspension", "text": "Your MarketHub order has been cancelled due to a billing problem. Please verify your payment method: markethub-billing-fix.example"}
+{"id": "sup-s-0231", "label": "scam_like", "category": "account_suspension", "text": "Messaging app notice: your account will be deactivated unless you verify it in the next hour. Tap here: app-verify-now.example"}
+{"id": "sup-s-0232", "label": "scam_like", "category": "account_suspension", "text": "Velo Mobile: Your number will be disconnected and given to another customer. Keep your number by paying 4.99 now"}
+{"id": "sup-s-0233", "label": "scam_like", "category": "account_suspension", "text": "Dear customer, we were unable to process your latest bill. Update your billing information to avoid suspension of your service."}
+{"id": "sup-s-0234", "label": "scam_like", "category": "account_suspension", "text": "Your domain name is about to expire and your website will go offline. Renew now for 89 at domain-renew-urgent.example"}
+{"id": "sup-s-0235", "label": "scam_like", "category": "account_suspension", "text": "Security warning: your account was accessed from an unknown location. Change your password immediately here: password-change-now.example"}
+{"id": "sup-s-0236", "label": "scam_like", "category": "account_suspension", "text": "Tidewater Energy: you have an unpaid balance of 211.40. Pay today to prevent an engineer visit to disconnect your meter"}
+{"id": "sup-s-0237", "label": "scam_like", "category": "otp_theft", "text": "omg sorry I gave your number by mistake for my verification, can you send me the code that just came through?"}
+{"id": "sup-s-0238", "label": "scam_like", "category": "otp_theft", "text": "To confirm the cancellation of your fraudulent order, please reply with the one-time code sent to your phone"}
+{"id": "sup-s-0239", "label": "scam_like", "category": "otp_theft", "text": "Your delivery driver needs the code we just sent you to complete the drop-off. Please share it with him by text"}
+{"id": "sup-s-0240", "label": "scam_like", "category": "otp_theft", "text": "MarketHub support: to process your refund we need the verification code you received. Reply with it in this chat"}
+{"id": "sup-s-0241", "label": "scam_like", "category": "marketplace", "text": "Hi, is your camera still for sale? I'll pay full price plus shipping. I've sent the payment, just confirm it on this page: confirm-sale-funds.example"}
+{"id": "sup-s-0242", "label": "scam_like", "category": "marketplace", "text": "I have paid for the item but the platform needs you to upgrade to a business account to receive it. Upgrade fee 60, refunded after"}
+{"id": "sup-s-0243", "label": "scam_like", "category": "marketplace", "text": "Selling a nearly new phone for 120, I can only accept bank transfer, will post it as soon as I receive the money"}
+{"id": "sup-s-0244", "label": "scam_like", "category": "marketplace", "text": "Room available near campus. Landlord abroad. Send first month and deposit and I will post you the keys"}
+{"id": "sup-s-0245", "label": "scam_like", "category": "marketplace", "text": "Your buyer has paid! To release the funds to your bank, enter your card number and security code on the payout page"}
+{"id": "sup-s-0246", "label": "scam_like", "category": "tech_support", "text": "System alert: your device storage is compromised. Call our certified technicians right away on 07700 900894"}
+{"id": "sup-s-0247", "label": "scam_like", "category": "tech_support", "text": "Your internet provider here. We've detected hackers on your line. Please download the remote support app so we can fix it"}
+{"id": "sup-s-0248", "label": "scam_like", "category": "tech_support", "text": "Invoice: your PC protection subscription has been charged 349.00. Not you? Call billing on 01632 960511 for a refund"}
+{"id": "sup-s-0249", "label": "scam_like", "category": "loan_debt", "text": "Guaranteed loan approval even with bad credit! Get up to 10,000 today. Pay a small insurance fee first"}
+{"id": "sup-s-0250", "label": "scam_like", "category": "loan_debt", "text": "You have been approved for a debt relief grant. Reply with your income and bank details to apply"}
+{"id": "sup-s-0251", "label": "scam_like", "category": "loan_debt", "text": "Debt collection notice: you owe 1,840 to a payday lender. Pay today to stop court action: payday-debt-pay.example"}
+{"id": "sup-s-0252", "label": "scam_like", "category": "charity_disaster", "text": "Earthquake relief: 100 percent of your donation goes to victims. Give now by bank transfer to the account below"}
+{"id": "sup-s-0253", "label": "scam_like", "category": "charity_disaster", "text": "Animal rescue emergency: 40 dogs will be put down tomorrow unless we raise 3,000 tonight. Send what you can"}
+{"id": "sup-s-0254", "label": "scam_like", "category": "subscription_trap", "text": "Your subscription to Premium Recipes has started. 49.99 will be charged today. To cancel, enter your card details at recipes-cancel.example"}
+{"id": "sup-s-0255", "label": "scam_like", "category": "extortion", "text": "I hacked your email and have your browsing history. Send 600 in crypto to the address below or everyone sees it"}
+{"id": "sup-s-0256", "label": "scam_like", "category": "utility_refund", "text": "Your energy account is in credit by 132.80. To get it back, verify your bank details at energy-credit-return.example"}
+{"id": "sup-s-0257", "label": "scam_like", "category": "utility_refund", "text": "Broadband compensation: you are owed 58 for slow speeds. Claim now with your card details at speed-compensation.example"}
+{"id": "sup-s-0258", "label": "scam_like", "category": "travel_booking", "text": "Your flight check-in failed due to a payment problem. Pay the 15 fee now to keep your seat: checkin-fee-pay.example"}
+{"id": "sup-s-0259", "label": "scam_like", "category": "travel_booking", "text": "Holiday rental confirmed! To finalise, pay the security deposit by bank transfer, not through the website, to save on fees"}
+{"id": "sup-s-0260", "label": "scam_like", "category": "health_insurance", "text": "Your prescription is ready but payment failed. Pay 9.90 to release it: prescription-release.example"}
+{"id": "sup-s-0261", "label": "scam_like", "category": "health_insurance", "text": "Life insurance payout pending: you are named as beneficiary. Confirm your identity and pay the admin fee"}
+{"id": "sup-s-0262", "label": "scam_like", "category": "short_link_lure", "text": "your photos from the party are up 😂 check them here tinylnk.example/p3"}
+{"id": "sup-s-0263", "label": "scam_like", "category": "short_link_lure", "text": "You have a new voicemail. Listen here: voicemail-listen.example/vm/9910"}
+{"id": "sup-s-0264", "label": "scam_like", "category": "short_link_lure", "text": "Your package photo is ready, see where we left it: photo-proof.example/x"}
+{"id": "sup-s-0265", "label": "scam_like", "category": "short_link_lure", "text": "You've been tagged in a post. See who mentioned you: tag-mention.example"}
+{"id": "sup-s-0266", "label": "scam_like", "category": "email_style", "text": "Dear Valued Customer, We have detected irregular activity on your account. As a precaution, access has been limited. To restore full access, please verify your information within 24 hours using the secure link below. Failure to do so will result in permanent closure. Regards, Account Security Team"}
+{"id": "sup-s-0267", "label": "scam_like", "category": "email_style", "text": "Hello, Please find attached the outstanding invoice for services rendered. Our bank details have changed, so kindly make payment to the new account listed in the attachment by end of day. Thank you, Accounts Department"}
+{"id": "sup-s-0268", "label": "scam_like", "category": "email_style", "text": "Subject: Action required. Your password will expire in 2 hours. Click below to keep your current password and avoid losing access to your mailbox. IT Service Desk"}
+{"id": "sup-s-0269", "label": "scam_like", "category": "email_style", "text": "Dear Sir or Madam, I am writing to inform you that you have been selected as the beneficiary of an unclaimed inheritance. Please respond with your full name, address and telephone number so that we can begin the legal process."}
+{"id": "sup-s-0270", "label": "scam_like", "category": "email_style", "text": "Your Kestrel Bank statement is ready. For your security, we need you to confirm your login details before you can view it. Click here to sign in and confirm."}
+{"id": "sup-s-0271", "label": "scam_like", "category": "email_style", "text": "Notice of shared document: a file named Payment_Remittance has been shared with you. To view the document, sign in with your email password at the link provided."}
+{"id": "sup-s-0272", "label": "scam_like", "category": "email_style", "text": "Hi, this is the CEO. I need you to handle a confidential acquisition payment today. Our lawyer will contact you with the wire details. Do not discuss this with anyone else in the office."}
+{"id": "sup-s-0273", "label": "scam_like", "category": "email_style", "text": "Congratulations on your new role! Before you start, please purchase the required laptop from our approved vendor using the cheque we will send. Any extra must be returned by bank transfer."}
+{"id": "sup-s-0274", "label": "scam_like", "category": "email_style", "text": "We were unable to process your recent tax return. Please download the attached form, fill in your bank details and send it back today to avoid a penalty."}
+{"id": "sup-s-0275", "label": "scam_like", "category": "email_style", "text": "Payroll update: all staff must re-enter their bank details on the new HR portal by Friday or salaries will be delayed. Portal: hr-portal-update.example"}
+{"id": "sup-s-0276", "label": "scam_like", "category": "chat_style", "text": "bro u seen this?? they're giving away free credit if u sign up in the next hour lol free-credit-hour.example"}
+{"id": "sup-s-0277", "label": "scam_like", "category": "chat_style", "text": "hey, sorry random q but can u vote for my niece in a competition? just log in with ur account here vote-niece.example"}
+{"id": "sup-s-0278", "label": "scam_like", "category": "chat_style", "text": "Hi! I'm from the community group. We're doing a raffle for the school, buy tickets by sending money to my personal account"}
+{"id": "sup-s-0279", "label": "scam_like", "category": "chat_style", "text": "Can you help me? I'm trying to win a giveaway and need 5 people to send the code they get by text. It's totally safe"}
+{"id": "sup-s-0280", "label": "scam_like", "category": "chat_style", "text": "hi, is it ok if I send you some money to hold for me? my account has a limit. then you send it on to my cousin"}
+{"id": "sup-s-0281", "label": "scam_like", "category": "pressure_payment", "text": "Pay now or lose it. Only 10 minutes left to complete your payment. Do not close this message."}
+{"id": "sup-s-0282", "label": "scam_like", "category": "pressure_payment", "text": "Payment must be made in gift cards or bitcoin only. We do not accept card or bank payments for this service."}
+{"id": "sup-s-0283", "label": "scam_like", "category": "pressure_payment", "text": "Don't hang up and don't tell your bank why you're making this transfer, they will try to stop you. Just say it's for a family member."}
+{"id": "sup-s-0284", "label": "scam_like", "category": "pressure_payment", "text": "Your account will be closed and reported to credit agencies within 1 hour unless you call us back. This is your last warning."}
+{"id": "sup-s-0285", "label": "scam_like", "category": "pressure_payment", "text": "Go to the shop now and buy 4 cards of 250. Read me the numbers on the back. Stay on the line with me."}
+{"id": "sup-s-0286", "label": "scam_like", "category": "pressure_payment", "text": "If you do not pay by 5pm a warrant will be issued and officers will come to your address."}
+{"id": "sup-s-0287", "label": "scam_like", "category": "pressure_payment", "text": "We need you to install this app so we can see your screen and help you reverse the payment."}
+{"id": "sup-s-0288", "label": "scam_like", "category": "pressure_payment", "text": "Withdraw the cash and hand it to our courier who will come to your door. He will give you a reference number."}
+{"id": "sup-s-0289", "label": "scam_like", "category": "account_suspension", "text": "Your account ID was used to sign in on a new device near you. If this wasn't you, lock your account now: id-lock-now.example"}
+{"id": "sup-s-0290", "label": "scam_like", "category": "parcel_fee", "text": "Your order is on its way, but we need a small payment of 0.50 to confirm your delivery address: confirm-addr-fee.example"}
+{"id": "sup-s-0291", "label": "scam_like", "category": "bank_safe_account", "text": "Kestrel Bank: your card has been suspended. Visit kestrel-card-unlock.example and log in to unlock it."}
+{"id": "sup-s-0292", "label": "scam_like", "category": "government_refund", "text": "Your driving licence photo is out of date. Update it online now to avoid a 1,000 fine: licence-photo-update.example"}
+{"id": "sup-s-0293", "label": "scam_like", "category": "job_task", "text": "Want to earn 70 an hour? Our company needs people to post reviews. Start immediately, no interview. Reply START"}
+{"id": "sup-s-0294", "label": "scam_like", "category": "investment_crypto", "text": "The bank doesn't want you to know about this. Ordinary people are making thousands with this crypto app. Try it with just 250"}
+{"id": "sup-s-0295", "label": "scam_like", "category": "prize_reward", "text": "You were selected in today's draw! Answer one question to claim your gift card: quick-quiz-gift.example"}
+{"id": "sup-s-0296", "label": "scam_like", "category": "toll_fine", "text": "Toll account notice: your toll balance is negative. Top up now to avoid fines: toll-topup.example"}
+{"id": "sup-s-0297", "label": "scam_like", "category": "utility_refund", "text": "Council notice: you are entitled to a council tax rebate of 150. Apply online with your card details at rebate-apply.example"}
+{"id": "sup-s-0298", "label": "scam_like", "category": "otp_theft", "text": "Hi, I'm from the electricity company doing your meter upgrade. We've sent you a code to confirm the booking, can you read it to me?"}
+{"id": "sup-s-0299", "label": "scam_like", "category": "marketplace", "text": "Interested in your car. I'll send a cashier's cheque for more than the price, please refund the difference to my shipping agent"}
+{"id": "sup-s-0300", "label": "scam_like", "category": "family_impersonation", "text": "Mum it's me, I've got a new phone. My old number doesn't work anymore. Can you please reply so I know you got this? It's urgent x"}
+{"id": "sup-l-0001", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: You've spent 23.40 at Fernway Market with your card ending 4471. Not you? Use the app to freeze your card."}
+{"id": "sup-l-0002", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: Your salary of 2,145.60 has been paid into your current account."}
+{"id": "sup-l-0003", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: Your balance is 312.08 as of 07:00 today. Reply STOP to turn off balance alerts."}
+{"id": "sup-l-0004", "label": "not_scam_like", "category": "bank_notification", "text": "Your new Kestrel debit card is on its way. Activate it in the app when it arrives. We will never ask you to move money to a safe account."}
+{"id": "sup-l-0005", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: You've added a new payee, Jordan Hale. If you didn't do this, call the number on the back of your card."}
+{"id": "sup-l-0006", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: Your overdraft limit change has been approved. Your new limit is 500."}
+{"id": "sup-l-0007", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: Your savings pot Holiday reached its goal of 1,200. Nice work!"}
+{"id": "sup-l-0008", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel: A standing order of 450.00 to R Lewis Lettings will leave your account tomorrow."}
+{"id": "sup-l-0009", "label": "not_scam_like", "category": "bank_notification", "text": "Your Meridian credit card statement is ready. Minimum payment of 25.00 due 14 Nov. View it in online banking."}
+{"id": "sup-l-0010", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: We declined a payment of 89.99 at an online store because it looked unusual. If it was you, approve it in the app and try again."}
+{"id": "sup-l-0011", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: Your account is overdrawn by 12.40. Pay in before midnight to avoid a fee."}
+{"id": "sup-l-0012", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: Your contactless limit has been reset. Next time, you may be asked to insert your card and enter your PIN at the till."}
+{"id": "sup-l-0013", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: The 30.00 refund from Hartley Shoes has been credited to your account."}
+{"id": "sup-l-0014", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel: Reminder, your fixed saver matures on 3 Dec. Log in to the app to choose what happens next."}
+{"id": "sup-l-0015", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian Building Society: Your mortgage payment of 812.33 has been collected. Thank you."}
+{"id": "sup-l-0016", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: Fraud warning. Criminals pretend to be us. We will never call you to ask for a passcode or tell you to move your money."}
+{"id": "sup-l-0017", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: You received 60.00 from M Okafor with reference birthday."}
+{"id": "sup-l-0018", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: Your card was used at a cash machine for 40.00 at 18:12."}
+{"id": "sup-l-0019", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: Your address was updated on 20 Oct. If you didn't make this change, call us on the number on our website."}
+{"id": "sup-l-0020", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel: You have a new secure message in your online banking inbox."}
+{"id": "sup-l-0021", "label": "not_scam_like", "category": "otp_code", "text": "Kestrel Bank code: 830511. Use this to approve the payment of 64.00 to Fernway Market. Never share this code, not even with us."}
+{"id": "sup-l-0022", "label": "not_scam_like", "category": "otp_code", "text": "Your MarketHub verification code is 271946."}
+{"id": "sup-l-0023", "label": "not_scam_like", "category": "otp_code", "text": "G-482771 is your sign-in code. Don't share it with anyone."}
+{"id": "sup-l-0024", "label": "not_scam_like", "category": "otp_code", "text": "Meridian: 509318 is your one-time passcode to log in. It expires in 5 minutes. If you didn't try to log in, ignore this message."}
+{"id": "sup-l-0025", "label": "not_scam_like", "category": "otp_code", "text": "Your Cinemax+ code is 4417. Enter it on your TV to finish signing in."}
+{"id": "sup-l-0026", "label": "not_scam_like", "category": "otp_code", "text": "Velo Mobile: your PAC code to switch provider is VEL382917. It's valid for 30 days."}
+{"id": "sup-l-0027", "label": "not_scam_like", "category": "otp_code", "text": "Use 662049 to verify your phone number for the Fernway app."}
+{"id": "sup-l-0028", "label": "not_scam_like", "category": "otp_code", "text": "Your security code is 93821. Our staff will never ask you for this code."}
+{"id": "sup-l-0029", "label": "not_scam_like", "category": "otp_code", "text": "Kestrel: You've just signed in on a new device, an Android phone. If this was you, there's nothing to do."}
+{"id": "sup-l-0030", "label": "not_scam_like", "category": "otp_code", "text": "Your password reset code is 118204. If you didn't ask to reset your password, you can ignore this text."}
+{"id": "sup-l-0031", "label": "not_scam_like", "category": "otp_code", "text": "Login attempt from a new browser was blocked because the code was not entered. Your account is fine."}
+{"id": "sup-l-0032", "label": "not_scam_like", "category": "otp_code", "text": "Tidewater Energy: your account verification code is 7260."}
+{"id": "sup-l-0033", "label": "not_scam_like", "category": "otp_code", "text": "Your two-factor code for the council portal is 445190."}
+{"id": "sup-l-0034", "label": "not_scam_like", "category": "otp_code", "text": "Meridian: we've sent a code to your registered email as well. Only enter it on our website or app."}
+{"id": "sup-l-0035", "label": "not_scam_like", "category": "otp_code", "text": "Your Parcelwise code for safe collection is 8812. Show it to the locker screen to open your locker."}
+{"id": "sup-l-0036", "label": "not_scam_like", "category": "delivery_update", "text": "Parcelwise: Your parcel from Hartley Shoes will arrive today between 13:05 and 14:05. Track it at parcelwise.example/t/KX8812"}
+{"id": "sup-l-0037", "label": "not_scam_like", "category": "delivery_update", "text": "QuickDrop: Your driver Tom is on the way. You're stop 6 of 14. Live map: quickdrop.example/live"}
+{"id": "sup-l-0038", "label": "not_scam_like", "category": "delivery_update", "text": "Your parcel was delivered and signed for by D SMITH at 11:42."}
+{"id": "sup-l-0039", "label": "not_scam_like", "category": "delivery_update", "text": "We couldn't deliver your parcel today, so we've taken it to the Fernway Market collection point on High Street. Bring your ID to collect it."}
+{"id": "sup-l-0040", "label": "not_scam_like", "category": "delivery_update", "text": "Parcelwise: Your parcel is in locker 14 at the station. Your code is 5521. It will be kept for 3 days."}
+{"id": "sup-l-0041", "label": "not_scam_like", "category": "delivery_update", "text": "Your MarketHub order has shipped. Expected delivery Thursday 23 Oct."}
+{"id": "sup-l-0042", "label": "not_scam_like", "category": "delivery_update", "text": "Your furniture delivery is booked for Monday. Our team will call 30 minutes before arrival."}
+{"id": "sup-l-0043", "label": "not_scam_like", "category": "delivery_update", "text": "QuickDrop: We left your parcel in your safe place: behind the bins. Photo in the app."}
+{"id": "sup-l-0044", "label": "not_scam_like", "category": "delivery_update", "text": "Your grocery order is on its way and will arrive at 18:20. Substitutions: semi-skimmed milk replaced with whole milk."}
+{"id": "sup-l-0045", "label": "not_scam_like", "category": "delivery_update", "text": "Parcelwise: Change of plan? You can choose a new delivery day in the app at no cost."}
+{"id": "sup-l-0046", "label": "not_scam_like", "category": "delivery_update", "text": "Your return has been received at our warehouse. Your refund will be processed in 3 to 5 days."}
+{"id": "sup-l-0047", "label": "not_scam_like", "category": "delivery_update", "text": "Hi it's your MarketHub driver, I'm outside but there's no answer. I'll leave it with number 22 next door."}
+{"id": "sup-l-0048", "label": "not_scam_like", "category": "delivery_update", "text": "QuickDrop: Your parcel is delayed due to bad weather. New estimated delivery: tomorrow."}
+{"id": "sup-l-0049", "label": "not_scam_like", "category": "delivery_update", "text": "Your takeaway has been picked up by Ana and will arrive in about 12 minutes."}
+{"id": "sup-l-0050", "label": "not_scam_like", "category": "delivery_update", "text": "Parcelwise: Delivered! Rate your delivery experience in the app."}
+{"id": "sup-l-0051", "label": "not_scam_like", "category": "marketing_optout", "text": "Hartley Shoes: Autumn sale now on, up to 40 percent off boots. Shop in store or at hartleyshoes.example. Reply STOP to opt out."}
+{"id": "sup-l-0052", "label": "not_scam_like", "category": "marketing_optout", "text": "Fernway Market: Double points on all fruit and veg this weekend with your loyalty card. Text STOP to 60123 to unsubscribe."}
+{"id": "sup-l-0053", "label": "not_scam_like", "category": "marketing_optout", "text": "Cinemax+: New this week, the second season of your favourite crime drama. Watch now in the app."}
+{"id": "sup-l-0054", "label": "not_scam_like", "category": "marketing_optout", "text": "Velo Mobile: Upgrade offer for you. Get a new handset from 18 a month. Visit a store or log in to see details. Opt out: reply STOP."}
+{"id": "sup-l-0055", "label": "not_scam_like", "category": "marketing_optout", "text": "Pizza Corner: 2 for 1 on large pizzas every Tuesday. Order online or in the app. STOP to end."}
+{"id": "sup-l-0056", "label": "not_scam_like", "category": "marketing_optout", "text": "Your local garden centre: Christmas trees arrive next weekend. Members get 10 percent off. Reply STOP to unsubscribe."}
+{"id": "sup-l-0057", "label": "not_scam_like", "category": "marketing_optout", "text": "MarketHub: Prices dropped on 3 items in your basket. Have a look before they sell out."}
+{"id": "sup-l-0058", "label": "not_scam_like", "category": "marketing_optout", "text": "Brightwater Cinema: Tuesday tickets are 5 for members. Book at brightwater.example."}
+{"id": "sup-l-0059", "label": "not_scam_like", "category": "marketing_optout", "text": "Fernway Market: Your personalised offers for this week are ready in the app."}
+{"id": "sup-l-0060", "label": "not_scam_like", "category": "marketing_optout", "text": "Hartley Shoes: Happy birthday! Here's 10 off your next purchase over 50, valid for 30 days. STOP to opt out."}
+{"id": "sup-l-0061", "label": "not_scam_like", "category": "marketing_optout", "text": "Tidewater Energy: Switch to our fixed tariff and lock in your price for 12 months. See plans in your account."}
+{"id": "sup-l-0062", "label": "not_scam_like", "category": "marketing_optout", "text": "Coastline Gym: Bring a friend for free all of November. Book at reception."}
+{"id": "sup-l-0063", "label": "not_scam_like", "category": "marketing_optout", "text": "The Book Nook: Signed copies of the new thriller are in stock while they last. Reply STOP to stop messages."}
+{"id": "sup-l-0064", "label": "not_scam_like", "category": "marketing_optout", "text": "Pizza Corner: We miss you! Here's 20 percent off your next order with code BACK20. Valid until Sunday."}
+{"id": "sup-l-0065", "label": "not_scam_like", "category": "marketing_optout", "text": "Velo Mobile: You've used 80 percent of your data this month. Add a data boost in the app if you need more."}
+{"id": "sup-l-0066", "label": "not_scam_like", "category": "account_service", "text": "Cinemax+: Your monthly payment of 9.99 was successful. Thanks for watching."}
+{"id": "sup-l-0067", "label": "not_scam_like", "category": "account_service", "text": "Velo Mobile: Your bill for October is 22.50 and will be collected on 1 Nov."}
+{"id": "sup-l-0068", "label": "not_scam_like", "category": "account_service", "text": "MarketHub: Your password was changed. If this wasn't you, reset it from the app and contact support through the help page."}
+{"id": "sup-l-0069", "label": "not_scam_like", "category": "account_service", "text": "Tidewater Energy: Thanks for your meter reading. Your next bill will use it."}
+{"id": "sup-l-0070", "label": "not_scam_like", "category": "account_service", "text": "Your cloud storage is 90 percent full. You can free up space or change your plan in settings."}
+{"id": "sup-l-0071", "label": "not_scam_like", "category": "account_service", "text": "Cinemax+: Your card expires soon. Please update it in Account settings before 30 Nov to keep watching."}
+{"id": "sup-l-0072", "label": "not_scam_like", "category": "account_service", "text": "Velo Mobile: Your roaming is now active. Calls and texts in Europe use your plan allowance."}
+{"id": "sup-l-0073", "label": "not_scam_like", "category": "account_service", "text": "Your subscription to Garden Weekly renews on 5 Dec for 39.99. Manage or cancel it in your account."}
+{"id": "sup-l-0074", "label": "not_scam_like", "category": "account_service", "text": "Tidewater Energy: Your direct debit is changing from 68 to 72 from next month, based on your usage."}
+{"id": "sup-l-0075", "label": "not_scam_like", "category": "account_service", "text": "Fibrelink: Scheduled maintenance tonight from 00:00 to 04:00. You may notice short drops in service."}
+{"id": "sup-l-0076", "label": "not_scam_like", "category": "account_service", "text": "MarketHub: Your refund of 15.99 for the phone case has been issued to your original payment method."}
+{"id": "sup-l-0077", "label": "not_scam_like", "category": "account_service", "text": "Your free trial of Cinemax+ ends on 2 Nov. After that you'll pay 9.99 a month unless you cancel in settings."}
+{"id": "sup-l-0078", "label": "not_scam_like", "category": "account_service", "text": "Velo Mobile: We couldn't take your payment this month. Please check your card in the app. Your service is not affected for now."}
+{"id": "sup-l-0079", "label": "not_scam_like", "category": "account_service", "text": "Tidewater Energy: Your annual statement is ready to view in your online account."}
+{"id": "sup-l-0080", "label": "not_scam_like", "category": "account_service", "text": "Fibrelink: Your engineer appointment is confirmed for Wednesday 8am to 1pm."}
+{"id": "sup-l-0081", "label": "not_scam_like", "category": "appointment", "text": "Reminder from Elm Street Surgery: flu jab clinic Saturday 9am to 12pm. No need to book, just turn up."}
+{"id": "sup-l-0082", "label": "not_scam_like", "category": "appointment", "text": "Brookside Dental: Your appointment with Dr Ahmed is tomorrow at 15:40. Reply YES to confirm or call us to rearrange."}
+{"id": "sup-l-0083", "label": "not_scam_like", "category": "appointment", "text": "Your MOT is due on 12 Dec. Book at Hill Road Motors on 01632 960174."}
+{"id": "sup-l-0084", "label": "not_scam_like", "category": "appointment", "text": "Physio reminder: Thursday at 10:15 with Kate. Please wear comfortable clothes."}
+{"id": "sup-l-0085", "label": "not_scam_like", "category": "appointment", "text": "Your vet appointment for Biscuit is on Monday at 4.30pm. Please bring his vaccination card."}
+{"id": "sup-l-0086", "label": "not_scam_like", "category": "appointment", "text": "Elm Street Surgery: Your blood test results are back and are normal. No action needed."}
+{"id": "sup-l-0087", "label": "not_scam_like", "category": "appointment", "text": "Hi, this is Clara from Bloom Salon. Just confirming your colour appointment on Friday at 11. Text back if you need to change."}
+{"id": "sup-l-0088", "label": "not_scam_like", "category": "appointment", "text": "Hospital appointment: Outpatients, Tuesday 18 Nov, 09:20, Clinic B. Bring a list of your medicines."}
+{"id": "sup-l-0089", "label": "not_scam_like", "category": "appointment", "text": "Your boiler service is booked for 28 Oct between 8am and 12pm. The engineer will call when on the way."}
+{"id": "sup-l-0090", "label": "not_scam_like", "category": "appointment", "text": "Optician reminder: your contact lens check is due. Call us to book a time that suits you."}
+{"id": "sup-l-0091", "label": "not_scam_like", "category": "appointment", "text": "Elm Street Surgery: Your prescription is ready to collect from the pharmacy."}
+{"id": "sup-l-0092", "label": "not_scam_like", "category": "appointment", "text": "Parents evening booking: 6.10pm with Mr Davies, room 12. See you there."}
+{"id": "sup-l-0093", "label": "not_scam_like", "category": "personal_money", "text": "Just sent you 18 for my half of the taxi 👍"}
+{"id": "sup-l-0094", "label": "not_scam_like", "category": "personal_money", "text": "Can you transfer me your share for the cabin when you get a chance? It's 95 each. No rush"}
+{"id": "sup-l-0095", "label": "not_scam_like", "category": "personal_money", "text": "Mum I've paid you back the 50 from last week, check your account"}
+{"id": "sup-l-0096", "label": "not_scam_like", "category": "personal_money", "text": "Could you lend me 20 until Friday? I'll give it back at football"}
+{"id": "sup-l-0097", "label": "not_scam_like", "category": "personal_money", "text": "Dinner was 84 total, so 21 each. My details are on the group chat"}
+{"id": "sup-l-0098", "label": "not_scam_like", "category": "personal_money", "text": "Thanks for the birthday money grandma! I'm going to put it towards a new bike ❤️"}
+{"id": "sup-l-0099", "label": "not_scam_like", "category": "personal_money", "text": "Did you pay the window cleaner or shall I? He's coming Tuesday"}
+{"id": "sup-l-0100", "label": "not_scam_like", "category": "personal_money", "text": "I'll pay for the tickets now and you can sort me out later"}
+{"id": "sup-l-0101", "label": "not_scam_like", "category": "personal_money", "text": "Rent is going up by 30 from January, landlord just emailed. Ugh"}
+{"id": "sup-l-0102", "label": "not_scam_like", "category": "personal_money", "text": "Got your transfer, thank you! See you at the wedding"}
+{"id": "sup-l-0103", "label": "not_scam_like", "category": "personal_money", "text": "Dad can you put 15 on my bus card? I'm nearly out"}
+{"id": "sup-l-0104", "label": "not_scam_like", "category": "personal_money", "text": "Don't forget it's the collection for Sam's leaving present, 5 each in the envelope on my desk"}
+{"id": "sup-l-0105", "label": "not_scam_like", "category": "personal_money", "text": "The plumber said it'll be about 120 to fix the leak. Shall we split it?"}
+{"id": "sup-l-0106", "label": "not_scam_like", "category": "personal_money", "text": "I've set up the standing order for the electric so we don't have to remember"}
+{"id": "sup-l-0107", "label": "not_scam_like", "category": "personal_money", "text": "Can you send me the account details for the school trip payment? I lost the letter"}
+{"id": "sup-l-0108", "label": "not_scam_like", "category": "personal_chat", "text": "omw, 5 mins"}
+{"id": "sup-l-0109", "label": "not_scam_like", "category": "personal_chat", "text": "Are you coming to the barbecue on Saturday? Bring the kids, there's a bouncy castle"}
+{"id": "sup-l-0110", "label": "not_scam_like", "category": "personal_chat", "text": "Can you call me when you're free? Nothing urgent, just want to ask about Christmas plans"}
+{"id": "sup-l-0111", "label": "not_scam_like", "category": "personal_chat", "text": "The cat was sick on the rug again 🙄 I've cleaned it"}
+{"id": "sup-l-0112", "label": "not_scam_like", "category": "personal_chat", "text": "Did you see the photos I sent? The view from the top was amazing"}
+{"id": "sup-l-0113", "label": "not_scam_like", "category": "personal_chat", "text": "I'm at the station, train's delayed 20 mins. Start without me"}
+{"id": "sup-l-0114", "label": "not_scam_like", "category": "personal_chat", "text": "Hi it's Sam from five-a-side, got a new number so save this one. See you Thursday"}
+{"id": "sup-l-0115", "label": "not_scam_like", "category": "personal_chat", "text": "Happy anniversary you two! Have a lovely meal"}
+{"id": "sup-l-0116", "label": "not_scam_like", "category": "personal_chat", "text": "What time does your flight land? I'll pick you up"}
+{"id": "sup-l-0117", "label": "not_scam_like", "category": "personal_chat", "text": "Sorry I missed your call, I was in the shower. Ring me back?"}
+{"id": "sup-l-0118", "label": "not_scam_like", "category": "personal_chat", "text": "Can you check if I left my keys at yours? I can't find them anywhere"}
+{"id": "sup-l-0119", "label": "not_scam_like", "category": "personal_chat", "text": "Good luck in your exam today! You've got this 💪"}
+{"id": "sup-l-0120", "label": "not_scam_like", "category": "personal_chat", "text": "Mum says thanks for the flowers, she loved them"}
+{"id": "sup-l-0121", "label": "not_scam_like", "category": "personal_chat", "text": "lol that video is hilarious, sending it to the group"}
+{"id": "sup-l-0122", "label": "not_scam_like", "category": "personal_chat", "text": "Weather looks rubbish tomorrow, shall we move the walk to Sunday?"}
+{"id": "sup-l-0123", "label": "not_scam_like", "category": "personal_chat", "text": "Hey, it's Lucy. My phone died so I'm texting from Ben's. I'll be home by 10"}
+{"id": "sup-l-0124", "label": "not_scam_like", "category": "personal_chat", "text": "Have you booked the restaurant yet? If not I can do it"}
+{"id": "sup-l-0125", "label": "not_scam_like", "category": "personal_chat", "text": "I'm making lasagne tonight if you want to come round"}
+{"id": "sup-l-0126", "label": "not_scam_like", "category": "personal_chat", "text": "The boiler's making that noise again. Can you have a look when you're back?"}
+{"id": "sup-l-0127", "label": "not_scam_like", "category": "personal_chat", "text": "Just landed! Long queue at passport control but all good"}
+{"id": "sup-l-0128", "label": "not_scam_like", "category": "personal_chat", "text": "Sorry, wrong number! Meant to text my sister"}
+{"id": "sup-l-0129", "label": "not_scam_like", "category": "personal_chat", "text": "Can you grab a birthday card for Nana on your way? I forgot"}
+{"id": "sup-l-0130", "label": "not_scam_like", "category": "personal_chat", "text": "Kids are asleep finally. Film tonight?"}
+{"id": "sup-l-0131", "label": "not_scam_like", "category": "personal_chat", "text": "Your package came while you were out, I've put it in your porch"}
+{"id": "sup-l-0132", "label": "not_scam_like", "category": "personal_chat", "text": "Hiya, just checking you got home ok after last night"}
+{"id": "sup-l-0133", "label": "not_scam_like", "category": "work_message", "text": "Hi all, quick reminder that the quarterly report is due Friday. Shout if you need help with the figures."}
+{"id": "sup-l-0134", "label": "not_scam_like", "category": "work_message", "text": "Can you cover my shift on Sunday? I'll swap you for next Saturday"}
+{"id": "sup-l-0135", "label": "not_scam_like", "category": "work_message", "text": "Meeting room 3 is booked for the interview at 2. Candidate is called Rhys."}
+{"id": "sup-l-0136", "label": "not_scam_like", "category": "work_message", "text": "Fire alarm test at 11am today. No need to leave the building."}
+{"id": "sup-l-0137", "label": "not_scam_like", "category": "work_message", "text": "Your annual leave request for 22 to 24 Dec has been approved."}
+{"id": "sup-l-0138", "label": "not_scam_like", "category": "work_message", "text": "IT notice: laptops will restart tonight for updates. Save your work before you leave."}
+{"id": "sup-l-0139", "label": "not_scam_like", "category": "work_message", "text": "Rota for next week is up on the staff board. Let me know about any problems by Wednesday."}
+{"id": "sup-l-0140", "label": "not_scam_like", "category": "work_message", "text": "Client moved the call to 4pm. Same dial-in."}
+{"id": "sup-l-0141", "label": "not_scam_like", "category": "work_message", "text": "Thanks for staying late yesterday, really appreciated. Pizza on me Friday"}
+{"id": "sup-l-0142", "label": "not_scam_like", "category": "work_message", "text": "Payslips for October are now available in the HR system as usual."}
+{"id": "sup-l-0143", "label": "not_scam_like", "category": "work_message", "text": "Reminder: expenses for last month need receipts attached. Submit through the finance portal you normally use."}
+{"id": "sup-l-0144", "label": "not_scam_like", "category": "work_message", "text": "Hi, I'm running 10 minutes late for the site visit, traffic on the ring road"}
+{"id": "sup-l-0145", "label": "not_scam_like", "category": "work_message", "text": "Training on the new till system is on Tuesday at 9, it takes about an hour"}
+{"id": "sup-l-0146", "label": "not_scam_like", "category": "work_message", "text": "Could you print 20 copies of the agenda before the board meeting? Thanks"}
+{"id": "sup-l-0147", "label": "not_scam_like", "category": "work_message", "text": "The supplier delivery is arriving early tomorrow, can someone be there at 7?"}
+{"id": "sup-l-0148", "label": "not_scam_like", "category": "work_message", "text": "Christmas party is on the 12th at the Crown. Let Jo know about dietary requirements"}
+{"id": "sup-l-0149", "label": "not_scam_like", "category": "work_message", "text": "New starter Amira joins on Monday. Please say hello!"}
+{"id": "sup-l-0150", "label": "not_scam_like", "category": "work_message", "text": "Server maintenance this weekend, the shared drive will be read-only from Saturday 8pm."}
+{"id": "sup-l-0151", "label": "not_scam_like", "category": "school_community", "text": "Maple Lane School: Reminder that Friday is non-uniform day. Donations of 1 for the charity bucket are welcome."}
+{"id": "sup-l-0152", "label": "not_scam_like", "category": "school_community", "text": "Swimming lessons are cancelled this week because the pool is closed for repairs."}
+{"id": "sup-l-0153", "label": "not_scam_like", "category": "school_community", "text": "Maple Lane School: Year 4 trip to the museum is on 6 Nov. Please return the consent form by Monday."}
+{"id": "sup-l-0154", "label": "not_scam_like", "category": "school_community", "text": "Residents association meeting on Thursday 7pm in the church hall. Agenda: parking and the new bus stop."}
+{"id": "sup-l-0155", "label": "not_scam_like", "category": "school_community", "text": "Scouts: please bring a torch and waterproof coat for the night hike this Saturday."}
+{"id": "sup-l-0156", "label": "not_scam_like", "category": "school_community", "text": "Maple Lane School: School closes at 1.30pm on the last day of term."}
+{"id": "sup-l-0157", "label": "not_scam_like", "category": "school_community", "text": "Library: your loan of The Silent Coast is due back on 30 Oct. Renew online or at the desk."}
+{"id": "sup-l-0158", "label": "not_scam_like", "category": "school_community", "text": "Council: your garden waste subscription has been renewed. Collections continue every other Tuesday."}
+{"id": "sup-l-0159", "label": "not_scam_like", "category": "school_community", "text": "Dance class has moved to the small hall from next week. Same time, 5pm."}
+{"id": "sup-l-0160", "label": "not_scam_like", "category": "school_community", "text": "Maple Lane School: Your child was absent today. If you have not already told us why, please call the office."}
+{"id": "sup-l-0161", "label": "not_scam_like", "category": "school_community", "text": "Bake sale after church on Sunday, all money raised goes to the roof fund. Cakes welcome!"}
+{"id": "sup-l-0162", "label": "not_scam_like", "category": "school_community", "text": "Road closure on Mill Lane from 9am to 3pm on Wednesday for resurfacing. Use the diversion via Park Road."}
+{"id": "sup-l-0163", "label": "not_scam_like", "category": "school_community", "text": "Nursery: Please label all coats and lunch boxes. We have a lot of lost property!"}
+{"id": "sup-l-0164", "label": "not_scam_like", "category": "school_community", "text": "Council: Recycling collection is a day late this week because of the bank holiday."}
+{"id": "sup-l-0165", "label": "not_scam_like", "category": "school_community", "text": "Five-a-side is on tonight, 8pm, pitch 2. Bring bibs if you've got them"}
+{"id": "sup-l-0166", "label": "not_scam_like", "category": "travel_transport", "text": "Your train tickets for Saturday are in the app. Coach C, seats 14 and 15."}
+{"id": "sup-l-0167", "label": "not_scam_like", "category": "travel_transport", "text": "Northwind Air: Boarding for flight NW 482 starts at gate 21 at 10:35."}
+{"id": "sup-l-0168", "label": "not_scam_like", "category": "travel_transport", "text": "Your rental car is ready. Collect it from bay 7 with your driving licence."}
+{"id": "sup-l-0169", "label": "not_scam_like", "category": "travel_transport", "text": "Northwind Air: Your flight is delayed by about 45 minutes. We'll text you when we have more news."}
+{"id": "sup-l-0170", "label": "not_scam_like", "category": "travel_transport", "text": "Bayview Hotel: We look forward to welcoming you tomorrow. Check-in is from 3pm. Parking is free for guests."}
+{"id": "sup-l-0171", "label": "not_scam_like", "category": "travel_transport", "text": "Your bus pass renews on 1 Nov. 52.00 will be taken from your saved card."}
+{"id": "sup-l-0172", "label": "not_scam_like", "category": "travel_transport", "text": "Ferry update: the 14:30 sailing is running on time. Please arrive 30 minutes before departure."}
+{"id": "sup-l-0173", "label": "not_scam_like", "category": "travel_transport", "text": "Your ride with Kofi is arriving in 2 minutes. Silver estate, plate ends 7YT."}
+{"id": "sup-l-0174", "label": "not_scam_like", "category": "travel_transport", "text": "Northwind Air: Online check-in is open for your flight to Lisbon. Check in through our app or website."}
+{"id": "sup-l-0175", "label": "not_scam_like", "category": "travel_transport", "text": "Bayview Hotel: Thanks for staying with us. Your receipt has been emailed to you."}
+{"id": "sup-l-0176", "label": "not_scam_like", "category": "travel_transport", "text": "Engineering works this Sunday, replacement buses between Ashford and Dunmore."}
+{"id": "sup-l-0177", "label": "not_scam_like", "category": "travel_transport", "text": "Your parking session at Station Road car park ends in 15 minutes. Extend in the app if you need more time."}
+{"id": "sup-l-0178", "label": "not_scam_like", "category": "travel_transport", "text": "Bike share: your ride ended at 08:52. Trip cost 1.65."}
+{"id": "sup-l-0179", "label": "not_scam_like", "category": "travel_transport", "text": "Your holiday balance of 420 is due on 15 Jan. Pay through My Booking on our website when you're ready."}
+{"id": "sup-l-0180", "label": "not_scam_like", "category": "travel_transport", "text": "Northwind Air: Your bag has been loaded on your flight. Have a good trip!"}
+{"id": "sup-l-0181", "label": "not_scam_like", "category": "government_genuine", "text": "Reminder: your self assessment tax return is due by 31 January. Sign in through the official government website you normally use."}
+{"id": "sup-l-0182", "label": "not_scam_like", "category": "government_genuine", "text": "Council: Your council tax bill for this year has been sent by post. You can also view it in your online account."}
+{"id": "sup-l-0183", "label": "not_scam_like", "category": "government_genuine", "text": "Your passport application has been received. We'll contact you if we need more information."}
+{"id": "sup-l-0184", "label": "not_scam_like", "category": "government_genuine", "text": "Electoral services: polling day is Thursday 7am to 10pm. Your polling station is the community centre."}
+{"id": "sup-l-0185", "label": "not_scam_like", "category": "government_genuine", "text": "Your driving licence has been sent and should arrive within 5 working days."}
+{"id": "sup-l-0186", "label": "not_scam_like", "category": "government_genuine", "text": "Council: Bulky waste collection booked for Monday. Please leave the items outside by 7am."}
+{"id": "sup-l-0187", "label": "not_scam_like", "category": "government_genuine", "text": "Your vehicle tax was renewed successfully. No action needed."}
+{"id": "sup-l-0188", "label": "not_scam_like", "category": "government_genuine", "text": "Job centre: Your appointment is on Wednesday at 10:40. Bring your ID and any letters you've received."}
+{"id": "sup-l-0189", "label": "not_scam_like", "category": "government_genuine", "text": "Your census form was received. Thank you for taking part."}
+{"id": "sup-l-0190", "label": "not_scam_like", "category": "government_genuine", "text": "Council: The leisure centre will be closed on Christmas Day and Boxing Day."}
+{"id": "sup-l-0191", "label": "not_scam_like", "category": "receipt_order", "text": "Thanks for shopping at Fernway Market. You spent 46.20 and earned 46 points."}
+{"id": "sup-l-0192", "label": "not_scam_like", "category": "receipt_order", "text": "Order confirmed: 1 x winter coat, size M, 79.00. We'll let you know when it's dispatched."}
+{"id": "sup-l-0193", "label": "not_scam_like", "category": "receipt_order", "text": "Pizza Corner: Order 1182 confirmed. Estimated delivery 19:45."}
+{"id": "sup-l-0194", "label": "not_scam_like", "category": "receipt_order", "text": "The Book Nook: Your order is ready to collect from the shop. We hold orders for 7 days."}
+{"id": "sup-l-0195", "label": "not_scam_like", "category": "receipt_order", "text": "Your booking at Saffron Kitchen for 2 on Saturday at 8pm is confirmed. To cancel, reply CANCEL."}
+{"id": "sup-l-0196", "label": "not_scam_like", "category": "receipt_order", "text": "Hartley Shoes: Your exchange has been processed. The new pair will be posted today."}
+{"id": "sup-l-0197", "label": "not_scam_like", "category": "receipt_order", "text": "Ticket confirmation: 2 tickets for the Saturday matinee at Brightwater Cinema, screen 3."}
+{"id": "sup-l-0198", "label": "not_scam_like", "category": "receipt_order", "text": "MarketHub: Thanks for your review! It will appear on the product page within 48 hours."}
+{"id": "sup-l-0199", "label": "not_scam_like", "category": "receipt_order", "text": "Your photo prints are ready to collect at the Fernway Market photo counter."}
+{"id": "sup-l-0200", "label": "not_scam_like", "category": "receipt_order", "text": "Your gym membership payment of 32 was taken today. See you soon at Coastline Gym."}
+{"id": "sup-l-0201", "label": "not_scam_like", "category": "receipt_order", "text": "Florist: your bouquet was delivered to the recipient at 12:10. Thank you for your order."}
+{"id": "sup-l-0202", "label": "not_scam_like", "category": "receipt_order", "text": "Order cancelled as requested. Any payment taken will be refunded within 5 days."}
+{"id": "sup-l-0203", "label": "not_scam_like", "category": "receipt_order", "text": "Saffron Kitchen: We hope you enjoyed your meal. We'd love your feedback on our website."}
+{"id": "sup-l-0204", "label": "not_scam_like", "category": "receipt_order", "text": "Your pre-order of the new console has been confirmed. We'll charge your card when it ships."}
+{"id": "sup-l-0205", "label": "not_scam_like", "category": "receipt_order", "text": "Dry cleaning ready for collection. Ticket number 2281."}
+{"id": "sup-l-0206", "label": "not_scam_like", "category": "security_genuine", "text": "MarketHub: A new sign-in to your account from Chrome on Windows. If this was you, you don't need to do anything."}
+{"id": "sup-l-0207", "label": "not_scam_like", "category": "security_genuine", "text": "Cinemax+: Your email address was changed. If you didn't do this, contact us through the help centre in the app."}
+{"id": "sup-l-0208", "label": "not_scam_like", "category": "security_genuine", "text": "Kestrel Bank: You've turned on fingerprint login. If this wasn't you, call us using the number on your card."}
+{"id": "sup-l-0209", "label": "not_scam_like", "category": "security_genuine", "text": "Two-step verification is now on for your account. You'll need a code each time you sign in on a new device."}
+{"id": "sup-l-0210", "label": "not_scam_like", "category": "security_genuine", "text": "Meridian: Scam warning. If someone calls saying they're from us and asks you to move money, hang up. It's a scam."}
+{"id": "sup-l-0211", "label": "not_scam_like", "category": "security_genuine", "text": "Velo Mobile: We've received a request to switch your number to a new sim. If this wasn't you, call us from another phone using the number on our website."}
+{"id": "sup-l-0212", "label": "not_scam_like", "category": "security_genuine", "text": "Your account password was reset successfully. You can now sign in with your new password."}
+{"id": "sup-l-0213", "label": "not_scam_like", "category": "security_genuine", "text": "Kestrel Bank: Your card has been frozen as you asked. Unfreeze it in the app any time."}
+{"id": "sup-l-0214", "label": "not_scam_like", "category": "security_genuine", "text": "Thanks for signing up to Fernway rewards. Confirm your email address from the message we've sent to your inbox."}
+{"id": "sup-l-0215", "label": "not_scam_like", "category": "security_genuine", "text": "Reminder: we'll never ask for your full password or card PIN by text, email or phone."}
+{"id": "sup-l-0216", "label": "not_scam_like", "category": "work_recruiter", "text": "Hi, this is Ellen from Harbour Recruitment. Thanks for applying for the warehouse supervisor role. Are you free for a phone interview on Tuesday?"}
+{"id": "sup-l-0217", "label": "not_scam_like", "category": "work_recruiter", "text": "Your interview at Fernway Market head office is confirmed for 3 Nov at 11am. Ask for Paul at reception."}
+{"id": "sup-l-0218", "label": "not_scam_like", "category": "work_recruiter", "text": "Thanks for your application. Unfortunately we won't be taking it further this time. We wish you luck with your search."}
+{"id": "sup-l-0219", "label": "not_scam_like", "category": "work_recruiter", "text": "Congratulations, we'd like to offer you the role. Your contract will be emailed today. Start date to be agreed with your manager."}
+{"id": "sup-l-0220", "label": "not_scam_like", "category": "work_recruiter", "text": "Temp agency: there's a 3 day shift at the distribution centre next week, 11.90 an hour. Reply if you want it."}
+{"id": "sup-l-0221", "label": "not_scam_like", "category": "marketplace_genuine", "text": "Hi, is the bookshelf still available? I could collect it Saturday morning and pay cash"}
+{"id": "sup-l-0222", "label": "not_scam_like", "category": "marketplace_genuine", "text": "Yes still available! Collection only from Ashford, 25 cash please"}
+{"id": "sup-l-0223", "label": "not_scam_like", "category": "marketplace_genuine", "text": "Thanks, I'll come and see the bike first if that's ok. Tuesday evening?"}
+{"id": "sup-l-0224", "label": "not_scam_like", "category": "marketplace_genuine", "text": "Your item sold on the marketplace. The buyer's payment is in your balance and you can withdraw it from the app."}
+{"id": "sup-l-0225", "label": "not_scam_like", "category": "marketplace_genuine", "text": "Hi, I've got the pram you were after. Happy to meet at the supermarket car park, 40 is fine"}
+{"id": "sup-l-0226", "label": "not_scam_like", "category": "marketplace_genuine", "text": "Sorry, it's been sold. Good luck finding one"}
+{"id": "sup-l-0227", "label": "not_scam_like", "category": "marketplace_genuine", "text": "The flat viewing is at 6pm on Thursday. I'll meet you outside number 14 with the keys."}
+{"id": "sup-l-0228", "label": "not_scam_like", "category": "charity_genuine", "text": "Thank you for your donation to the Riverbank Food Bank. It helps local families this winter."}
+{"id": "sup-l-0229", "label": "not_scam_like", "category": "charity_genuine", "text": "Thanks for signing up for the fun run! Your race pack will arrive a week before the event."}
+{"id": "sup-l-0230", "label": "not_scam_like", "category": "charity_genuine", "text": "Riverbank Food Bank: We're short of tinned vegetables and pasta. Drop-off points are listed on our noticeboard."}
+{"id": "sup-l-0231", "label": "not_scam_like", "category": "email_genuine", "text": "Hi team, attached are the minutes from Tuesday's meeting. Actions are highlighted in yellow. Let me know if I've missed anything. Thanks, Helen"}
+{"id": "sup-l-0232", "label": "not_scam_like", "category": "email_genuine", "text": "Dear parent, the school photographer will be in on Wednesday. Order forms will come home in book bags and can be returned with cash or paid through the usual parent app."}
+{"id": "sup-l-0233", "label": "not_scam_like", "category": "email_genuine", "text": "Hello, thank you for contacting customer services. Your reference is 44812. We aim to reply within 2 working days. Please don't reply to this email."}
+{"id": "sup-l-0234", "label": "not_scam_like", "category": "email_genuine", "text": "Your monthly newsletter from Coastline Gym: new spin classes, holiday opening hours and our member of the month. Unsubscribe at the bottom of this email."}
+{"id": "sup-l-0235", "label": "not_scam_like", "category": "email_genuine", "text": "Hi Mr Kaur, your car is booked in for its service on Monday at 8.30am. Please leave the key at reception. We'll call you with any extra work before doing it."}
+{"id": "sup-l-0236", "label": "not_scam_like", "category": "email_genuine", "text": "Dear tenant, the annual gas safety check will take place on 14 Nov between 9 and 1. Please make sure someone is home or let us know if you'd like us to use the spare key."}
+{"id": "sup-l-0237", "label": "not_scam_like", "category": "email_genuine", "text": "Hello, I'm writing to confirm your place on the beginners pottery course starting on 4 Nov. Aprons are provided. The fee you paid at booking covers all materials."}
+{"id": "sup-l-0238", "label": "not_scam_like", "category": "email_genuine", "text": "Hi, just following up on my email last week about the invoice for the September work. No problem if you need more time, just let me know when to expect payment. Best, Raj"}
+{"id": "sup-l-0239", "label": "not_scam_like", "category": "email_genuine", "text": "Thanks for your order. Your invoice is attached to this email and also available in your account under Orders."}
+{"id": "sup-l-0240", "label": "not_scam_like", "category": "email_genuine", "text": "Dear member, our AGM is on 2 Dec at 7pm. Papers will be circulated a week before. Please send any questions to the secretary."}
+{"id": "sup-l-0241", "label": "not_scam_like", "category": "chat_genuine", "text": "Who's bringing what for Sunday? I've got dessert covered"}
+{"id": "sup-l-0242", "label": "not_scam_like", "category": "chat_genuine", "text": "Can someone send me the link for the quiz tonight? Lost it"}
+{"id": "sup-l-0243", "label": "not_scam_like", "category": "chat_genuine", "text": "Reminder for the group: subs for the season are 60, pay the treasurer at training"}
+{"id": "sup-l-0244", "label": "not_scam_like", "category": "chat_genuine", "text": "Anyone fancy a coffee after the school run?"}
+{"id": "sup-l-0245", "label": "not_scam_like", "category": "chat_genuine", "text": "Has anyone seen a black cat around Elm Close? Ours didn't come home last night"}
+{"id": "sup-l-0246", "label": "not_scam_like", "category": "chat_genuine", "text": "Thanks everyone for the birthday wishes, had the best day"}
+{"id": "sup-l-0247", "label": "not_scam_like", "category": "chat_genuine", "text": "The plumber my neighbour used was great and fair price, I can send you his number"}
+{"id": "sup-l-0248", "label": "not_scam_like", "category": "chat_genuine", "text": "Heads up, there's a scam text going round pretending to be the parcel company. Don't click anything"}
+{"id": "sup-l-0249", "label": "not_scam_like", "category": "chat_genuine", "text": "Who wants the last slice of cake in the office kitchen? Going once, going twice"}
+{"id": "sup-l-0250", "label": "not_scam_like", "category": "chat_genuine", "text": "Just booked the cottage for May, 4 nights. I'll send everyone the details"}
+{"id": "sup-l-0251", "label": "not_scam_like", "category": "personal_chat", "text": "Can you remind me what time the party starts on Saturday?"}
+{"id": "sup-l-0252", "label": "not_scam_like", "category": "personal_chat", "text": "I've left the spare key under the plant pot for the cleaner"}
+{"id": "sup-l-0253", "label": "not_scam_like", "category": "personal_chat", "text": "Grandad's settled in well at the home, the staff are lovely"}
+{"id": "sup-l-0254", "label": "not_scam_like", "category": "personal_chat", "text": "Running late, the meeting overran. Be there by 7"}
+{"id": "sup-l-0255", "label": "not_scam_like", "category": "personal_chat", "text": "Can you text me the recipe for that curry? It was so good"}
+{"id": "sup-l-0256", "label": "not_scam_like", "category": "personal_chat", "text": "We're at the park by the pond if you want to join us"}
+{"id": "sup-l-0257", "label": "not_scam_like", "category": "personal_chat", "text": "The washing machine is fixed! Only cost 40 for the part"}
+{"id": "sup-l-0258", "label": "not_scam_like", "category": "personal_chat", "text": "Hey love, I'm at the shops, do we need anything?"}
+{"id": "sup-l-0259", "label": "not_scam_like", "category": "personal_chat", "text": "Congratulations on the new job!! So proud of you"}
+{"id": "sup-l-0260", "label": "not_scam_like", "category": "personal_chat", "text": "Did the dog get walked this morning or shall I take him out?"}
+{"id": "sup-l-0261", "label": "not_scam_like", "category": "personal_chat", "text": "Mum, I'm staying at Jess's tonight, her mum will drop me at school tomorrow"}
+{"id": "sup-l-0262", "label": "not_scam_like", "category": "personal_chat", "text": "Hi, it's Tom's mum. Would your son like to come to Tom's party next Saturday? 2 to 4 at the soft play"}
+{"id": "sup-l-0263", "label": "not_scam_like", "category": "personal_chat", "text": "Got home safe, thanks for a lovely evening"}
+{"id": "sup-l-0264", "label": "not_scam_like", "category": "personal_chat", "text": "The match is on at 3, coming to the pub to watch it?"}
+{"id": "sup-l-0265", "label": "not_scam_like", "category": "personal_chat", "text": "Can you send me that photo of us at the beach? Want to print it"}
+{"id": "sup-l-0266", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: Direct debit set up for Coastline Gym, 32.00 monthly. If you didn't set this up, contact us through the app."}
+{"id": "sup-l-0267", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: Your ISA allowance for this tax year has 4,800 remaining."}
+{"id": "sup-l-0268", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: Payment of 120.00 to Jordan Hale sent. Reference: holiday."}
+{"id": "sup-l-0269", "label": "not_scam_like", "category": "bank_notification", "text": "Meridian: We've updated our terms and conditions. You can read them in the app or on our website. No action is needed."}
+{"id": "sup-l-0270", "label": "not_scam_like", "category": "bank_notification", "text": "Kestrel Bank: Interest of 3.17 has been paid into your savings account."}
+{"id": "sup-l-0271", "label": "not_scam_like", "category": "delivery_update", "text": "Parcelwise: Your parcel needs a signature. If you're out, we'll try again tomorrow or you can pick a collection point in the app."}
+{"id": "sup-l-0272", "label": "not_scam_like", "category": "delivery_update", "text": "QuickDrop: Your parcel is out for delivery today. Tracking: quickdrop.example/track/QD71882"}
+{"id": "sup-l-0273", "label": "not_scam_like", "category": "delivery_update", "text": "Your new mattress will be delivered on Friday. Our team will remove the old one as you requested."}
+{"id": "sup-l-0274", "label": "not_scam_like", "category": "delivery_update", "text": "MarketHub: Part of your order has been delivered. The rest will arrive separately."}
+{"id": "sup-l-0275", "label": "not_scam_like", "category": "delivery_update", "text": "Parcelwise: Your parcel has been collected from the locker. Thanks for using Parcelwise."}
+{"id": "sup-l-0276", "label": "not_scam_like", "category": "otp_code", "text": "Your Coastline Gym door code for today is 4419#."}
+{"id": "sup-l-0277", "label": "not_scam_like", "category": "otp_code", "text": "Your MarketHub sign-in code is 615220. MarketHub will never call you to ask for it."}
+{"id": "sup-l-0278", "label": "not_scam_like", "category": "otp_code", "text": "Kestrel Bank: Your card PIN reminder has been posted to your home address."}
+{"id": "sup-l-0279", "label": "not_scam_like", "category": "otp_code", "text": "Use code 2907 to confirm your booking at Bloom Salon."}
+{"id": "sup-l-0280", "label": "not_scam_like", "category": "otp_code", "text": "Meridian: 774102 is your code to set up the app on a new phone. Only enter it in the app."}
+{"id": "sup-l-0281", "label": "not_scam_like", "category": "marketing_optout", "text": "Northwind Air: Winter sun fares from 59 one way. Book by Sunday. Unsubscribe in your account settings."}
+{"id": "sup-l-0282", "label": "not_scam_like", "category": "marketing_optout", "text": "Bayview Hotel: Members save 15 percent on weekend stays in December. Book on our website."}
+{"id": "sup-l-0283", "label": "not_scam_like", "category": "marketing_optout", "text": "Saffron Kitchen: New tasting menu launches Friday. Reply STOP to stop receiving offers."}
+{"id": "sup-l-0284", "label": "not_scam_like", "category": "marketing_optout", "text": "The Book Nook: Author talk on Thursday at 7pm. Tickets 5, includes a drink."}
+{"id": "sup-l-0285", "label": "not_scam_like", "category": "marketing_optout", "text": "Fernway Market: Your coupon for 3 off a 30 shop is in the app. Valid until 2 Nov."}
+{"id": "sup-l-0286", "label": "not_scam_like", "category": "account_service", "text": "Fibrelink: Your new router has been dispatched and will arrive in 2 to 3 days. Keep using your old one until then."}
+{"id": "sup-l-0287", "label": "not_scam_like", "category": "account_service", "text": "Velo Mobile: Your contract ends on 30 Nov. You can keep your plan or look at upgrade options in the app."}
+{"id": "sup-l-0288", "label": "not_scam_like", "category": "account_service", "text": "Tidewater Energy: Your smart meter installation is booked for 9 Nov, 8am to 12pm. There's no charge for this."}
+{"id": "sup-l-0289", "label": "not_scam_like", "category": "account_service", "text": "Cinemax+: You're now on the family plan. Up to 4 people can watch at once."}
+{"id": "sup-l-0290", "label": "not_scam_like", "category": "account_service", "text": "Water services: planned work in your street on Thursday may cause low pressure. Sorry for any inconvenience."}
+{"id": "sup-l-0291", "label": "not_scam_like", "category": "appointment", "text": "Elm Street Surgery: Your appointment has been cancelled as requested. Call us if you need to rebook."}
+{"id": "sup-l-0292", "label": "not_scam_like", "category": "appointment", "text": "Bloom Salon: Thanks for visiting! Book your next appointment online any time."}
+{"id": "sup-l-0293", "label": "not_scam_like", "category": "appointment", "text": "Hill Road Motors: Your car passed its MOT. You can collect it after 4pm."}
+{"id": "sup-l-0294", "label": "not_scam_like", "category": "appointment", "text": "Pharmacy: your repeat prescription has been sent to the surgery for approval."}
+{"id": "sup-l-0295", "label": "not_scam_like", "category": "appointment", "text": "Brookside Dental: It's been a year since your last check-up. Call us to book."}
+{"id": "sup-l-0296", "label": "not_scam_like", "category": "work_message", "text": "Can everyone fill in the holiday planner by the end of the month please"}
+{"id": "sup-l-0297", "label": "not_scam_like", "category": "work_message", "text": "Car park is closed tomorrow for line painting, park on the street"}
+{"id": "sup-l-0298", "label": "not_scam_like", "category": "work_message", "text": "Happy Friday everyone, thanks for a great week"}
+{"id": "sup-l-0299", "label": "not_scam_like", "category": "work_message", "text": "Your timesheet for week 43 is missing. Please complete it in the usual system today."}
+{"id": "sup-l-0300", "label": "not_scam_like", "category": "work_message", "text": "Reminder: the office closes at 3pm on Christmas Eve"}

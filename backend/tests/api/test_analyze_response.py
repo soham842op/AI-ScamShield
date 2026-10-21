@@ -213,7 +213,9 @@ def test_pipeline_receives_configured_provider(
     seen: list[object] = []
     pipeline = fake_pipeline()
 
-    async def message(text: str, channel: str, *, provider: object) -> object:
+    async def message(
+        text: str, channel: str, *, provider: object, classifier: object = None
+    ) -> object:
         seen.append(provider)
         return await pipeline.analyze_message(text, channel, provider=provider)
 
