@@ -29,5 +29,6 @@ def test_readyz_unavailable(client: TestClient, monkeypatch: pytest.MonkeyPatch)
     monkeypatch.setattr(health, "check_database", down)
     response = client.get("/readyz")
     assert response.status_code == 503
+    assert response.headers["Retry-After"] == "30"
     assert response.json()["status"] == "not_ready"
     assert response.json()["checks"]["database"] == "unavailable"

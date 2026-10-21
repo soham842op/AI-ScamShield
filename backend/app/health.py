@@ -48,4 +48,6 @@ async def readyz() -> JSONResponse:
             "model": "not_loaded",
         },
     }
-    return JSONResponse(body, status_code=200 if database_ok else 503)
+    if database_ok:
+        return JSONResponse(body)
+    return JSONResponse(body, status_code=503, headers={"Retry-After": "30"})

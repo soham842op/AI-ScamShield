@@ -11,6 +11,8 @@ dependencies = [
     "psycopg[binary]",
     "sqlalchemy>=2.0",
     "alembic>=1.13",
+    "idna>=3.7",
+    "publicsuffixlist>=1.0",
 ]
 
 [dependency-groups]

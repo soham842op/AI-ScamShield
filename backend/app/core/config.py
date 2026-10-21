@@ -7,7 +7,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-    app_env: str = "development"
+    # Anything but "development" is treated as production, so a missing value fails safe.
+    app_env: str = "production"
     log_level: str = "info"
 
     database_url: SecretStr = SecretStr("")

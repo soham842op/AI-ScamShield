@@ -15,4 +15,6 @@ WORKDIR /app
 COPY --from=builder --chown=appuser:appuser /app /app
 USER appuser
 EXPOSE 8000
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Access logs would record client IPs. The app reads X-Forwarded-For itself, so
+# uvicorn must not rewrite the client address.
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--no-access-log", "--no-proxy-headers"]

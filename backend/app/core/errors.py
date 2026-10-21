@@ -1,5 +1,6 @@
 import logging
 import uuid
+from collections.abc import Sequence
 from typing import Any, cast
 
 from fastapi import FastAPI, Request
@@ -33,7 +34,18 @@ _VALIDATION_ISSUES: dict[str, str] = {
     "string_type": "invalid_type",
     "bool_type": "invalid_type",
     "dict_type": "invalid_type",
+    "model_attributes_type": "invalid_type",
+    "uuid_type": "invalid_type",
+    # Raised by the request schemas with PydanticCustomError; the type is the issue name.
+    "invalid_type": "invalid_type",
+    "min_length": "min_length",
+    "max_length": "max_length",
+    "whitespace_only": "whitespace_only",
+    "nul_character": "nul_character",
+    "invalid_unicode": "invalid_unicode",
 }
+
+NO_STORE = "no-store"
 
 
 class RequestIdMiddleware:
@@ -74,6 +86,41 @@ def error_body(
     return {"error": error}
 
 
+class ApiError(Exception):
+    """An application error that maps to the error envelope.
+
+    ``message`` must be safe to show to users: no submitted values, no internals.
+    """
+
+    def __init__(
+        self,
+        status_code: int,
+        *,
+        code: str | None = None,
+        message: str | None = None,
+        details: list[dict[str, Any]] | None = None,
+        headers: dict[str, str] | None = None,
+    ) -> None:
+        default_code, default_message = _STATUS_CODES.get(
+            status_code, ("internal_error", "An unexpected error occurred.")
+        )
+        super().__init__(code or default_code)
+        self.status_code = status_code
+        self.code = code or default_code
+        self.message = message or default_message
+        self.details = details
+        self.headers = dict(headers or {})
+
+
+async def api_error_handler(request: Request, exc: Exception) -> JSONResponse:
+    exc = cast(ApiError, exc)
+    return JSONResponse(
+        error_body(exc.code, exc.message, _request_id(request), exc.details),
+        status_code=exc.status_code,
+        headers=exc.headers,
+    )
+
+
 async def http_exception_handler(request: Request, exc: Exception) -> JSONResponse:
     exc = cast(StarletteHTTPException, exc)
     code, message = _STATUS_CODES.get(
@@ -83,6 +130,9 @@ async def http_exception_handler(request: Request, exc: Exception) -> JSONRespon
     if exc.status_code in (429, 503):
         retry_after = (exc.headers or {}).get("Retry-After")
         headers["Retry-After"] = retry_after or "30"
+    allow = (exc.headers or {}).get("Allow")
+    if exc.status_code == 405 and allow:
+        headers["Allow"] = allow
     return JSONResponse(
         error_body(code, message, _request_id(request)),
         status_code=exc.status_code,
@@ -90,23 +140,53 @@ async def http_exception_handler(request: Request, exc: Exception) -> JSONRespon
     )
 
 
-async def validation_exception_handler(request: Request, exc: Exception) -> JSONResponse:
-    exc = cast(RequestValidationError, exc)
+def validation_details(errors: Sequence[Any]) -> list[dict[str, Any]]:
+    """Map Pydantic errors to contract details. Never copies input, ctx or url."""
     details: list[dict[str, Any]] = []
-    for item in exc.errors():
+    for item in errors:
+        error_type = str(item.get("type"))
         loc = [str(part) for part in item.get("loc", ())]
         if loc and loc[0] in ("body", "query", "path", "header", "cookie"):
             loc = loc[1:]
-        details.append(
-            {
-                "field": ".".join(loc) or None,
-                "issue": _VALIDATION_ISSUES.get(str(item.get("type")), "invalid_value"),
-            }
+        field = ".".join(loc) or None
+        # A syntax error's location is a character offset, not a field. An unknown field
+        # name is client content, so it is never echoed.
+        if error_type in ("json_invalid", "extra_forbidden"):
+            field = None
+        detail: dict[str, Any] = {
+            "field": field,
+            "issue": _VALIDATION_ISSUES.get(error_type, "invalid_value"),
+        }
+        limit = (item.get("ctx") or {}).get("limit")
+        if detail["issue"] == "max_length" and isinstance(limit, int):
+            detail["limit"] = limit
+        details.append(detail)
+    return details or [{"field": None, "issue": "invalid_value"}]
+
+
+def validation_error(details: list[dict[str, Any]]) -> ApiError:
+    # input_too_long is only for exceeding a maximum length.
+    if all(d.get("issue") == "max_length" for d in details):
+        return ApiError(
+            422,
+            code="input_too_long",
+            message="The input is too long.",
+            details=details,
         )
-    if not details:
-        details = [{"field": None, "issue": "invalid_value"}]
-    code, message = _STATUS_CODES[422]
-    return JSONResponse(error_body(code, message, _request_id(request), details), status_code=422)
+    return ApiError(422, details=details)
+
+
+async def validation_exception_handler(request: Request, exc: Exception) -> JSONResponse:
+    exc = cast(RequestValidationError, exc)
+    return await api_error_handler(request, validation_error(validation_details(exc.errors())))
+
+
+def _unhandled_headers(request: Request, request_id: str) -> dict[str, str]:
+    # This response is built outside the middleware stack, so it sets its own headers.
+    headers = {REQUEST_ID_HEADER: request_id}
+    if request.url.path.startswith("/api/"):
+        headers["Cache-Control"] = NO_STORE
+    return headers
 
 
 async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONResponse:
@@ -115,11 +195,12 @@ async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONR
     return JSONResponse(
         error_body("internal_error", "An unexpected error occurred.", request_id),
         status_code=500,
-        headers={REQUEST_ID_HEADER: request_id},
+        headers=_unhandled_headers(request, request_id),
     )
 
 
 def register_error_handlers(app: FastAPI) -> None:
+    app.add_exception_handler(ApiError, api_error_handler)
     app.add_exception_handler(StarletteHTTPException, http_exception_handler)
     app.add_exception_handler(RequestValidationError, validation_exception_handler)
     app.add_exception_handler(Exception, unhandled_exception_handler)

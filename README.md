@@ -6,7 +6,7 @@ It is a portfolio project by Soham Shah.
 
 ## Status
 
-Early development. The repository foundation (skeletons, CI and health endpoints) is in place, but no analysis features exist yet. Nothing is deployed. There is no live demo, no trained model and no published evaluation. Everything below describes the plan, and any detail may change as the work progresses.
+Early development. The analysis API and the web page work end to end using rule signals only: there is no trained classifier yet and no URL reputation lookup, so links are reported as not checked and most results without clear warning signs are inconclusive. Nothing is deployed. There is no live demo, no trained model and no published evaluation. Everything below describes the plan, and any detail may change as the work progresses.
 
 ## What it will do
 
@@ -72,34 +72,26 @@ scripts/          development helpers
 
 What is processed: the text or URL you submit, for the length of the request, to produce a result.
 
-What is not stored: the submitted text, extracted excerpts, the URLs or their hosts, raw IP addresses, and user agents. The plan is to keep only derived fields (classification, signal identifiers, timings, versions).
+What is not stored: the submitted text, extracted excerpts, the URLs or their hosts, raw IP addresses, and user agents. Each analysis keeps only derived fields (classification, signal identifiers, counts, timings, versions) for 90 days. Rate limiting stores a keyed hash of the client address, never the address itself, for 48 hours.
 
 What leaves the service:
 
 - URLs found in a submission are sent to the URL reputation provider so they can be checked.
 - The Gemini API receives only structured evidence (signal identifiers and descriptions, the classification, URL check statuses and threat types). It does not receive the message text or the URLs.
 
-Do not paste anything you are not comfortable having checked against a third-party reputation service. This section will be updated once the implementation exists.
+Neither third-party call is enabled yet: links are currently reported as not checked, and explanations come from fixed templates. Do not paste anything you are not comfortable having checked against a third-party reputation service once lookups are enabled.
 
 ## Local development
 
 Prerequisites: Python 3.12 or newer, [uv](https://docs.astral.sh/uv/), Node.js 20 or newer, and Docker.
 
-Copy the example environment file before running anything that reads configuration:
+The simplest setup runs PostgreSQL, the migrations and the backend in Docker (http://localhost:8000; the credentials in `docker-compose.yml` are for local use only):
 
 ```
-cp .env.example .env
+docker compose up --build
 ```
 
-Backend (http://localhost:8000):
-
-```
-cd backend
-uv sync
-uv run uvicorn app.main:app --reload
-```
-
-Frontend:
+Then start the frontend (http://localhost:3000). In development it forwards `/api/*` to the backend on port 8000:
 
 ```
 cd frontend
@@ -107,10 +99,14 @@ npm ci
 npm run dev
 ```
 
-PostgreSQL and the backend together, using Docker (the credentials in `docker-compose.yml` are for local use only):
+To run the backend outside Docker instead, point it at a PostgreSQL database you control. The backend reads `backend/.env`; when `APP_ENV` is not set it assumes production and refuses to start without a database URL and a strong `CLIENT_ID_HASH_KEY`:
 
 ```
-docker compose up
+cp .env.example backend/.env    # then edit DATABASE_URL
+cd backend
+uv sync
+uv run alembic upgrade head
+uv run uvicorn app.main:app --reload
 ```
 
 Checks:
