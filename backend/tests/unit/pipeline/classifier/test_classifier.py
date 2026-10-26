@@ -172,7 +172,7 @@ async def test_failure_is_unavailable_and_logs_no_text(caplog: pytest.LogCapture
 
 @pytest.mark.parametrize(
     "text",
-    ["Plain text", "ＷＩＮ cash", "pa​y n‍ow", "café", "½ off"],
+    ["Plain text", "ＷＩＮ cash", "pa\u200by n\u200dow", "café", "½ off"],
 )
 def test_features_match_the_training_input_form(text: str) -> None:
     # ml/scamshield_ml/prepare.py model_input: NFC, NFKC, then drop category Cf.

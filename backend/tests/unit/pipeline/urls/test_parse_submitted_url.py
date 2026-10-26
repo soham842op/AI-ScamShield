@@ -82,7 +82,7 @@ def test_unsupported_scheme(value: str) -> None:
         "http://example.com/\x01",
         "http://example.com/\x7f",
         "http://example.com/\x85",
-        "http://example.com/ x",
+        "http://example.com/\u00a0x",
         "http://example.com/　x",
         "http://",
         "http:///",

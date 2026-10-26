@@ -1,6 +1,6 @@
 """Choose the operating thresholds T_s < T_h from validation scores only.
 
-Rule (CP5 design decision, recorded in docs/MODEL_EVALUATION.md):
+Rule:
 
 - T_h (`high_risk`): the lowest score at which validation precision is at least
   HIGH_RISK_MIN_PRECISION, and stays at least that for every higher threshold.

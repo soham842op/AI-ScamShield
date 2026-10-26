@@ -1,4 +1,4 @@
-"""Owner-approved current-style training supplement (ADR 011 amendment, 2026-10-21).
+"""Current-style training supplement, reviewed before use (status in `manifest.json`).
 
 `supplement/current_style_train_v1.jsonl` uses the same row format as the synthetic
 evaluation set: `id`, `label` (`scam_like` or `not_scam_like`), `category`, `text`.

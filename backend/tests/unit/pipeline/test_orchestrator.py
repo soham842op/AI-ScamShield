@@ -343,7 +343,7 @@ class FakeClassifier:
 async def test_classifier_scores_the_feature_form_of_the_text() -> None:
     model = FakeClassifier(0.1)
     await orchestrator.analyze_message(
-        "ＷＩＮ ca​sh", "sms", provider=FakeProvider(), classifier=model
+        "ＷＩＮ ca\u200bsh", "sms", provider=FakeProvider(), classifier=model
     )
     assert model.seen == ["WIN cash"]
 

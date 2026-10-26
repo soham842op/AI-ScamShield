@@ -1,0 +1,3 @@
+# The training data is hashed byte for byte; keep the same line endings on every OS.
+ml/supplement/*.jsonl text eol=lf
+ml/synthetic/*.jsonl text eol=lf

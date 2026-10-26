@@ -16,7 +16,7 @@ def _raw(text: str, label: str = "ham", dataset: str = "a") -> RawExample:
 
 def test_model_input_folds_compatibility_forms_and_drops_format_chars() -> None:
     # Fullwidth letters fold to ASCII; zero-width space and joiner are removed.
-    assert model_input("ＷＩＮ​ ca‍sh") == "WIN cash"
+    assert model_input("ＷＩＮ\u200b ca\u200dsh") == "WIN cash"
 
 
 def test_model_input_composes_to_nfc_first() -> None:
@@ -56,7 +56,7 @@ def test_conflicting_targets_are_dropped() -> None:
 
 
 def test_empty_texts_are_dropped() -> None:
-    examples, stats = prepare([_raw("   "), _raw("​")])
+    examples, stats = prepare([_raw("   "), _raw("\u200b")])
     assert examples == []
     assert stats.empty_dropped == 2
 

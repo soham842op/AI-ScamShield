@@ -1,6 +1,6 @@
 """Label mapping, deduplication and the train/validation/test split.
 
-Label mapping (owner decision, 2026-10-21): `spam` and `smishing` are `scam_like`
+Label mapping: `spam` and `smishing` are `scam_like`
 (target 1), `ham` is `not_scam_like` (target 0). Supplement rows arrive as `scam`
 (target 1) or `ham`.
 
