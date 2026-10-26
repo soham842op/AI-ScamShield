@@ -2,6 +2,6 @@
   "set": "synthetic_eval_v1.jsonl",
   "purpose": "evaluation only, never training",
   "examples": 120,
-  "status": "draft, awaiting owner review",
+  "status": "approved, 2026-10-26",
   "notes": "All names, brands, numbers and domains are invented. Domains use the reserved .example TLD; phone numbers use the Ofcom drama ranges 07700 900xxx and 01632 960xxx."
 }

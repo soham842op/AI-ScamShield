@@ -1,4 +1,4 @@
-"""The labeled datasets used for training and evaluation (ADR 011).
+"""The labeled datasets used for training and evaluation, both CC BY 4.0 (credits in the README).
 
 Datasets are never committed. `fetch` downloads each archive from its official
 page and refuses any file whose size or SHA-256 differs from the values pinned here.

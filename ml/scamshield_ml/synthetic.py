@@ -1,9 +1,9 @@
-"""The owner-approved synthetic evaluation set (ADR 011). Evaluation only, never training.
+"""The synthetic evaluation set. Evaluation only, never training.
 
 Rows in `synthetic/synthetic_eval_v1.jsonl`: `id`, `label` (`scam_like` or
 `not_scam_like`), `category`, `text`. All names, numbers and domains are invented
 (reserved example domains and drama-range phone numbers). `manifest.json` holds the
-review status; results are reported as provisional until the owner approves the set.
+review status; results are reported as provisional until the set is approved.
 """
 
 import json

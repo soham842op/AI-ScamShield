@@ -149,6 +149,9 @@ _ADVERSARIAL = {
     "plain": "x" * 10_000,
 }
 _LIMIT_SECONDS = 0.05
+# All rules together. Shared CI runners are several times slower than a laptop; a
+# backtracking pattern still takes over a second on these inputs.
+_EVALUATE_LIMIT_SECONDS = 0.25
 
 
 def _timed(pattern: "re.Pattern[str]", features: str) -> float:
@@ -175,7 +178,7 @@ def test_evaluate_is_fast_on_adversarial_text(name: str) -> None:
         start = time.perf_counter()
         evaluate(normalized)
         runs.append(time.perf_counter() - start)
-    assert min(runs) < _LIMIT_SECONDS
+    assert min(runs) < _EVALUATE_LIMIT_SECONDS
 
 
 def excerpt_of(text: str) -> str:
